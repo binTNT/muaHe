@@ -1,0 +1,2038 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      *{
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+      }
+      body{
+         display: flex;
+         height: 100vh;
+         flex-direction: column;
+         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .cap{
+         font-size: 15px;
+         flex: 2;
+         overflow: hidden;
+         overflow-y: scroll;
+         padding: 10px 20px ;
+         background: #e0e0e0;
+      }
+      .btn{
+         flex: 1;
+         display: flex;
+         justify-content: space-between;
+      }
+      .btn button{
+         width: 50%;
+         margin: 10px;
+         border-radius: 10px;
+         border: none;
+      }
+      .btn button:nth-child(1){
+         flex: 1;
+      }
+      .btn button:nth-child(2){
+         flex: 1;
+         background: #f8b0b0;
+      }
+
+      .btn button:hover{
+         box-shadow: 1px 1px 10px 1px #727272;
+      }
+      .btn button:active{
+         background: rgb(189, 129, 245);
+      }
+      .btn textarea{
+         outline: none;
+         border: none;
+         flex: 2;
+         background: #fff4f4;
+         padding: 10px 10px;
+      }
+   </style>
+</head>
+<body>
+   <div class="cap">
+      <p>TOP 5 LÝ DO NÊN ĐẶT ĐỒNG PHỤC TẠI HỒNG HÀ
+         <br>- Mẫu mã đa dạng, thiết kế độc quyền ấn tượng
+         <br>- Tối ưu quy trình, tối ưu chi phí sản xuất, mang lại nhiều lợi ích cho khách hàng
+         <br>- Chất lượng sản phẩm đúng chuẩn cam kết, 100% khách hàng hài lòng sau hợp tác
+         <br>- Thợ may tay nghề cao, công nghệ may - in hiện đại
+         <br>- Đội ngũ tư vấn viên nhiệt tình, giàu kinh nghiệm
+         <br>- Để sở hữu những bộ đồng phục đẹp, chất lượng thì không thể thiếu được sự góp mặt của một đơn vị may đồng phục uy tín với mức giá tốt. Liên hệ với HỒNG HÀ ngay hôm nay để được tư vấn và nhận báo giá ưu đãi nhất nhé!</p>
+         <br><p>KHÁCH HÀNG NÓI GÌ VỀ ĐỒNG PHỤC HỒNG HÀ
+         <br>- Chị Hà - Bảo Tín Mạnh Hải: "Đồng phục HỒNG HÀ may đúng như ảnh với chuẩn size luôn, nhân viên bên em mặc vừa lắm. Các bạn khen chất liệu co giãn mặc thích lắm ạ. Đồng phục HỒNG HÀ mãi đỉnh."
+         <br>- Chị Minh - Sun Group: "Chất đẹp, mặc thoải mái lắm. Cảm ơn HỒNG HÀ nhiều ạ."
+         <br>- Chị Chang - AVC: "Đồng phục sơ mi HỒNG HÀ thiết kế đẹp, vải mặc dễ chịu mà đường may chắc chắn lắm luôn. Thay mặt công ty cảm ơn đội ngũ HỒNG HÀ nhiều nhé!"
+         <br>- Chị Thoa - Mediplantex: Mặc đồng phục HỒNG HÀ cái khác hẳn, team nổi bật nhất sân bay luôn."
+         <br>- Mỗi ngày, HỒNG HÀ đều có cơ hội được làm việc cùng hàng trăm khách hàng, từ các doanh nghiệp lớn đến đến các tổ chức, hội nhóm nhỏ trên khắp cả nước. Cả những khách hàng lần đầu tiên biết đến HỒNG HÀ và các khách hàng đã tin tưởng và lựa chọn đồng hành cùng chúng tôi trong suốt 5 - 7 năm.
+         <br>- Trên con đường phát triển để tiến tới thành công chắc chắc không thể thiếu những khó khăn và thử thách, nhưng động lực lớn nhất để HỒNG HÀ không ngừng cố gắng đó là nhờ tình cảm và sự tin tưởng tuyệt đối của khách hàng. Chúng tôi sẽ luôn mang tới những sản phẩm đồng phục chất lượng cũng như những dịch vụ tốt nhất đến với khách hàng, để phần nào chứng minh được sự tin tưởng của khách hàng đã dành cho HỒNG HÀ luôn là đúng đắn. 
+         <br>- Nếu bạn cần tư vấn về đồng phục, hãy gọi cho HỒNG HÀ. Chúng tôi ở đây và luôn sẵn sàng được phục vụ bạn! 
+         <br></p>
+         <br><p>- Sếp: Khách chê thiếu chuyên nghiệp thì đi thẳng đến HỒNG HÀ mà đặt đồng phục chứ còn về công ty làm gì? 
+         <br>Đến HỒNG HÀ để sở hữu ngay những bộ đồng phục:
+         <br>- Kiểu dáng thời trang, tinh tế trong từng chi tiết.
+         <br>- Thiết kế dựa theo văn hóa doanh nghiệp và bộ nhận diện thương hiệu
+         <br>- Chất liệu cao cấp, mang đến sự thoải mái, tự tin cho người mặc
+         <br>- Bền bỉ từ đường kim mũi chỉ đến logo thương hiệu.
+         <br>- Thời gian bảo hành áo lên tới 2 năm.
+         <br></p>
+         <br><p>NIỀM VUI CUỐI TUẦN
+         <br>"Mọi người ở công ty ai cũng khen chất vải đẹp, mặc thoải mái, đường may đều đẹp. Nói chung là ưng lắm. Cảm ơn HỒNG HÀ nhiều nhé!"
+         <br>- Không cần những lời màu mè hoa mỹ, chỉ cần sự công nhận của khách hàng về chất lượng sản phẩm thôi đã đủ tiếp thêm 100% động lực cho đội ngũ HỒNG HÀ rồi. 
+         <br>- Cảm ơn Công ty và tất cả các khách hàng đã luôn tin chọn HỒNG HÀ. Chúng tôi xin hứa sẽ luôn nỗ lực không ngừng để ngày càng nâng cao chất lượng sản phẩm và dịch vụ, mang đến sự hài lòng và ưng ý nhất cho khách hàng trong từng dự án đồng phục.</p>
+         <br><p>LỰA CHỌN MÀU SẮC TRANG PHỤC PHÙ HỢP VỚI TỪNG TÔNG DA 
+         <br>Trước khi tìm hiểu màu sắc trang phục phù hợp, bạn cần phải biết bản thân thuộc tông da gì. Tông da ấm, da lạnh hay da trung tính?
+         <br>Dưới đây là 3 phương pháp đơn giản giúp bạn có thể xác định được tông da của mình:
+         <br>- Phương pháp đoán mạch máu: Nhìn vào mạch máu trên cổ tay dưới ánh sáng tự nhiên. 
+         <br>Màu xanh lam / tím: Tông lạnh 
+         <br>Màu xanh lá cây / xanh ô-liu: Tông ấm
+         <br>Có cả hai màu xanh lá cây lẫn xanh dương/tím: Tông trung tính 
+         <br>- Phương pháp tờ giấy trắng: Lấy một tờ giấy trắng đặt trước gương rồi nhìn vào mặt hoặc cổ tay của bạn. Ngoài ra, ngồi dưới ánh sáng tự nhiên, đưa tờ giấy trắng lên cổ tay, nếu tờ giấy tương phản:
+         <br>Màu vàng: Tông ấm
+         <br>Màu hồng/lục/lam: Tông lạnh 
+         <br>Không xác định: Tông trung tính
+         <br>- Phương pháp thử ngón tay: Nhéo nhẹ vào đầu ngón tay đeo nhẫn, nếu máu có màu hồng là tông lạnh, màu đỏ là tông ấm
+         <br>- Với tone da trung tính bạn sẽ không cần quá bận tâm về màu sắc trang phục, vì tone da này phù hợp với hầu hết tất cả các màu. Còn nếu bạn thuộc tông da ấm hay lạnh thì hãy tham khảo ngay những màu sắc trang phục phù hợp với tông da của mình trong hình ảnh dưới đây của HỒNG HÀ nhé!</p>
+         <br><p>ÁO ĐỒNG PHỤC - MÀU SẮC ĐA DẠNG - CHẤT LƯỢNG CAO CẤP 
+         <br>-Đối với các doanh nghiệp, bộ đồng phục đóng góp một phần không nhỏ vào hình ảnh nhận diện thương hiệu. Hình ảnh đội ngũ doanh nghiệp trong bộ đồng phục đồng đều, chỉn chu thể hiện tác phong chuyên nghiệp của doanh nghiệp đó, đồng thời củng cố dấu ấn thương hiệu trong mắt khách hàng.
+         <br>-Với ưu điểm thoải mái khi mặc, thể hiện phong cách thời trang năng động, dễ phối đồ những chiếc áo phông đã trở thành một lựa chọn hàng đầu cho những hoạt động du lịch nhóm, team building của công ty. 
+         <br>-Mặc áo phông đồng phục giúp người mặc có thể thoải mái tham gia các hoạt động đồng thời góp phần xây dựng hình ảnh thương hiệu.
+         <br>-Các thiết kế hiện đại, màu sắc đa dạng, mang đến cho doanh nghiệp diện mạo trẻ trung, sáng tạo:
+         <br>-Chất liệu vải cao cấp, thoáng mát, co giãn 4 chiều nhẹ nhàng dễ chịu khi mặc.
+         <br>-Vải được dệt đan chắc tay, nhỏ mắt tăng độ bền.
+         <br>-Nếu Quý doanh nghiệp đang tìm kiếm xưởng may áo đồng phục đẹp, chất lượng hãy liên hệ HỒNG HÀ để được tư vấn chi tiết về chất liệu, kiểu dáng theo yêu cầu nhé!</p>
+         <br><p>BẠN ĐANG CÓ NHU CẦU ĐẶT MAY ÁO PHÔNG ĐỒNG PHỤC???
+         <br>- Nếu bạn đang có nhu cầu đặt may áo phông đồng phục và cần tìm hiểu chi tiết về chất liệu vải, màu sắc, các loại in/thêu logo, các loại cổ áo,... 
+         <br>- Những bộ đồng phục được lên ý tưởng từ đội ngũ thiết kế trẻ và sáng tạo của HỒNG HÀ ngoài đảm bảo các yếu tố làm nổi bật "màu cờ sắc áo" của thương hiệu thì luôn:
+         <br>- Sử dụng chất liệu tốt nhất trong tầm giá, phù hợp với nhu cầu của công ty, đảm bảo sự thoáng mát và thoải mái cho người mặc.
+         <br>- Bảng màu vải đa dạng, luôn cập nhật đầy đủ các mẫu màu HOT nhất, phù hợp với nhu cầu của người mặc hiện nay là "phải dễ phối đồ".
+         <br>- Đồng phục thiết kế phù hợp với mọi dáng người, có đủ size từ trẻ em đến người lớn 100kg. Và đặc biệt, HỒNG HÀ có nhận cắt may theo chuẩn số đo của khách hàng.
+         <br>- Liên hệ với chúng tôi để nhận ngay những bộ đồng phục đẹp nhất và tận hưởng sự hoàn hảo nhất từ bước tư vấn đến khâu giao hàng của đội ngũ HỒNG HÀ nhé! 
+         <br></p>
+         <br><p>TOP 3 LỢI ÍCH CỦA VIỆC MẶC ĐỒNG PHỤC
+         <br>Nhân viên là những người tiếp xúc trực tiếp với khách hàng mỗi ngày, vậy nên có thể nói họ chính là đại diện cho hình ảnh của thương hiệu trong lòng khách hàng. 
+         <br>- Doanh nghiệp sử dụng đồng phục cho đội ngũ nhân viên của mình sẽ giúp:
+         <br>- Đồng phục không chỉ mang đến sự đồng bộ mà còn giúp nhân viên trở lên tự tin, thoải mái trong quá trình tư vấn và hỗ trợ cho khách hàng. Giúp xây dựng hình ảnh chuyên nghiệp trong mắt khách hàng.
+         <br>- Trang phục thể hiện tính cách riêng của bản thân người mặc, và tương tự như vậy, đồng phục sẽ mang đến một thông điệp riêng cho doanh nghiệp. Ví dụ như đối với trang phục màu xanh lá, khách hàng có thể biết được thương hiệu hướng đến những sản phẩm thiên nhiên, đồng phục có màu đỏ đậm (vàng, nâu) thường sử dụng cho các nhà hàng ăn,…
+         <br>- Đầu tư cho đồng phục nhân viên bán hàng cũng là một cách đầu tư cho truyền thông với chi phí thấp mà hiệu quả cao. Màu sắc, logo, slogan,... của đồng phục sẽ giúp khách hàng ghi nhớ về đặc điểm của thương hiệu lâu hơn.
+         <br>- Mời bạn tham khảo BST áo đồng phục được thiết kế độc quyền tại HỒNG HÀ dưới đây. Và đừng quên liên hệ với HỒNG HÀ nếu bạn có nhu cầu đặt may hay cần tư vấn về đồng phục nhé!
+         <br></p>
+         <br><p>BẠN LO SỢ ĐIỀU GÌ KHI PHẢI MẶC ĐỒNG PHỤC CÔNG TY?
+         <br>- Chất lượng đồng phục thấp, chất vải bí bách mặc không thoải mái?
+         <br>- Đồng phục thiết kế không hợp thời, cứng nhắc, khó phối đồ?
+         <br>- Kiểu dáng, kích thước không phù hợp với vóc dáng cơ thể?
+         <br>Đừng lo lắng, với kinh nghiệm gần 10 năm trong ngành đồng phục, HỒNG HÀ tự tin khẳng định: KHÔNG CÓ ĐỒNG PHỤC XẤU, CHỈ CÓ ĐỒNG PHỤC CHƯA ĐƯỢC THIẾT KẾ BỞI HỒNG HÀ THÔI!
+         <br>- Những bộ đồng phục được lên ý tưởng từ đội ngũ thiết kế trẻ và sáng tạo của HỒNG HÀ ngoài đảm bảo các yếu tố làm nổi bật "màu cờ sắc áo" của thương hiệu thì luôn:
+         <br>- Sử dụng chất liệu tốt nhất trong tầm giá, phù hợp với nhu cầu của công ty, đảm ảo sự thoáng mát và thoải mái cho người mặc.
+         <br>- Bảng màu vải đa dạng, luôn cập nhật đầy đủ các mẫu màu HOT nhất, phù hợp với nhu cầu của người mặc hiện nay là "phải dễ phối đồ".
+         <br>- Đồng phục thiết kế phù hợp với mọi dáng người, có đủ size từ trẻ em đến người lớn 100kg. Và đặc biệt, HỒNG HÀ có nhận cắt may theo chuẩn số đo của khách hàng.
+         <br>Còn chần chừ gì nữa bạn ơi, hãy liên hệ với chúng tôi để nhận ngay những bộ đồng phục đẹp nhất và tận hưởng sự hoàn hảo nhất từ bước tư vấn đến khâu giao hàng của đội ngũ HỒNG HÀ nhé!
+         <br></p>
+         <br><p>ĐỒNG PHỤC DOANH NGHIỆP - BÍ QUYẾT GHI DẤU TRONG LÒNG KHÁCH HÀNG! 
+         <br>Ấn tượng đầu tiên của khách hàng dành cho doanh nghiệp có sức ảnh hưởng rất lớn đến giá trị của doanh nghiệp trong lòng khách hàng. Và có thể nói đồng phục chính là chiếc chìa khóa để gây ấn tượng, thể hiện giá trị cốt lõi, nâng tầm doanh nghiệp trong mắt khách hàng.
+         <br>Đồng phục doanh nghiệp đẹp sẽ giúp:
+         <br>- Thể hiện sự tôn trọng với khách hàng từ sự chuyên nghiệp trong những bộ đồng phục nhân viên.
+         <br>- Tạo thiện cảm và tăng độ tin cậy đối với đối tác/khách hàng nhờ sự đồng bộ về trang phục.
+         <br>- Giúp nhân viên cảm thấy thoải mái, tự tin và trở lên nổi bật hơn, chuyên nghiệp hơn trong mắt khách hàng nhờ những bộ đồng phục đẹp, thoải mái.
+         <br>- Vậy nên hãy luôn tạo ấn tượng tốt cho khách hàng bằng vẻ ngoài chỉn chu của toàn bộ nhân viên trong công ty với những bộ đồng phục đẹp được thiết kế bởi HỒNG HÀ nhé!
+         <br>Đến với HỒNG HÀ, doanh nghiệp sẽ sở hữu những chiếc áo đồng phục:
+         <br>- Kiểu dáng thời trang, tinh tế trong từng chi tiết.
+         <br>- Thiết kế dựa theo văn hóa doanh nghiệp và bộ nhận diện thương hiệu
+         <br>- Chất liệu thoải mái, thoáng mát.
+         <br>- Bền bỉ từ đường kim mũi chỉ đến logo thương hiệu.
+         <br>- Thời gian bảo hành áo lên tới 2 năm.
+         <br></p>
+         <br><p>MARKETING 0Đ VỚI ÁO ĐỒNG PHỤC, BẠN ĐÃ BIẾT CHƯA?
+         <br>Ngoài các phương pháp marketing quen thuộc như treo banner, phát tờ rơi với độ phủ và hiệu quả không cao, hay làm video quảng cáo trên tivi, chạy quảng cáo trên facebook, google với mức chi phí đắt đỏ. Thì phương pháp marketing bằng áo đồng phục đang được ưa chuộng hơn cả nhờ chi phí bỏ ra nhỏ mà hiệu quả lại vô cùng lớn. Cụ thể:
+         <br>- Chi phí cho 1 áo đồng phục quà tặng, áo đồng phục nhân viên chất lượng cao khá rẻ, chỉ từ vài chục ngàn/cái.
+         <br>- Áo có thiết kế đẹp, thoải mái sẽ giúp nhân viên (khách hàng) thích thú và mặc nhiều → vô tình quảng bá sản phẩm thương hiệu cho công ty.
+         <br>- Với một chiếc áo đồng phục, có thể in hình ảnh sản phẩm lên áo, sử dụng những slogan ấn tượng, thiết kế màu sắc nổi bật thương hiệu,... Có rất nhiều cách để quảng bá hình ảnh công ty một cách tinh tế mà hiệu quả.
+         <br> Và, để sở hữu những bộ đồng phục đẹp, chất lượng thì không thể thiếu được sự góp mặt của một đơn vị may đồng phục uy tín với mức giá tốt. 
+         <br>- Đồng phục Hồng Hà với gần 10 năm kinh nghiệm trong ngành may đồng phục. Đã hợp tác với hơn 12.000 khách hàng. Nổi bật là các doanh nghiệp lớn như: SunGroup, Sony, LG, Coca Cola, BIDV, Techcombank,...
+         <br>- Có quy mô xưởng may lớn với đội ngũ thiết kế trẻ sáng tạo, đội ngũ tư vấn viên chuyên nghiệp và đội ngũ nhân công lành nghề,...
+         <br>-  97% khách hàng đều hài lòng sau khi hợp tác cùng HỒNG HÀ, và duy trì hợp tác lâu dài.
+         <br>Liên hệ đặt may đồng phục tại HỒNG HÀ ngay hôm nay để đẩy nhanh chiến dịch quảng bá thương hiệu cho doanh nghiệp mình thôi nào!
+         <br></p>
+         <br><p>ÁO ĐỒNG PHỤC
+         <br>- Đối với các doanh nghiệp, bộ đồng phục đóng góp một phần không nhỏ vào hình ảnh nhận diện thương hiệu. Hình ảnh đội ngũ doanh nghiệp trong bộ đồng phục đồng đều, chỉn chu thể hiện tác phong chuyên nghiệp của doanh nghiệp đó, đồng thời củng cố dấu ấn thương hiệu trong mắt khách hàng.
+         <br>- Với ưu điểm thoải mái khi mặc, thể hiện phong cách thời trang năng động, dễ phối đồ những chiếc áo phông đã trở thành một lựa chọn hàng đầu cho những hoạt động du lịch nhóm, team building của công ty. 
+         <br>- Mặc áo phông đồng phục giúp người mặc có thể thoải mái tham gia các hoạt động đồng thời góp phần xây dựng hình ảnh thương hiệu.
+         <br>- Các thiết kế hiện đại, màu sắc đa dạng, mang đến cho doanh nghiệp diện mạo trẻ trung, sáng tạo:
+         <br>-  Chất liệu vải cao cấp, thoáng mát, co giãn 4 chiều nhẹ nhàng dễ chịu khi mặc.
+         <br>-  Vải được dệt đan chắc tay, nhỏ mắt tăng độ bền.
+         <br>- Nếu Quý doanh nghiệp đang tìm kiếm xưởng may áo thun đồng phục dài tay đẹp, chất lượng hãy liên hệ HỒNG HÀ để được tư vấn chi tiết về chất liệu, kiểu dáng theo yêu cầu nhé!
+         <br></p>
+         <br><p>ÁO ĐỒNG PHỤC HỒNG HÀ 
+         <br>- Kiểu áo đồng phục thích hợp trong mùa thu - đông, ưu điểm kín đáo, nhẹ nhàng, thoải mái, nhiều công ty chọn may đồng phục nhân viên. 
+         <br>- Với sự tiện dụng, áo đã trở thành một trong những kiểu đồng phục được yêu thích của nhiều doanh nghiệp mang đến phong cách trẻ trung nhưng không kém phần tinh tế và chuyên nghiệp. 
+         <br>- Các thiết kế hiện đại, màu sắc đa dạng, mang đến cho doanh nghiệp diện mạo trẻ trung, sáng tạo:
+         <br>- Chất liệu vải cao cấp, thoáng mát, co giãn 4 chiều nhẹ nhàng dễ chịu khi mặc.
+         <br>- Dáng đứng form, lịch sự, hợp thời trang phù hợp với thời tiết se lạnh.
+         <br>- Vải được dệt đan chắc tay, nhỏ mắt tăng độ bền.
+         <br>- Nếu Quý doanh nghiệp đang tìm kiếm xưởng may áo đẹp, chất lượng hãy liên hệ HỒNG HÀ để được tư vấn chi tiết về chất liệu, kiểu dáng theo yêu cầu nhé!</p>
+         <br><p>5 MÀU SẮC ÁO ĐỒNG PHỤC - THỂ HIỆN TÍNH CÁCH DOANH NGHIỆP 
+         <br>- Vàng tươi: Tươi trẻ, giàu sức sống
+         <br>- Xanh lá: Cá tính, khác biệt
+         <br>- Xanh lam đậm: Mạnh mẽ, trưởng thành
+         <br>- Xám nâu: Nội tâm, dịu dàng
+         <br>- Ghi đen: Nghiêm túc, trững trạc
+         <br></p>
+         <br><p>ĐỒNG PHỤC DOANH NGHIỆP - ĐẠI SỨ THƯƠNG HIỆU!
+         <br>- Đồng phục doanh ngiệp không chỉ là hình ảnh, bộ mặt công ty mà nó còn mang rất nhiều lợi ích cho công ty bạn.
+         <br>- Củng cố tinh thần làm việc, tinh thần đoàn kết của nhân viên.
+         <br>- Thúc đẩy trách nhiệm của từng nhân viên trong công ty.
+         <br>- Là nền tảng phát triển nên tảng marketing thương hiệu của doanh nghiệp
+         <br>HÃY LIÊN HỆ NGAY VỚI HỒNG HÀ ĐỂ TÌM CHO DOANH NGHIỆP CỦA BẠN BỘ ĐỒNG PHỤC ƯNG Ý NHẤT!</p>
+         <br><p>- Xưởng may ĐỒNG PHỤC HỒNG HÀ có hơn 9 năm kinh nghiệm trong lĩnh vực sản xuất đồng phục. Chúng tôi sản xuất đa dạng các loại đồng phục: Đồng phục doanh nghiệp, đồng phục team building, đồng phục nhóm, đồng phục áo khoác, đồng phục công sở, đồng phục nhà hàng – khách sạn, đồng phục in logo doanh nghiệp…
+         <br>- Với tiêu chí NHIỆT HUYẾT - TẬN TÂM - CHẤT LƯỢNG, chúng tôi luôn nỗ lực mang đến những sản phẩm tốt nhất cho khách hàng. Từ khâu lựa chọn chất liệu, kiểu dáng, mẫu mã tới thành phẩm khách hàng sẽ được tư vấn chi tiết, cung cấp đầy đủ thông tin về sản phẩm. 
+         <br>- Mọi thắc mắc xin liên hệ Phòng CSKH ĐỒNG PHỤC HỒNG HÀ
+         <br></p>
+         <br><p>- Một chiếc áo đồng phục phù hợp và chất lượng sẽ xây dựng hình ảnh doanh nghiệp uy tín và chuyên nghiệp trong mắt khách hàng và đối tác.
+         <br>- Một trong những yếu tố góp phần vào bộ nhận diện thương hiệu của doanh nghiệp một cách rõ ràng và rộng rãi chính là ĐỒNG PHỤC
+         <br>- Bởi vậy hãy tạo ấn tượng tốt cho khách hàng bằng vẻ ngoài đẹp và chuyên nghiệp của toàn bộ nhân viên công ty với đồng phục từ HỒNG HÀ
+         <br>- Các thiết kế hiện đại, màu sắc đa dạng, mang đến cho doanh nghiệp diện mạo trẻ trung, sáng tạo:
+         <br>- Chất liệu vải cao cấp, thoáng mát, nhẹ nhàng dễ chịu khi mặc
+         <br>- Dáng đứng form, lịch sự, hợp thời trang.
+         <br>- Vải được dệt đan chắc tay, nhỏ mắt tăng độ bền.
+         <br>Nếu Quý doanh nghiệp đang tìm kiếm xưởng may đồng phục đẹp, chất lượng hãy liên hệ HỒNG HÀ để được tư vấn chi tiết về chất liệu, kiểu dáng theo yêu cầu nhé!
+         <br>ĐỒNG PHỤC CHẤT LƯỢNG - THƯƠNG HIỆU GIÁ TRỊ
+         <br></p>
+         <br><p>ĐIỀU GÌ ĐANG CHỜ ĐỢI KHI MAY ĐỒNG PHỤC TẠI HỒNG HÀ?
+         <br>“May đồng phục ở đâu cũng được, ở đâu chả như nhau!”
+         <br>Khi hàng loạt những đơn vị may đồng phục mọc lên như nấm sau mưa, thật khó để Quý khách có thể cân nhắc được một đơn vị sản xuất với chất lượng đáng tin cậy.
+         <br>Vậy khi tới với Đồng phục HỒNG HÀ, Quý khách sẽ nhận được những lợi thế gì khác biệt?
+         <br>- Tặng gói may mẫu đặc biệt
+         <br>- Bảo hành sản phẩm 1 năm
+         <br>- Giao hàng chuẩn tiến độ cam kết, miễn phí TOÀN QUỐC
+         <br>Đồng phục HỒNG HÀ với quy trình làm việc tinh giản, ngắn gọn, cùng sản phẩm với chất lượng được kiểm định và chứng nhận bởi Viện Dệt May Việt Nam chắc chắn sẽ luôn làm Quý khách hàng hài lòng!
+         <br></p>
+         <br><p>ĐỒNG PHỤC DOANH NGHIỆP THỂ HIỆN SỰ CHUYÊN NGHIỆP CỦA THƯƠNG HIỆU! 
+         <br>Để doanh nghiệp của bạn có thể:
+         <br>- Xây dựng hình ảnh, nhận diện riêng của thương hiệu tốt hơn
+         <br>- Thể hiện tính chuyên nghiệp, tạo thiện cảm cho nhân viên khi giao tiếp với khách hàng, đối tác
+         <br>- Tạo sự đoàn kết, đồng bộ cho tập thể, gắn kết nội bộ doanh nghiệp
+         <br>Việc đầu tiên các doanh nghiệp nên làm là may đồng phục cho toàn thể nhân viên trong doanh nghiệp. 
+         <br>Với gần 10 năm kinh nghiệm trong ngành đồng phục, hợp tác với hơn 10.000 khách hàng, HỒNG HÀ mong muốn đem đến cho doanh nghiệp của bạn những mẫu đồng phục đẹp và chất lượng cũng những lời ích:
+         <br>-  Tư vấn, lên ý tưởng và thiết kế mẫu hoàn toàn miễn phí
+         <br>-  Chất liệu, màu sắc đa dạng. Hình in sắc nét.
+         <br>-  Đội ngũ nhân viên tư vấn tận tình, hỗ trợ tận tâm
+         <br>-  Mức giá luôn đảm bảo tốt nhất thị trường
+         <br>- Nếu Quý doanh nghiệp đang tìm kiếm xưởng may đồng phục đẹp, chất lượng hãy liên hệ HỒNG HÀ để được tư vấn chi tiết về chất liệu, kiểu dáng theo yêu cầu nhé!
+         <br></p>
+         <br><p>ĐỒNG PHỤC HỒNG HÀ – KHẲNG ĐINH TẦM VÓC DOANH NGHIỆP
+         <br>- Đồng phục tạo ra trải nghiệm về một doanh nghiệp có quy mô nhân sự lớn, có vị thế hay chỗ đứng nhất định trên thị trường.
+         <br>- Nhưng ở Đồng phục HỒNG HÀ chúng tôi sẵn sàng nhận cả các đơn hàng của những doanh nghiệp nhỏ và vừa, giúp nâng tầm giá trị doanh nghiệp bạn.
+         <br>ĐẾN VỚI ĐỒNG PHỤC HỒNG HÀ BẠN NHẬN ĐƯỢC GÌ?
+         <br>-  Xưởng sản xuất trực tiếp -  Giá TẬN GỐC
+         <br>-  Kiểu dáng đa dạng, chất lượng bền bỉ -  bảo hành lên tới 12 tháng.
+         <br>-  ĐÚNG TIẾN ĐỘ sản xuất -  GIAO HÀNG NHANH 24H.
+         <br>-  Hỗ trợ thiết kế - lên marquett miễn phí 
+         <br></p>
+         <br><p>Lựa Chọn Hoàn Hảo Nào Về Chất Liệu May Áo Đồng Phục 
+         <br>- Khi làm áo đồng phục doanh nghiệp là một trong nhưng lựa chọn hàng đầu. Không chỉ đẹp hình thức mà nó còn mang lại ưu điểm về sự lịch sự,chỉnh chu, chuyên nghiệp.
+         <br>- Doanh nghiệp của bạn đang sử dụng loại chất liệu nào để làm áo đồng phục? 
+         <br>- Bạn đang phân vân về việc lựa chọn chất vải phù hợp để làm áo?
+         <br>- Hãy tham khảo những chất liệu thường được khách hàng của Đồng phục HỒNG HÀ ưu tiên lựa chọn nhé!
+         <br>-  Vải Phù hợp để may đồng phục phổ thông, giá thành rẻ, mỏng, nhẹ, thoáng mát, đa dạng màu sắc.
+         <br>-  Lựa chọn hàng đầu cho đồng phục, đa dạng màu sắc, dày dặn, thấm hút mồ hôi tốt, không xù lông, bóng nhẹ, bền màu, nhanh khô, giá thành hợp lý.
+         <br>-  Chất liệu vải đồng phục cao cấp, Kháng khuẩn tốt, chống tia cực tím, khử mùi, thấm và thoát mồ hôi tốt, thoáng khí mát mẻ, linh hoạt, an toàn cho da.
+         <br>- Tuỳ thuộc vào nhu cầu và đặc điểm sử dụng của tập thể doanh nghiệp, hãy lựa chọn một phương án tốt nhất.
+         <br>- Hoặc bạn cũng có thể liên hệ ngay với HỒNG HÀ để nhận được những tư vấn, hỗ trợ chuyên nghiệp, chất lượng nhất nhé!
+         <br></p>
+         <br><p>5 LỢI ÍCH CỦA ĐỒNG PHỤC ĐỐI VỚI DOANH NGHIỆP
+         <br>- Xây dựng hình ảnh, nâng tầm thương hiệu: Con người thường hay có xu hướng đánh giá vấn đề thông qua vẻ ngoài. Việc lựa chọn một bộ đồng phục nhân viên thích hợp ngay lập tức có thể thiết lập một hình ảnh doanh nghiệp chuyên nghiệp, tăng khả năng thu hút và giúp giữ chân khách hàng.
+         <br>- Quảng bá thương hiệu: Thay vì phải bỏ ra rất nhiều chi phí để quảng cáo, thuê quảng cáo thì việc nhân viên công ty mặc đồng phục hàng ngày, khi đi gặp khách hàng hay tham gia các hoạt động tập thể sẽ giúp mọi người xung quanh có thể ghi nhớ về doanh nghiệp của bạn. Đây có thể coi là phương thức Marketing 0đ vô cùng hiệu quả.
+         <br>- Thể hiện sự chuyên nghiệp và đồng nhất: Việc sử dụng chung một loại đồng phục sẽ tạo được sự thống nhất, xây dựng hình ảnh chuyên nghiệp trong mắt khách hàng, điều này giúp cho doanh nghiệp tạo dựng uy tín với khách hàng một cách vô hình. Đây cũng là yếu tố khá quan trọng giúp tăng niềm tin và uy tín với khách hàng mà doanh nghiệp có thể khai thác.
+         <br>- Tạo sự bình đẳng, tăng tính đoàn kết, gắn bó giữa các nhân viên: Đồng phục giúp xóa bỏ mọi rào cản, không phân biệt hoàn cảnh gia đình, ngoại hình hay năng lực giúp cho nhân viên luôn cảm thấy tự tin, thoải mái, có thể tập trung làm tốt công việc của mình.
+         <br>Ngoài ra, việc mặc chung 1 bộ đồng phục cũng giúp các nhân viên có một sự liên kết vô hình, tăng tính đoàn kết, giúp các nhân viên cảm thấy gắn bó, thân thiện với nhau hơn.
+         <br>- Nâng cao ý thức trách nhiệm của nhân viên: Khi mặc trên mình đồng phục của công ty, nhân viên sẽ cảm thấy có trách nhiệm hơn với công việc của mình. Bởi lẽ, khi mặc đồng phục, mọi người sẽ nhận biết được công ty của bạn và có cách đánh giá tốt/xấu dựa trên những gì nhân viên của bạn làm. Nhờ vậy, mỗi nhân viên sẽ có thái độ làm việc tích cực hơn.
+         <br>- Gọi ngay cho HỒNG HÀ nếu bạn đang có nhu cầu đặt may đồng phục cho doanh nghiệp của mình để được nghe tư vấn kỹ hơn về sản phẩm, dịch vụ cũng như giá thành nhé!
+         <br></p>
+         <br><p>ĐỒNG PHỤC - SỰ LỰA CHỌN HÀNG ĐẦU CHO DOANH NGHIỆP CỦA BẠN
+         <br>- Gạt bỏ suy nghĩ đồng phục là gò bó, cứng nhắc khi nhìn vào BST áo đồng phục vô cùng năng động và tràn đầy nhiệt huyết được thiết kế bởi HỒNG HÀ 
+         <br>- Từ những chi tiết được cách điệu lạ mắt, nhấn nhá màu sắc ở phần eo, vai, đường viền tay áo hay cổ áo đều giúp chiếc áo trở nên thật sự khác biệt và mang đậm bản sắc riêng của mỗi doanh nghiệp.
+         <br>- Đừng quên theo dõi HỒNG HÀ để liên tục cập nhật những mẫu thiết kế đồng phục mới, ấn tượng và phù hợp nhất doanh nghiệp của mình nhé!
+         <br></p>
+         <br><p>ĐỒNG PHỤC DOANH NGHIỆP CÓ THỰC SỰ CẦN THIẾT?
+         <br>- Đồng phục là cách nhanh nhất và hiệu quả nhất giúp doanh nghiệp của bạn trở nên chuyên nghiệp hơn trong mắt khách hàng và đối tác️.
+         <br>- Nhân viên công ty mặc đồng phục hàng ngày, khi đi gặp khách hàng hay tham gia các hoạt động tập thể sẽ giúp mọi người xung quanh có thể dễ dàng ghi nhớ về doanh nghiệp của bạn.
+         <br>- Việc cùng mặc một bộ đồng phục giúp nâng cao tinh thần đoàn kết và ý thức trách nhiệm của mỗi cá nhân trong cùng công ty,...
+         <br>- Những lợi ích mà đồng phục mang lại cho doanh nghiệp là điều không thể phủ nhận, chỉ với 3 lợi ích HỒNG HÀ liệt kê trên đây đã đủ để bạn thôi băn khoăn khi quyết định đặt may đồng phục cho doanh nghiệp của mình chưa nhỉ?
+         <br>- Với gần 10 năm kinh nghiệm trong ngành đồng phục, hợp tác với hơn 10.000 khách hàng, và cho ra mắt hàng triệu sản phẩm, đồng phục HỒNG HÀ luôn tự hào đem đến những bộ đồng phục chuyên nghiệp nhất, thời trang nhất đến với doanh nghiệp của bạn.
+         <br>- Liên hệ ngay với chúng tôi để được may đồng phục công sở giá tốt với thiết kế đẹp, chất lượng hàng đầu cùng sự tư vấn tận tình nhất!
+         <br></p>
+         <br><p>BÓC PHỐT ĐỒNG PHỤC HỒNG HÀ
+         <br>3 điều KHÔNG CÓ khi bạn đặt may đặt đồng phục tại HỒNG HÀ:
+         <br>- Thiết kế KHÔNG mờ nhạt: Thiết kế độc, đẹp, ấn tượng, mang lại dấu ấn riêng của khách hàng luôn là yếu tố quan trọng được HỒNG HÀ đặt lên hàng đầu. 
+         <br>- Chất lượng KHÔNG phải bàn: Để người mặc có được những trải nghiệm tốt nhất, HỒNG HÀ luôn đảm bảo lựa chọn chất liệu một cách cẩn thận: Chất vải tốt, bền màu, chống nhăn,... cùng đường may tỉ mỉ và vô cùng chắc chắn.
+         <br>- Giá cả KHÔNG hề cao: HỒNG HÀ luôn muốn mang tới những điều tốt đẹp nhất dành khách hàng, từ dịch vụ cho đến sản phẩm, và cuối cùng là mức giá. Tất cả các sản phẩm tại HỒNG HÀ đều có mức giá vô cùng phù hợp với chất lượng và luôn tự tin khẳng định là đơn vị cung cấp sản phẩm và dịch vụ chất lượng nhất với MỨC GIÁ TỐT NHẤT THỊ TRƯỜNG.
+         <br></p>
+         <br><p>ĐỒNG PHỤC XƯA VÀ NAY
+         <br>Đồng phục ngày xưa:
+         <br>-  Mẫu mã, kiểu dáng hạn chế. 
+         <br>-  May đại trà với số lượng lớn nên đồng phục thường may không được quá chuẩn, không tôn dáng.
+         <br>-  Gò bó, không dễ phối đồ, không thể hiện được cá tính.
+         <br>Đồng phục ngày nay tại HỒNG HÀ:
+         <br>-  Đa dạng mẫu mã, kiểu dáng, màu sắc, phong cách. 
+         <br>-  Sử dụng công nghệ may hiện đại, đội ngũ công nhân may tỉ mỉ, chi tiết đến từng đường kim mũi chỉ.
+         <br>-  Thiết kế hiện đại theo xu hướng, dễ phối đồ, dễ kết hợp với các trang phục và phụ kiện để mang đến những phong cách thời trang khác nhau, thể hiện được cá tính riêng của mỗi cá nhân trong tập thể.
+         <br></p>
+         <br><p>HỒNG HÀ - TÔN VINH THƯƠNG HIỆU VIỆT 
+         <br>- Mỗi bộ đồng phục là một đại sứ thương hiệu. Một mẫu đồng phục có thiết kế ấn tượng và phù hợp với doanh nghiệp sẽ giúp khẳng định vị thế và nâng tầm thương hiệu. Chính vì vậy, thiết kế sản phẩm mang lại dấu ấn riêng cho khách hàng luôn là yếu tố quan trọng được HỒNG HÀ ưu tiên hàng đầu.
+         <br>- Những bộ đồng phục được may và thiết kế bởi HỒNG HÀ luôn đảm bảo:
+         <br>- Thiết kế riêng biệt, ấn tượng giúp xây dựng hình ảnh và nâng tầm thương hiệu.
+         <br>- Nhận được sự yêu thích của đông đảo cán bộ, nhân viên. Giúp họ cảm thấy gắn bó với công ty hơn khi hàng ngày được mặc những chiếc áo đồng phục đẹp và vô cùng thoải mái.
+         <br>- Tối ưu thời gian và chi phí nhờ chất liệu vải tốt, bền màu, chống nhăn cùng đường may cẩn thận, tỉ mỉ và vô cùng chắc chắn.
+         <br></p>
+         <br><p>ĐỒNG PHỤC HỒNG HÀ - CHẤT LƯỢNG TUYỆT HẢO KHẲNG ĐỊNH VỊ THẾ
+         <br>- Với kinh nghiệm gần 10 năm trong ngành sản xuất đồng phục và đã từng hợp tác với hơn 100.000 khách hàng, đặc biệt phải kể đến các thương hiệu lớn như: Yamaha, Vingroup, Sharp, Honda, Vietcombank, Vinaconex…
+         <br>- HỒNG HÀ đã và đang luôn làm hài lòng tất cả các khách hàng của mình nhờ chất lượng sản phẩm và dịch vụ uy tín hàng đầu.
+         <br>- Nếu bạn đang có nhu cầu đặt may đồng phục và còn đang băn khoăn lựa chọn một đơn vị may uy tín, thì hãy đến với chúng tôi, HỒNG HÀ cam kết:
+         <br>- Thiết kế mẫu chuẩn cho tới khi khách hàng ưng ý.
+         <br>- Sử dụng đúng chất liệu vải khách hàng đã chọn.
+         <br>- Chất lượng may tốt nhất nhờ máy móc hiện đại cùng đội ngũ thiết kế sáng tạo, đội ngũ thợ may trên 20 năm kinh nghiệm
+         <br>- Giao hàng đúng hẹn.
+         <br>- Sửa chữa mọi lỗi phát sinh do thiết kế hoặc sản xuất (nếu có).
+         <br></p>
+         <br><p>ĐỒNG PHỤC ĐÃ THAY ĐỔI NHƯ NÀO?
+         <br>-  Trước đây, khi nhắc đến đồng phục, chúng ta thường nghĩ đến những chiếc áo trơn hoặc áo in hoạ tiết. Tuy nhiên, trong những năm gần đây, đồng phục đã có nhiều sự thay đổi, không chỉ đơn giản là những mẫu áo màu hay áo in hoạ tiết mà đã được thiết kế đa dạng hơn, với những mẫu áo in hình in biểu tượng, và được chú trọng hơn về kiểu dáng với nhiều dáng áo mới lạ,…
+         <br>-  Hơn nữa, đồng phục hiện nay không chỉ được đầu tư mẫu mã phù hợp xu hướng mà còn đi kèm chất lượng, với những chất vải dày dặn, thoáng mát hơn, đường may cẩn thận, chắc chắn, đem lại sự thoải mái cho người mặc, giúp nâng cao tinh thần gắn kết tập thể.
+         <br></p>
+         <br><p>ĐỒNG PHỤC TẠO VĂN HÓA DOANH NGHIỆP
+         <br>- Cuộc sống ngày càng phát triển, nhu cầu về cái đẹp cũng ngày càng được nâng cao. Đặc biệt, nét đẹp còn nói lên phần nào tính cách của mỗi cá nhân trong cách lựa chọn trang phục. Vậy văn hóa và trang phục liệu có mối tương quan nào không, trong cộng đồng nói chung và trong văn hóa doanh nghiệp nói riêng?
+         <br>- Một trong những điều quan trọng tạo nên bộ mặt của doanh nghiệp chính là tác phong của nhân viên, đặc biệt là từ những bộ đồng phục mà họ đang khoác trên mình; và bộ đồng phục công sở chính là nét đặc trưng không thể thiếu, là phương thức hữu hiệu nhằm truyền tải nét đẹp văn hóa riêng của mỗi doanh nghiệp.
+         <br>- Văn hóa và trang phục là hai khía cạnh tưởng như chẳng có sự liên quan nào, nhưng chúng lại có sự song hành vô cùng mật thiết. Và nét đẹp trong những bộ trang phục của nhân viên khi đi làm không chỉ là đồng phục đẹp, đúng quy định mà còn gắn liền với văn hóa thương hiệu, cá tính riêng của từng doanh nghiệp.
+         <br></p>
+         <br><p>LÀM VIỆC NĂNG SUẤT HƠN TRONG BỘ ĐỒNG PHỤC
+         <br>-  Khi bàn luận về trang phục công sở, nhiều người thường hỏi lại rằng: “Trang phục đi làm quan trọng vậy à? Có mấy ai để ý đâu?” Tuy hầu hết mọi người đều nghĩ mình không quan tâm, nhưng ai cũng vẫn phải lựa chọn trang phục đi làm mỗi sáng thức dậy.
+         <br>-  Một kiểu tóc, một cặp kính mới rất dễ gây chú ý khi bạn thay đổi. Nhưng đồng phục thì không, chúng giản dị nhưng lịch sự, và mọi người quen nhìn những bộ đồng phục bạn mặc tới mức khi bạn thay đổi thậm chí họ còn không hay.
+         <br>-  Tuy vậy, sự đơn giản của bộ đồng phục lại có lợi thế riêng của nó. Khi tâm trạng thoải mái bởi bộ đồ trên người, nhân viên sẽ cảm thấy tự tin hơn để làm việc. Khi có đồng phục, nhân viên có thể làm việc năng suất hơn do không còn bị stress mỗi sáng cho việc mặc gì, bởi nếu đã bị căng thẳng từ sáng sớm sẽ rất dễ gây hiệu ứng domino căng thẳng, dẫn tới cả ngày làm việc không hiệu quả. Bộ đồng phục còn giúp người mặc cảm thấy năng lượng tập trung cho công việc tốt hơn, đó là lý do vì sao đồng phục công sở cũng chính là một khoản đầu tư xứng đáng cho mỗi doanh nghiệp.
+         <br></p>
+         <br><p>ĐỒNG PHỤC MỚI - TINH THẦN MỚI
+         <br>- Bộ đồng phục ngày nay không chỉ được áp dụng trong môi trường học đường mà còn rất được ưa chuộng nơi công sở. Dù là áo thun đồng phục hay áo sơ mi đồng phục thì đều tạo được ấn tượng tốt về sự chuyên nghiệp trong mắt khách hàng.
+         <br>- Đồng phục được đầu tư chỉn chu cũng là một vũ khí kinh doanh. Nếu như máy móc hỗ trợ công cụ thì đồng phục cũng là một trong những yếu tố hỗ trợ tinh thần rất tốt. Năng suất cũng nhờ vậy mà tăng cao. Đồng phục được dùng đúng nơi, đúng chỗ sẽ không chỉ là một chiếc áo mặc lên người. Chúng đều có khả năng hỗ trợ công việc, thể hiện cá tính, hình ảnh của một thương hiệu.
+         <br>- Bạn cũng đang cần những chiếc áo thun công nhân bền bỉ? Muốn tham khảo áo thun nhân viên chỉnh chu? Hay có nhu cầu áo thun cho hoạt động ngoài trời thoải mái? Chưa biết phải lựa chọn thế nào hãy để Đồng phục Hồng Hà chọn thay! 
+         <br>- Với đội ngũ nhân viên tư vấn tận tình, đội ngũ thiết kế tinh tế cùng xưởng may công suất lớn, có thể sản xuất hàng loạt sản phẩm chất lượng cao trong thời gian nhanh nhất, HỒNG HÀ sẽ đem tới một làn gió mới cho bộ đồng phục công ty bạn, giúp tăng độ uy tín cũng như giúp doanh nghiệp của bạn làm việc với tinh thần mới hào hứng nhất!
+         <br></p>
+         <br><p>ÁO ĐỒNG PHỤC CHUYÊN NGHIỆP NHƯNG KHÔNG ĐƠN ĐIỆU
+         <br>- Xu hướng áo đồng phục doanh nghiệp, áo lớp, áo nhóm những năm gần đây có sự phát triển nhanh chóng. Không chỉ đơn giản là một chiếc áo thun đơn điệu hoặc khách hàng chỉ được lựa chọn mẫu áo từ những lô áo có sẵn, nghèo nàn cả về màu sắc lẫn thiết kế, sự chuyển mình của ngành áo đồng phục đang rõ rệt hơn bao giờ hết với mẫu áo polo đồng phục – những chiếc áo có cổ cùng thiết kế hiện đại, trẻ trung, mà vẫn giữ tính chuyên nghiệp, lịch sự cho người mặc.
+         <br>- Tới với HỒNG HÀ, quý khách sẽ không phải lo lắng áo đồng phục của mình bị nhàm chán, “một màu”, với hàng ngàn mẫu vải từ kho vải đa dạng của chúng tôi, cùng đội ngũ thiết kế sáng tạo, có tư duy thiết kế nhạy bén, hợp thời, chắc chắn bộ đồng phục quý khách khoác lên người sẽ vừa luôn thanh lịch, vừa luôn nổi bật giữa đám đông.
+         <br></p>
+         <br><p>HỒNG HÀ - DẪN ĐẦU CHẤT LƯỢNG, DẪN ĐẦU UY TÍN
+         <br>- Đồng phục công ty thể hiện hình ảnh thương hiệu của doanh nghiệp. Sự đồng bộ của đồng phục thể hiện sự chuyên nghiệp, xây dựng uy tín doanh nghiệp, tạo niềm tin trong mắt khách hàng. Không chỉ vậy, một bộ đồng phục chất lượng tốt sẽ nói lên sự chăm chút của doanh nghiệp đó với nhân viên, thể hiện được tinh thần trách nhiệm và sự chu đáo của doanh nghiệp trong công việc.
+         <br>- Tại HỒNG HÀ, chúng tôi quan niệm rằng chất lượng sản phẩm là yếu tố tiên quyết, luôn cần được đặt lên hàng đầu. Sản phẩm có đảm bảo chất lượng, thì khách hàng mới có thể tiếp tục đặt niềm tin vào thương hiệu. 
+         <br>Với 10 năm kinh nghiệm trong lĩnh vực sản xuất đồng phục, sở hữu xưởng sản xuất quy mô lớn, đội ngũ nhân công lành nghề, giàu kinh nghiệm, đặc biệt với đội ngũ thiết kế đầy nhiệt huyết và sáng tạo, HỒNG HÀ cam kết mang đến cho khách hàng những sản phẩm chất lượng cao nhất, độc đáo nhất, với chi phí tiết kiệm nhất!
+         <br>- Chất lượng tạo nên uy tín, uy tín làm nên thương hiệu - Hãy để HỒNG HÀ đồng hành cùng bạn đi tới thành công! 
+         <br>- Liên hệ ngay để nhận tư vấn!
+         <br></p>
+         <br><p>ÁO ĐỒNG PHỤC: ĐỒNG BỘ THÔI CHƯA ĐỦ
+         <br>- Đối với mỗi doanh nghiệp, bộ đồng phục đẹp là yếu tố đầu tiên thể hiện sự chuyên nghiệp. Bộ đồng phục là ấn tượng đầu tiên một thương hiệu để lại trong mắt khách hàng, chính vì vậy, tính đồng bộ là một tiêu chí bắt buộc phải có khi may đồng phục. Tuy nhiên, sự đồng bộ đôi khi có thể khiến cho hình ảnh thương hiệu bị nhạt nhòa. Vậy điều gì sẽ khiến cho bộ đồng phục của một công ty “ghi điểm” trong mắt khách hàng?
+         <br>- Đồng phục phải thể hiện bộ mặt công ty
+         <br>Một bộ đồng phục công sở không chỉ cần được thiết kế đẹp, thời trang mà còn phải thể hiện được hình ảnh, thương hiệu của công ty, vì đồng phục cũng nằm trong bộ nhận diện thương hiệu, giúp quảng bá hình ảnh của công ty ra bên ngoài.
+         <br>- Đồng phục phải mang lại cảm giác thoải mái khi mặc
+         <br>Ngoài việc phải có thiết kế đẹp, hợp gu thẩm mỹ và tương đồng với nhận diện của công ty, một bộ đồng phục chất lượng cần được may từ chất liệu phù hợp với môi trường làm việc để người mặc cảm thấy thoải mái và tự tin khi khoác lên mình.
+         <br>- Đồng phục phải có tính linh hoạt trong thời trang
+         <br>Không chỉ cần được thiết kế phù hợp xu hướng, môi trường làm việc, đồng phục công ty còn cần mang tính linh hoạt khi kết hợp với các trang phục, phụ kiện khác. Mẫu đồng phục cần có thiết kế đơn giản, không quá cầu kì kiểu cách và màu sắc không quá khác biệt để có thể dễ dàng kết hợp với các đồ thời trang và phụ kiện.
+         <br>- Không còn phải trăn trở quá nhiều, HỒNG HÀ đã có hết giải pháp cho bạn! Với đội ngũ tư vấn và thiết kế nhiệt tình, chuyên nghiệp, đội sản xuất dày kinh nghiệm, tâm huyết với từng đường may, chắc chắn HỒNG HÀ sẽ đem lại cho bạn những bộ đồng phục vượt xa mong đợi, xứng đáng đại diện cho hình ảnh doanh nghiệp bạn!
+         <br>- Chất lượng tạo nên uy tín - hãy để HỒNG HÀ đồng hành cùng bạn đi tới thành công! 
+         <br>- Liên hệ ngay để nhận tư vấn!
+         <br></p>
+         <br><p>
+         <br>MAY ĐỒNG PHỤC CHẤT LƯỢNG – CHỌN HỒNG HÀ 
+         <br>- HỒNG HÀ với 10 năm kinh nghiệm trong lĩnh vực sản xuất đồng phục, chúng tôi luôn nỗ lực hết mình để mang lại những sản phẩm đồng phục chất lượng nhất.
+         <br>- Chúng tôi tự hào là nhà cung cấp đồng phục tin cậy của những thương hiệu hàng đầu như: SUNGROUP, BIDV, SOJO HOTEL, FPT, VNPT, HEY U…
+         <br>Với xưởng sản xuất quy mô lớn, đội ngũ nhân công lành nghề, giàu kinh nghiệm, chúng tôi cam kết cung cấp đến cho khách hàng những sản phẩm tốt nhất với chi phí tiết kiệm nhất.
+         <br>- Xưởng may khép kín , đáp ứng mọi đơn hàng gấp, đơn hàng khó.
+         <br>- Hệ thống máy móc in thêu hiện đại, đảm bảo in thêu sắc nét, bền màu, không bong tróc
+         <br>- Mẫu mã thời trang, thiết kế thời thượng, đáp ứng mọi nhu cầu
+         <br>- Giá may tại xưởng, không qua trung gian, chiết khấu cao
+         <br>- Giao hàng đúng thời gian, chuẩn chất lượng
+         <br></p>
+         <br><p>ĐỒNG PHỤC THỜI TRANG – NGUỒN CẢM HỨNG BẤT TẬN TRONG CÔNG VIỆC
+         <br>-  Những yếu tố khơi gợi nguồn cảm hứng trong công việc luôn khiến cho ngày làm việc của chúng ta nhẹ nhàng, hứng khởi và năng suất hơn rất nhiều. 
+         <br>-  Nếu bạn vẫn chưa biết cách đơn giản để tạo nên cảm hứng cho không gian làm việc văn phòng của công ty mình thì ngay từ bây giờ hãy thử dành tặng cho nhân viên của mình những bộ đồng phục mới mẻ, năng động và đầy tính thời trang.
+         <br>-  Và để có được những điều đó, hãy đến với HỒNG HÀ ! Với sự tư vấn nhiệt tình từ đội ngũ nhân viên chuyên nghiệp của HỒNG HÀ, bạn sẽ nhanh chóng tìm được những thiết kế đồng phục trẻ trung, hiện đại và thời trang – phù hợp và nổi bật đặc trưng thương hiệu công ty.
+         <br></p>
+         <br><p>SỨ MỆNH CỦA NHỮNG CHIẾC ÁO ĐỒNG PHỤC
+         <br>- Mọi vật trên thế giới đều có sứ mệnh riêng của mình, và những chiếc áo đồng phục cũng vậy. Đã bao giờ bạn tự hỏi xem, sứ mệnh của áo đồng phục là gì chưa?
+         <br>- Áo đồng phục từ khi sinh ra đã mang trong mình trọng trách mang đến sự bình đẳng, xóa nhòa mọi khoảng cách trong các tập thể, tạo nên một môi trường lành mạnh và gắn kết các cá nhân trong một tổ chức.
+         <br>-  Đến ngày nay, đồng phục còn có những vai trò quan trọng hơn nữa đó là mang đến vẻ ngoài tự tin, thời trang và cảm giác thoải mái năng động cho người mặc.
+         <br>- Tại HỒNG HÀ, với sự đổi mới tích cực không ngừng nghỉ về cả thiết kế, chất liệu, chất lượng dịch vụ - những chiếc áo đồng phục của chúng tôi luôn sẵn sàng lên đường thực hiện sứ mệnh ở các doanh nghiệp trên khắp mọi miền Tổ Quốc!
+         <br></p>
+         <br><p>SỨ MỆNH CỦA NHỮNG CHIẾC ÁO ĐỒNG PHỤC
+         <br>- Mọi vật trên thế giới đều có sứ mệnh riêng của mình, và những chiếc áo đồng phục cũng vậy. Đã bao giờ bạn tự hỏi xem, sứ mệnh của áo đồng phục là gì chưa?
+         <br>- Áo đồng phục từ khi sinh ra đã mang trong mình trọng trách mang đến sự bình đẳng, xóa nhòa mọi khoảng cách trong các tập thể, tạo nên một môi trường lành mạnh và gắn kết các cá nhân trong một tổ chức.
+         <br>-  Đến ngày nay, đồng phục còn có những vai trò quan trọng hơn nữa đó là mang đến vẻ ngoài tự tin, thời trang và cảm giác thoải mái năng động cho người mặc.
+         <br>- Tại HỒNG HÀ, với sự đổi mới tích cực không ngừng nghỉ về cả thiết kế, chất liệu, chất lượng dịch vụ - những chiếc áo đồng phục của chúng tôi luôn sẵn sàng lên đường thực hiện sứ mệnh ở các doanh nghiệp trên khắp mọi miền Tổ Quốc!
+         <br></p>
+         <br><p>ĐẸP ĐẾN TỪNG CHI TIẾT 
+         <br>- ĐIỀU GÌ LÀM NÊN SỰ HOÀN HẢO CỦA MỘT CHIẾC ÁO KHOÁC ĐỒNG PHỤC
+         <br>- Chất liệu vải giữ ấm, cản gió: Chất liệu vải của áo khoác gió luôn đòi hỏi sự bền đẹp đồng thời đảm bảo có thể cản gió, chống thấm và giữ ấm cơ thể, bảo vệ sức khỏe. 
+         <br>- Form dáng: Các thiết kế áo khoác gió hiện nay không còn đơn giản như trước đây. Ngày nay, áo khoác gió đã có nhiều kiểu dáng như: Áo bomber, áo gile, áo có mũ…phù hợp với mỗi ngành nghề khác nhau, tạo nên sự riêng biệt.
+         <br>- Sự nổi bật của logo: Việc thiết kế và in logo cho trang phục luôn là một trong những điều quan trọng bởi nó đóng vai trò nhận dạng thương hiệu, biến mỗi chiếc áo đồng phục trở thành một công cụ truyền thông hữu ích. Việc in ấn logo phải có sự hài hòa, phù hợp với màu sắc áo để làm nổi bật thương hiệu.
+         <br>- Màu sắc: Màu sắc chính là yếu tố giúp nhận diện thương hiệu dễ dàng nhất. Với những chiếc áo khoác đồng phục, màu sắc trang phục cũng cần có sự bắt mắt, phù hợp với màu sắc nhận diện thương hiệu giúp tạo ấn tượng đẹp đối với khách hàng.
+         <br></p>
+         <br><p>- Những Rủi Ro Gặp Phải Khi Mua Đồng Phục Giá Rẻ Chắc Chắn Doanh Nghiệp Nào Cũng Từng Gặp Phải?
+         <br>Vậy làm thế nào để khắc phục tình trạng này?
+         <br>- Lựa Chọn Doanh Nghiệp Sản Xuất Uy Tín, Chất Lượng
+         <br>Đồng Phục Doanh Nghiệp – HỒNG HÀ tự hào là đơn vị sản xuất đồng phục doanh nghiệp hàng đầu tại Việt Nam
+         <br>Đồng Phục HỒNG HÀ là nhà cung cấp hàng đầu về đồng phục cho học sinh, sinh viên, đồng phục lớp, các công ty, nhóm, và các tổ chức… 
+         <br>Đến với HỒNG HÀ, bạn yên tâm là luôn được cam kết những vấn đề sau:
+         <br>- Chất lượng sản phẩm đặt lên hàng đầu
+         <br>- Giá cả hợp lí nhất</p>
+         <br><p>ÁO ĐỒNG PHỤC – CHUYÊN NGHIỆP TẠO THƯƠNG HIỆU
+         <br>- MIỄN PHÍ thiết kế 
+         <br>- MIỄN PHÍ nhận vải mẫu
+         <br>- MIỄN PHÍ may sản phẩm mẫu 
+         <br>NÂNG TẦM THƯƠNG HIỆU CÙNG NHỮNG CHIẾC ÁO ĐỒNG PHỤC TỪ HỒNG HÀ:
+         <br>- Chất liệu co giãn 4 chiều thấm hút mồ hôi, nhẹ, bền màu
+         <br>- Kiểu dáng hiện đại, trẻ trung, lịch sự 
+         <br>- Màu sắc đa dạng, phối màu tinh tế, nổi bật thương hiệu 
+         <br>- Đủ size từ S-XXL, phù hợp mọi form dáng 
+         <br>- Đường may chắc chắn, tỉ mỉ 
+         <br>- In, thêu sắc nét, không bong tróc
+         <br>Với 10 năm trong lĩnh vực sản xuất đồng phục, là đối tác của nhiều doanh nghiệp lớn, HỒNG HÀ hiểu rằng rất nhiều ý nghĩa, thông điệp được gửi gắm trong từng chiếc áo. Vì vậy, mỗi sản phẩm được làm ra sẽ mang lại sự hài lòng cao nhất.
+         <br></p>
+         <br><p>LOGO CÔNG TY – ĐIỂM NHẤN QUAN TRỌNG TRÊN ÁO ĐỒNG PHỤC
+         <br>Trên mỗi chiếc áo đồng phục, logo là hình ảnh không thể thiếu và luôn được ưu tiên đặt ở vị trí trung tâm bởi đây là hình ảnh biểu trưng của mỗi doanh nghiệp.
+         <br>- Logo chính là chi tiết nhấn nhá, tô điểm để chiếc áo trở nên đẹp hơn, ấn tượng hơn. Nếu chiếc áo đồng phục chỉ trơn một màu, không có điểm nhấn thì nó chỉ đơn thuần giống như một loại trang phục mặc thường ngày, đơn giản và đơn điệu, dễ khiến những đồng phục công ty trở nên nhạt nhòa trong mắt khách hàng.
+         <br>- Logo trên áo đồng phục chính là một hình thức quảng bá hiệu quả. Trong quá trình làm việc với khách hàng, đối tác, trang phục cũng chính là một yếu tố được chú ý khá nhiều. Mặc đồng phục có in logo được xem là một hình thức quảng bá bởi nó sẽ dễ dàng lọt vào tầm nhìn của người đối diện. Chỉ với vài ba giây ngắn ngủi nhưng với việc lặp đi lặp lại nhiều lần sẽ giúp khách hàng dễ dàng ghi nhớ hình ảnh biểu tượng và màu sắc thương hiệu
+         <br>- Logo giúp truyền tải thông điệp tới mọi người bởi đây là hình ảnh biểu tượng tóm tắt về ý nghĩa, mục tiêu, sứ mệnh cũng như đặc trưng của sản phẩm, dịch vụ… ngành nghề đang sản xuất và kinh doanh của doanh nghiệp. Do vậy, khi nhìn vào biểu tượng logo khách hàng sẽ dễ dàng nhận biết được sản phẩm hay dịch vụ của công ty, doanh nghiệp.
+         <br>- Logo đồng phục giúp gắn kết và xây dựng sức mạnh nội bộ, xóa đi những khoảng cách, ranh giới, giúp môi trường làm việc trở nên thân thiện hơn. Đồng thời mặc áo đồng phục in logo còn nâng cao tinh thần, trách nhiệm của nhân viên đối với công việc, giúp hiệu suất công việc tăng lên.
+<br></p>
+         <br><p>
+         <br>3 YẾU TỐ ẢNH HƯỞNG ĐẾN GIÁ THÀNH CỦA ÁO ĐỒNG PHỤC MÀ BẠN NÊN BIẾT
+         <br>- Với bất kỳ một sản phẩm nào trên thị trường, yếu tố giá thành luôn là yếu tố được người dùng quan tâm nhất. Các mẫu đồng phục cũng không ngoại lệ, để lựa chọn được một bộ đồng phục với chất lượng tốt, nổi bật thương hiệu, giá thành phù hợp với ngân sách cũng là điều mà các doanh nghiệp quan tâm hàng đầu khi đặt may.
+         <br>Sau đây sẽ là 3 yếu tố trực tiếp ảnh hưởng đến giá thành của bộ đồng phục mà các doanh nghiệp nên biết để cân đối chi phí đặt may sao cho hợp lý.
+         <br>- Chất liệu may áo
+         <br>Sự đa dạng về các loại chất liệu may đồng phục cũng tạo nên các mức giá khác nhau. Các chất liệu cao cấp có độ co dãn, thấm hút mồ hôi tốt như: polo cá sấu, cotton,… thường có giá cao hơn hẳn các chất liệu bình dân khác. Cần cân nhắc về nhu cầu sử dụng để lựa chọn sao cho phù hợp.
+         <br>- Hình in – thêu trên áo
+         <br>Các yếu tố về số lượng màu sắc, kích thước hình in – thêu, công nghệ in ấn đều là các yếu tố cấu thành nên chi phí in ấn đồng phục. Các lựa chọn hình in nhỏ vừa phải sẽ làm cho chiếc áo đồng phục của bạn tinh tế và tiết kiệm chi phí hơn rất nhiều so với việc lạm dùng các hình in lớn và màu sắc tràn lan.
+         <br>- Số lượng áo
+         <br>Thay vì phải đặt may nhiều lần với số lượng lẻ tẻ khi có nhân sự phát sinh, bạn nên đặt may đồng phục số lượng lớn vì chi phí chắc chắn sẽ rẻ hơn nhiều. Hơn nữa đặt mua 1 lần cũng sẽ tiết kiệm được cả thời gian cho cả bạn và đơn vị sản xuất.
+         <br>3 yếu tố trên là ba yếu tố ảnh hưởng trực tiếp đến giá thành của bộ đồng phục mà nhất định bạn cần phải nắm được khi có ý định đặt may cho doanh nghiệp của mình! Chúc các bạn lựa chọn được một chiếc áo đồng phục ưng ý với giá thành phù hợp nhất!
+         <br></p>
+         <br><p>
+         <br>HỒNG HÀ – LUÔN ĐẶT KHÁCH HÀNG LÀM TRUNG TÂM
+         <br>Hơn ai hết, HỒNG HÀ hiểu rằng mỗi khách hàng khi đến với chúng tôi đều mong muốn tìm kiếm được những chiếc áo đồng phục thể hiện được cá tính của doanh nghiệp, làm nổi bật thương hiệu và mang lại sự chuyên nghiệp, thoải mái cho người mặc, cùng với đó là nhận được sự phục vụ tận tâm, cởi mở. Chính vì thế, HỒNG HÀ đã và đang: 
+         <br>- Miệt mài sáng tạo và sản xuất ra những sản phẩm chất lượng, bền đẹp
+         <br>- Đào tạo đội ngũ nhân viên nhiệt tình, chuyên nghiệp
+         <br>- Xây dựng cơ sở vật chất và đầu tư trang thiết bị may mặc, in ấn hiện đại nhất
+         <br>- Đồng hành cùng hàng nghìn khách hàng trên khắp cả nước, HỒNG HÀ hiểu rằng chỉ có chất lượng sản phẩm và sự tận tình cùng lòng nhiệt thành mới giúp chúng tôi nhận được sự tin yêu và lựa chọn của khách hàng.
+         <br>- Hi vọng trên chặng đường tiếp theo HỒNG HÀ sẽ tiếp tục là người bạn tin cậy của mọi doanh nghiệp.
+         <br></p>
+         <br><p>3 XU HƯỚNG CHỌN MÀU ÁO ĐỒNG PHỤC DOANH NGHIỆP
+         <br>- Chọn màu sắc áo theo màu sắc nhận diện của công ty
+         <br>Việc chọn lựa màu sắc này giúp đồng nhất các thành phần trong bộ nhận diện thương hiệu. Áo đồng phục với màu sắc theo màu nhận diện thương hiệu vừa nâng cao hình ảnh doanh nghiệp vừa giúp khách hàng dễ dàng nhớ tới thương hiệu của công ty dễ dàng hơn.
+         <br>- Chọn màu sắc áo theo tính chất công việc.
+         <br>Mỗi công việc sẽ có những tính chất, đặc thù riêng nên có thể căn cứ vào đó để lựa chọn màu sắc thích hợp.
+         <br>- Với những công việc văn phòng làm tại cơ quan, công sở, những gam màu sáng thanh lịch như màu trắng, xanh dương, ghi nhạt… tạo cảm giác dễ chịu, thanh nhã. 
+         <br>- Với những môi trường công việc như tại công trường, nhà máy sản xuất thì những gam màu trầm tối như màu đen, tím than, xanh lá cây, xanh đậm… sẽ thích hợp hơn vì chúng hạn chế làm nổi bật những vết bẩn trong quá trình làm việc. 
+         <br>- Những tông màu như màu tím, xanh bích, hồng... phù hợp với các trung tâm làm đẹp, thẩm mĩ, spa… 
+         <br>- Các tông màu đỏ, cam, vàng... thích hợp với nhà hàng, quán ăn vì chúng tạo cảm giác thèm ăn cho khách hàng.
+         <br>- Chọn màu sắc áo theo ý nghĩa màu sắc.
+         <br>Dựa theo những ý nghĩa đặc trưng của màu sắc và những định hướng phát triển hay những thông điệp mà bạn muốn truyền tải để chọn màu áo đồng phục.
+         <br></p>
+         <br><p>LÀM SAO ĐỂ CÓ MỘT BỘ ĐỒNG PHỤC ĐẸP
+         <br>Cứ ngỡ là khó nhưng lại cực kỳ đơn giản, vì bạn chỉ cần gửi cho chúng tôi logo, slogan, màu sắc thương hiệu và ý tưởng sơ bộ, HỒNG HÀ sẽ tư vấn cho bạn cách đặt logo sao cho đẹp, cách phối các chi tiết trên áo sao cho độc đáo, cách sắp xếp logo và slogan thương hiệu sao cho ấn tượng nhất với khách hàng. 
+         <br>HỒNG HÀ sẽ vấn từ A-Z cho bạn đến khi hoàn toàn ưng ý.
+         <br>Để lại lời nhắn để được tư vấn miễn phí.
+         <br></p>
+         <br><p>VĂN HOÁ DOANH NGHIỆP VÀ VAI TRÒ CỦA ĐỒNG PHỤC
+         <br>Văn hoá giống như "tính cách" của doanh nghiệp vậy, nó quyết định sự thành công bền vững của một doanh nghiệp thông qua việc giúp doanh nghiệp có được sự cam kết và đồng lòng của nhân viên. Và để xây dựng văn hoá doanh nghiệp, không thể thiếu sự góp công của đồng phục. 
+         <br>Để hiểu được tầm quan trọng của văn hoá doanh nghiệp cũng như vai trò của đồng phục trong việc xây dựng nên văn hoá doanh nghiệp, mời bạn cùng HỒNG HÀ tìm hiểu nhé!
+         <br></p>
+         <br><p>- Hình ảnh chỉn chu cũng là 1 cách nâng cao hiệu suất công việc.
+         <br>- Khi mặc trên người một bộ đồng phục đẹp, toàn bộ nhân viên công ty sẽ cảm thấy tự tin hơn đồng thời còn khiến tinh thần đoàn kết và nhiệt huyết làm việc được nâng cao.
+         <br>- Một doanh nghiệp có đồng phục và một doanh nghiệp mà mọi nhân sự đều bình đẳng, gắn kết.
+         <br></p>
+         <br><p>
+         <br>TỈ MỈ TRONG TỪNG ĐƯỜNG MAY - GIÁ TRỊ KHÁC BIỆT CỦA CHỮ “TÍN”
+         <br>HỒNG HÀ luôn giữ cho thương hiệu mình một chữ “Tín”, chữ “Tín” với khách hàng, chữ “Tín” với chính bản thân. Với hơn 10 năm trong ngành đồng phục và kinh nghiệm làm việc với hơn 10.000 đối tác thân thiết, HỒNG HÀ luôn khẳng định giá trị khác biệt này của mình bằng hành động và thái độ. Và tỉ mỉ trong từng đường may là một trong những tiêu chuẩn của chúng tôi.
+         <br>Vậy, sự tỉ mỉ trong từng đường may của chúng tôi là như thế nào?
+         <br>- Mũi chỉ nối nhau thẳng, đều, không xiêu vẹo. 
+         <br>- Sợi chỉ chắc chắn và phù hợp với từng loại vải. Khoảng cách tới mép vải chuẩn cự ly. 
+         <br>- Đường lượn cổ tròn trịa, không gấp khúc.
+         <br>- Đường diễu đảm bảo song song tuyệt đối.
+         <br>- Đường chắp giáp lai trùng khít nhau.
+         <br>- Đường lại mũi khéo léo gọn gàng tại các điểm cuối.
+         <br>- Mép vắt sổ mịn mượt, sạch sẽ.
+         <br>- Không có chỉ thừa khi sản phẩm đến tay khách hàng.
+         <br>Rất nhiều khách hàng của chúng tôi đã xây dựng cảm tình với HỒNG HÀ và đặt ở chúng tôi lời hẹn quay trở lại sử dụng dịch vụ. Chữ “Tín” sẽ được HỒNG HÀ đảm bảo trong từng đơn hàng, đảm bảo chất lượng sản phẩm khi đến tay khách hàng. Hãy để chúng tôi cùng bạn nâng tầm hình ảnh thương hiệu!
+         <br></p>
+         <br><p>
+         <br>5 GIÁ TRỊ CỐT LÕI ĐỒNG PHỤC HỒNG HÀ DÀNH CHO KHÁCH HÀNG
+         <br>Hình ảnh doanh nghiệp đoàn kết, chỉn chu trong bộ đồng phục luôn là nguồn động lực lớn mạnh để HỒNG HÀ mang đến cho khách hàng những sản phẩm chất lượng. Mỗi chuyến hàng được gửi tới quý khách chúng tôi đều đảm bảo 5 giá trị:
+         <br>- Thiết kế tinh tế, độc đáo, mang tính cá nhân hóa riêng của từng doanh nghiệp.
+         <br>- Tỉ mỉ từng chi tiết. Tại HỒNG HÀ chúng tôi không bao giờ thỏa mãn với các giá trị sản xuất tầm thường.
+         <br>- Đội ngũ nhân sự nhiệt tình và tận tâm.
+         <br>- Trân trọng và có trách nhiệm với niềm tin khách hàng dành trao.
+         <br>- Giá tốt tận xưởng.
+         <br>Chúng tôi tự tin với những giá trị mà mình mang lại, khách hàng sẽ luôn hài lòng khi lựa chọn đặt may đồng phục doanh nghiệp tại HỒNG HÀ.
+         <br>- Liên hệ ngay để được tư vấn và báo giá miễn phí.
+         <br></p>
+         <br><p>ĐỒNG PHỤC HỒNG HÀ - NÂNG TẦM GIÁ TRỊ THƯƠNG HIỆU
+         <br>Khách hàng sẽ không nhớ bạn là ai nếu bạn không trở nên nổi bật hoặc không để lại dấu ấn riêng. Và một trong những điều khiến doanh nghiệp của bạn trở nên riêng biệt và nổi bật chính là những chiếc đồng phục chỉnh chu mang màu thương hiệu.</p><p>
+         <br>GIÁ TRỊ MÀ CHIẾC ĐỒNG PHỤC MANG LẠI:
+         <br>-  Tăng khả năng nhận diện thương hiệu;
+         <br>-  Tạo tinh thần đoàn kết và bình đẳng trong tập thể;
+         <br>-  Xây dựng hình ảnh doanh nghiệp chuyên nghiệp;
+         <br>-  Giúp lan tỏa thông điệp của doanh nghiệp.
+         <br>Hiểu được những giá trị to lớn đó, HỒNG HÀ luôn chú trọng vào cả chất lượng và tính thẩm mỹ của từng sản phẩm. Tỉ mỉ trên từng đường may, chất liệu thoải mái thấm hút tốt, kiểu dáng thời trang hiện đại.</p>
+         <br><p>MÁCH BẠN ĐỊA CHỈ MAY ĐỒNG PHỤC ĐẸP
+         <br>HỒNG HÀ là một trong những thương hiệu chuyên nghiệp uy tín, nhận được sự ủng hộ và tin tưởng từ phía khách hàng. Chúng tôi luôn đảm bảo chất lượng cho từng sản phẩm, thiết kế thời trang, nhanh chóng đến tay khách hàng. 
+         <br>Lý do vì sao bạn nên đặt may đồng phục tại Đồng phục HỒNG HÀ:
+         <br>- Dịch vụ tư vấn miễn phí với đội ngũ thiết kế tinh tế chuyên nghiệp sẽ đáp ứng mọi phong cách thiết kế của bạn.
+         <br>- Đội ngũ nhân viên  phục vụ nhiệt tình, chu đáo, chuyên nghiệp sẽ đưa đến cho khách hàng những bộ đồng phục đẹp, tiện lợi khi sử dụng, có độ bền và thời gian sử dụng cao.
+         <br>- HỒNG HÀ sở hữu những công nghệ hàng đầu về kỹ thuật may, kỹ thuật in, thêu và có khâu kiểm tra chất lượng đầu ra sản phẩm.
+         <br>- Giá tại xưởng. Xưởng may khép kín từ khâu chọn vải, thiết kế, cắt, may, vận chuyển,... 
+         <br>- Đồng phục HỒNG HÀ chủ động trong mọi khâu sản xuất nên cam kết áo đến tay khách với chất lượng tốt nhất thị trường.
+         <br>- Bảo hành dài lâu: 2 năm đối với hình thêu, 2 năm với hình thức in 3D chuyển nhiệt…
+         <br>- Miễn phí vận chuyển toàn quốc.
+         <br>Nhanh tay liên hệ ngay cho HỒNG HÀ để được hỗ trợ tốt nhất. Chúng tôi cam kết mang cho quý khách trải nghiệm đẳng cấp và dịch vụ tối ưu.
+         <br></p>
+         <br><p>
+         <br>" NGƯỜI BẠN" ĐẶC BIỆT GIÚP NHÂN VIÊN TỰ TIN THOẢI MÁI TRONG SUỐT THỜI GIAN LÀM VIỆC
+         <br>- Hiện nay, đồng phục công ty là điều không thể thiếu trong bất cứ công ty hay doanh nghiệp nào. Ngoài vai trò tạo nên phong cách chuyên nghiệp, quảng bá thương hiệu hình ảnh của công ty thì Đồng phục còn như một người bạn thân thiết gắn bó với nhân viên trong suốt 8 tiếng đồng hồ mỗi ngày 
+         <br>- Một chiếc áo đồng phục với chất liệu cao cấp, thiết kế tối giản, màu sắc trẻ trung, bắt mắt góp phần truyền cảm hứng năng lượng tích cực cho nhân viên bắt đầu mỗi ngày mới
+         <br>- Với chất liệu mềm mại, thoáng mát, thấm hút mồi hôi tốt sẽ giúp nhân viên cảm thấy thoải mái, dễ chịu hơn trong suốt thời gian làm việc.
+         <br>- Dù bạn đang kinh doanh trong lĩnh vực nào đi nữa Đồng Phục HỒNG HÀ cam kết tạo ra những chiếc áo đồng phục mang đến cho bạn sự tự tin, thoải mái nhất khi mặc lên người
+         <br></p>
+         <br><p>ĐỒNG PHỤC DOANH NGHIỆP CHẤT LƯỢNG CAO
+         <br>Giải pháp marketing hiệu quả cho thương hiệu của bạn
+         <br>Đến với HỒNG HÀ quý khách không mất mà chỉ được:
+         <br>- Được thiết kế logo, in thêu miễn phí theo yêu cầu
+         <br>- Được nhận may mẫu miễn phí để cảm nhận thực tế
+         <br>- Được tư vấn kỹ lưỡng cho đến khi hoàn toàn ưng ý
+         <br>- Được xuất hóa đơn đầy đủ, ký kết bằng hợp đồng
+         <br>- Được đảm bảo tiến độ, giao hàng miễn phí
+         <br>- Được bảo hành đẩy đủ
+         <br>HỒNG HÀ có hàng trăm mẫu áo và chất liệu để quý khách có thể lựa chọn. Đặc biệt có những chất liệu độc quyền do chính HỒNG HÀ nghiên cứu có thể co giãn 4 chiều, thấm hút mồ hôi cực tốt, thoải mái vận động, không những thế còn mềm mượt không bai dão.
+         <br>Để lại thông tin SĐT để được tư vấn và báo giá trong tích tắc.
+         <br></p>
+         <br><p>HỒNG HÀ - GIẢI PHÁP THỜI TRANG ĐỒNG PHỤC
+         <br>SÁNG TẠO TỪNG THIẾT KẾ - CHỌN LỰA TỪNG CHẤT LIỆU
+         <br>Bạn nghĩ đồng phục là đơn điệu? HỒNG HÀ có thể làm bạn thay đổi suy nghĩ đấy!
+         <br>HỒNG HÀ luôn nỗ lực mang đến cho khách hàng giải pháp Đồng phục với thiết kế thời trang, mới mẻ, chất lượng cao và đậm chất thương hiệu doanh nghiệp.
+         <br>Trong từng bước hiện thực hoá tầm nhìn trở thành thương hiệu Thời trang đồng phục hàng đầu, để đảm bảo trải nghiệm sản phẩm tốt nhất cho khách hàng. Theo đó, chúng tôi:
+         <br>- Tư vấn giải pháp đồng phục đảm bảo tính thời trang.
+         <br>- Đề xuất phương án thiết kế mới mẻ, sáng tạo nhưng vẫn giữ nét thanh lịch, chuyên nghiệp cần thiết.
+         <br>- Chất liệu vải cao cấp, đường may chuẩn chỉnh.
+         <br>- Chăm sóc khách hàng tận tâm.
+         <br></p>
+         <br><p>ĐỒNG PHỤC HỒNG HÀ NÓI KHÔNG VỚI CHẤT LƯỢNG KHÔNG ĐẢM BẢO, IN LỖI, VẢI XẤU
+         <br>Điều bạn lo lắng nhất mỗi lần đặt đồng phục cho công ty hay đội nhóm là việc hàng nhận thực tế không giống tượng tưởng về chất liệu, màu sắc và hình in phải không?
+         <br>- Đặt may đồng phục tại HỒNG HÀ khách hàng chắc chắn không cần lo lắng về vấn đề chất lượng sản phẩm. 
+         <br>- HỒNG HÀ đảm bảo sản xuất đúng với cam kết đã có với khách hàng. Ngoài ra chúng tôi sẵn sàng chịu trách nhiệm với tất cả đơn hàng được gửi đi nếu phát sinh bất kì vấn đề nào.
+         <br>May đồng phục ở HỒNG HÀ là lựa chọn của sự an tâm</p>
+         <br><p>BẢNG MÀU ĐA DẠNG CHO ĐỒNG PHỤC ẤN TƯỢNG
+         <br>Màu sắc là một yếu tố quan trọng không chỉ về trực quan của sản phẩm mà còn về nhận diện thương hiệu.
+         <br>- Do đó nhiều khách hàng khi lựa màu sắc cho đồng phục thường gặp những vấn đề như: Màu này có sáng quá không? Không biết còn màu nào đẹp hơn nữa không? Logo thương hiệu em màu Cam thì kết hợp với màu nào cho đẹp?...
+         <br>- Hiện tại HỒNG HÀ đang có sẵn đầy đủ tất cả các bảng màu trên thị trường cho khách hàng dễ dàng lựa chọn. Đến với chúng tôi quý khách hàng sẽ được tư vấn miễn phí từ các chuyên gia có nhiều năm kinh nghiệm trong lĩnh vực thời trang phối màu để đưa ra được mẫu đồng phục vừa hợp thời trang vừa làm nổi bật thương hiệu của công ty bạn.
+         <br></p>
+         <br><p>HỒNG HÀ KHÔNG ĐƯA BẠN NHỮNG THỨ HỒNG HÀ CÓ
+         <br>HỒNG HÀ MANG ĐẾN CHO BẠN NHỮNG THỨ BẠN CẦN
+         <br>- Bạn tự chọn chất liệu
+         <br>- Bạn tự chọn màu sắc
+         <br>- Bạn tự chọn kiểu dáng
+         <br>Vì sáng tạo là không giới hạn - chỉ cần bạn có ý tưởng chúng tôi sẽ giúp bạn thực hiện. HỒNG HÀ biến những ý tưởng của bạn thành hiện thực.
+         <br>ĐỒNG PHỤC CHỈN CHU - NÂNG TẦM THƯƠNG HIỆU
+         <br>- Hãy để HỒNG HÀ mang đến cho bạn sự chuyên nghiệp, thu hút khách hàng ngay từ cái nhìn đầu tiên
+         <br></p>
+         <br><p>ĐỒNG PHỤC ĐẸP - THƯƠNG HIỆU UY TÍN
+         <br>Là đơn vị sản xuất đồng phục HỒNG HÀ tự hào mang đến Quý khách hàng những bộ đồng phục đẹp thiết kế độc đáo, giá cả cạnh tranh và chất lượng tốt nhất.
+         <br>- Tặng gói may mẫu Free cho khách hàng cảm nhận thực tế sản phẩm trước khi đặt hàng.
+         <br>- Thiết kế theo yêu cầu, nâng tầm trang phục theo thương hiệu riêng
+         <br>- Chính sách bảo hành 1 năm , hỗ trợ đổi trả 1 1 khi cần thiết.
+         <br>- Cam kết đúng tiến độ với khách hàng.
+         <br>- Chính sách giao hàng toàn quốc.
+         <br>HỒNG HÀ chuyên thiết kế và sản xuất đồng phục với kinh nghiệm trên 10 năm trong ngành và hợp tác hơn 12.000 doanh nghiệp. Là đơn vị tin cậy của các tập đoàn lớn trong nước !
+         <br>BẠN CẦN LÀM GÌ ĐỂ ĐẶT ĐỒNG PHỤC
+         <br></p>
+         <br><p>Mặc đồng phục có những lợi ích gì?
+         <br>-Hiện nay, đồng phục đã trở nên khá phổ biến. Những mẫu đồng phục đó thường được gắn logo hoặc thương hiệu. Để hiểu rõ hơn về lợi ích của việc mặc đồng phục, mời các bạn tham khảo thông tin trong bài viết dưới đây:
+         <br>1. Thể hiện tính thống nhất, đặc trưng riêng
+         <br>2. Giúp trở nên bình đẳng
+         <br>3. Tiết kiệm chi phí mua sắm quần áo
+         <br>4. Tăng khả năng sáng tạo
+         <br>5. Xây dựng tính đoàn kết
+         <br></p>
+         <br><p>MỤC ĐÍCH CỦA VIỆC MẶC ĐỒNG PHỤC LÀ GÌ?
+         <br>- Xác định nhân viên đó thuộc công ty, doanh nghiệp, tổ chức nào
+         <br>- Làm cho khách hàng dễ dàng nhận biết
+         <br>- Nhân viên không phải tự mua quần áo cho mình để đáp ứng yêu cầu về ngoại hình trong công việc 
+         <br>- Sử dụng đồng phục như một công cụ cụ tiếp thị giúp củng cố thương hiệu 
+         <br>Và còn vô vàn những mục đích khác nữa... 
+         <br>Vậy mục đích của việc mặc đồng phục công ty bạn là gì? Hãy nói cho HỒNG HÀ biết nhé!
+         <br></p>
+         <br><p>ĐỒNG PHỤC HỒNG HÀ
+         <br>Với thiết kế tối giản nhưng vẫn không kém phần sang trọng, HỒNG HÀ luôn cho ra mắt những sản phẩm đáp ứng đủ tiêu chí của khách hàng từ những chi tiết nhỏ nhất.
+         <br>- Chất liệu vải thấm hút mồ hôi tốt, chống phai màu tối ưu nhất.
+         <br>- Gam màu đa dạng, phù hợp với bộ nhận diện thương hiệu.
+         <br>- Đường chỉ may chắn chắn, bất chấp máy giặt.
+         <br>- Logo in rõ nét.
+         <br></p>
+         <br><p>CHẠY QUẢNG CÁO THÔI ĐÃ ĐỦ
+         <br>Hãy để HỒNG HÀ giúp bạn lan tỏa thông điệp
+         <br>Chạy quảng cáo trên các nền tảng mạng xã hội là công thức quảng cáo chiếm ưu thế nhất hiện nay. Các cửa hàng ngày càng nhiều, các chủ cửa hàng dùng những kênh quảng cáo mất phí trên nền tảng mạng xã hội để tìm kiếm ưu thế cạnh tranh.
+         <br>Nhưng chỉ quảng cáo trên các nền tảng mạng xã hội có thật sự đủ?
+         <br>Dưới đây, HỒNG HÀ sẽ cho các bạn thấy những "TUYỆT CHIÊU MARKETING" mà chỉ đồng phục doanh nghiệp mới có thể đem đến cho doanh nghiệp của bạn
+         <br>- Công cụ quảng bá thương hiệu
+         <br>- Xây dựng tổng thể chuyên nghiệp cho cửa hàng của bạn
+         <br>- Gắn kết mối quan hệ, tạo sự bình đẳng
+         <br>- Nâng cao tinh thần đoàn kết, làm việc nhóm
+         <br>- Tạo cảm giác tự tin cho nhân viên
+         <br>- Lưu lại dấu ấn với khách hàng
+         <br></p>
+         <br><p>HỒNG HÀ - ĐỒNG PHỤC MANG HƠI THỞ THỜI TRANG
+         <br>Đây có phải vấn đề bạn dang gặp phải
+         <br>- Đồng phục chẳng đẹp lại còn nóng
+         <br>- Đồng phục màu sắc loè loẹt, phối màu “nhà kê”
+         <br>- Đồng phục miễn cưỡng mặc đôi ba lần rồi bỏ!
+         <br>Tất cả những vấn đề đó sẽ được giải quyết khi bạn đến với HỒNG HÀ
+         <br>Tự tin là đơn vị tiên phong trong việc đưa yếu tố thời trang vào trong những chiếc đồng phục. Với kiểu dáng, màu sắc thời thượng, chất liệu cao cấp, đường may tỉ mỉ, tất cả tạo nên những sản phẩm đồng phục tinh tế - thời trang và mang lại cảm giác thoải mái cho người mặc.
+         <br>- Nếu bạn đang tìm kiếm mẫu đồng phục có thể tự tin diện mỗi ngày thì HỒNG HÀ ở ngay đây, chúng tôi luôn sẵn sàng tư vấn miễn phí 24/7
+         <br></p>
+         <br><p>ĐỒNG PHỤC - GẮN KẾT ĐỘI NHÓM - NÂNG TẦM THƯƠNG HIỆU. 
+         <br>Để nhân viên mặc đồng phục công ty hài lòng như đang mặc trang phục của chính mình.
+         <br>- Mỗi nhân viên là đại diện cho hình ảnh của doanh nghiệp. Một doanh nghiệp có chuyên nghiệp hay không hãy nhìn nhân sự của họ là rõ! Và người đánh giá không ai khác chính là khách hàng!
+         <br>- Ấn tượng đầu tiên đến từ ngoại hình, vậy hãy để HỒNG HÀ gợi ý cho bạn mẫu đồng phục khiến bạn trở nên chỉnh chu 
+         <br>- tinh tế - thời trang - chuyên nghiệp trong mắt khách hàng nhé!
+         <br>ĐỒNG PHỤC TẠI HỒNG HÀ:
+         <br>- Mang lại vẻ lịch sự, trang nhã, chuyên nghiệp
+         <br>- Kiểu dáng tôn dáng người mặc
+         <br>- Chất liệu cao cấp, đứng dáng, thoải mái khi mặc
+         <br>- Đường may tỉ mỉ, tinh tế
+         <br>Liên hệ ngay với HỒNG HÀ để được tư vấn miễn phí
+         <br></p>
+         <br><p>VĂN HÓA ĐỒNG PHỤC NHẬT BẢN, VN NÊN HỌC TẬP?
+         <br>- Nhắc đến Nhật Bản là nhắc đến tính kỉ luật cao. Và trẻ em đất nước Mặt trời mọc từ nhỏ đã được rèn luyện đức tính này qua một việc đơn giản là mặc đồng phục.
+         <br>Học sinh ở Nhật từ mẫu giáo đến cấp 3 đều có đồng phục. Đồng phục công ty có mặt trong các doanh nghiệp từ nhỏ đến lớn, từ các phòng trưng bày sang trọng đến các cửa hàng bán điện thoại di động.
+         <br>-  Những quy định về đồng phục nơi công sở không chỉ đơn giản là vì bộ mặt công ty mà đây còn giúp doanh nghiệp nâng cao tinh thần tập thể, xóa bỏ rào cản vị trí, xuất thân nơi công sở. Đồng phục chính là cách cơ bản xây dựng văn hóa công ty, tạo nên nền tảng vững mạnh cho sự phát triển lâu dài của doanh nghiệp.
+         <br>- Trong khi đó tại Việt Nam sử dụng đồng phục nội bộ lại chưa được coi trọng. Sẽ thật đáng tiếc nếu người Việt không thể học hỏi câu chuyện thành công của người Nhật khi đưa đồng phục vào môi trường doanh nghiệp.
+         <br>-  Chính vì thế, tại HỒNG HÀ từng đơn đặt hàng đồng phục công ty đều được coi trong. Bởi HỒNG HÀ thấu hiểu, chúng tôi không chỉ giao đi trang phục và còn đang đóng góp cho văn hóa doanh nghiệp của bạn!
+         <br></p>
+         <br><p>- Mặc gì cũng được, miễn là mặc giống nhau
+         <br>Miễn là chúng ta đồng hành cùng nhau vượt qua khó khăn
+         <br>Đã bao lâu rồi công ty bạn không có những chuyến đi chơi cùng nhau?
+         <br>- Vì Covid khiến các bạn bỏ lỡ những chuyến Teambuilding thú vị.  Nhưng không sao, chúng ta vẫn còn ở đây làm việc cùng nhau, cùng đưa công ty phát triển. Chúng ta chính là anh em một nhà!
+         <br>Áo đồng phục bạn mặc chính là sợi dây gắn kết các thành viên trong công ty với nhau.
+         <br>Nhìn thấy áo đồng phục chính là niềm tự hào dành cho công ty.
+         <br>Không đơn giản là Áo đồng phục mà đó chính là sự đồng lòng của TẤT CẢ các thành viên trong Doanh nghiệp.
+         <br>HỒNG HÀ - Giải pháp đồng phục CHUYÊN NGHIỆP - Nâng tầm THƯƠNG HIỆU
+         <br></p>
+         <br><p>ĐỒNG PHỤC ĐẸP - THƯƠNG HIỆU UY TÍN
+         <br>Là đơn vị #TRỰC TIẾP SẢN XUẤT ASIAN sẽ gửi đến Quý khách những bộ đồng phục đẹp thiết kế  theo #thương hiệu riêng, giá cả cạnh tranh và chất lượng tốt nhất.
+         <br>- Xuất #hóa đơn theo yêu cầu....
+         <br>- Miễn phí tư vấn, nhận sản phẩm mẫu, vải mẫu 
+         <br>- Miễn phí thiết kế, may mẫu
+         <br>- Miễn phí vận chuyển,...
+         <br>BẠN CẦN LÀM GÌ ĐỂ ĐẶT ĐỒNG PHỤC
+         <br>#COMMENT hoặc #INBOX số điện thoại, chúng tôi sẽ liên hệ và tư vấn, báo giá ngay cho bạn.
+         <br></p>
+         <br><p>HỒNG HÀ - ĐỒNG PHỤC CAO CẤP- THƯƠNG HIỆU UY TÍN
+         <br>- May theo yêu cầu khách hàng
+         <br>- Miễn phí tư vấn, thiết kế, may mẫu
+         <br>- Đa dạng mẫu mã, chất liệu
+         <br>- Miễn phí vận chuyển
+         <br>- Chuẩn chỉnh từ chất liệu, đường may, in thêu, phụ liệu
+         <br>- Bảo hành in thêu 2 năm 
+         <br>- .... Còn muôn vàn ưu đãi hấp dẫn khác, Liên hệ ngay để được tư vấn ngay
+         <br></p>
+         <br><p>Đồng phục HỒNG HÀ xin gửi tới Quý khách hàng những mẫu đồng phục được yêu thích
+         <br>-  Đa dạng chất liệu, form dáng, thiết kế.
+         <br>-  Được may đo một cách tỉ mỉ, gần như không có lỗi. 
+         <br>-  Có dáng trẻ trung, thanh lịch nhưng cực kì nghiêm túc, chuyên nghiệp, rất phù hợp cho tính chất công việc.
+         <br>-  Có giá thành phù hợp cho nhu cầu của từng khách hàng.
+         <br>-  Có may đo, may size chuyên nghiệp 
+         <br>-  Có chính sách giảm giá, miễn phí may mẫu, miễn phí vận chuyển và chăm sóc 24/7.
+         <br>ĐẶT HÀNG NGAY, NHẬN ƯU ĐÃI LIỀN TAY
+         <br></p>
+         <br><p>MAY ÁO PHÔNG ĐỒNG PHỤC TẠI HỒNG HÀ 
+         <br>- Miễn phí tư vấn, thiết kế, may mẫu, vận chuyển
+         <br>- Sử dụng kĩ thuật may thời trang, đường may tinh tế
+         <br>- +20 chất liệu áo phông từ cơ bản đến cao cấp
+         <br>- Bảo hành in thêu 2 năm
+         <br>Là đơn vị #TRỰC TIẾP SẢN XUẤT HỒNG HÀ luôn mang đến những bộ đồng phục đẹp, thiết kế độc đáo, in thêu sắc nét, thể hiện văn hóa  doanh nghiệp và giá cả tốt nhất thị trường.
+         <br>#ĐỂ LẠI SĐT hoặc [ #INBOX ] chúng tôi sẽ tư vấn giúp bạn tìm được mẫu áo đồng phục phù hợp nhu cầu.
+         <br></p>
+         <br><p>ĐỒNG PHỤC - CHÌA KHÓA VÀNG CỦA DOANH NGHIỆP
+         <br>- Đồng phục nhân viên – Tạo sự chuyên nghiệp, tính đồng bộ
+         <br>- Đồng phục tăng cường quảng bá và khả năng nhận diện thương hiệu, tạo ấn tượng tốt với khách hàng
+         <br>- Ngoài việc nhận diện thương hiệu thì đồng phục còn giúp phân khách hàng dễ dàng nhận đúng bộ phận nhân viên khi có nhu cầu dịch vụ.
+         <br>- Đồng phục nhân viên tạo sự thoải mái, tự tin khi làm việc.
+         <br>#COMMENT hoặc #INBOX số điện thoại, chúng tôi sẽ liên hệ và tư vấn, báo giá ngay cho bạn.
+         <br></p>
+         <br><p>BST ĐỒNG PHỤC - ĐẲNG CẤP QUA SỰ TINH TẾ
+         <br>- Tập trung hoàn toàn sự chú ý vào phần cổ áo mới mẻ, BST áo đồng phục mới nhất của Đồng Phục HỒNG HÀ được tối giản về mặt màu sắc để phác họa một hình ảnh doanh nghiệp tràn đầy sức sống, năng động và khỏe khoắn nhưng vẫn giữ được nét chuyên nghiệp, chỉn chu. 
+         <br>- Đừng quên theo dõi Đồng Phục HỒNG HÀ - Thời Trang Công Sở để liên tục cập nhật những thiết kế đồng phục dẫn đầu xu hướng và lựa chọn cho doanh nghiệp của mình nhé!
+         <br>CÔNG NGHỆ ÁO TẠI HỒNG HÀ
+         <br>- Sở hữu tới 15+ kiểu dáng và 34+ sắc màu để lựa chọn
+         <br>- Dây chuyền sản xuất khép kín với máy móc hiện đại, có khả năng đáp ứng 100% đơn hàng của quý khách để tối ưu chi phí.
+         <br>- Liên tục cập nhật những thiết kế mới nhất, theo sát xu hướng thời trang. 
+         <br>Hãy liên hệ ngay với chúng tôi để được tư vấn mẫu áo đồng phục ưng ý!
+         <br></p>
+         <br><p>- Với tiêu chí mang những sản phẩm chất lượng nhất đến tay khách hàng, HỒNG HÀ chú trọng vào 3 yếu tố CHẤT LƯỢNG - THỜI TRANG - NỔI BẬT:
+         <br>- CHẤT LƯỢNG vàng với công nghệ dệt độc quyền khiến sợi vải dai, co giãn đa chiều, thoáng mát và thấm hút mồ hôi.
+         <br>- THỜI TRANG với dáng vô cùng thanh lịch, phù hợp với mọi phong cách, độ tuổi, giới tính, phong cách và dáng người. Lên dáng đứng form vừa vặn giúp người mặc tự tin
+         <br>- NỔI BẬT với họa tiết dệt độc đáo ở cổ và tay áo cùng bảng màu vải đa dạng doanh nghiệp có thể tha hồ lựa chọn màu sắc phù hợp với thương hiệu của mình.
+         <br>- Liên hệ ngay với Đồng Phục HỒNG HÀ để được TƯ VẤN và NHẬN SIÊU ƯU ĐÃI khi đặt mua đồng phục công ty.</p>
+         <br><p>ĐỒNG PHỤC HỒNG HÀ - SỐ LƯỢNG CÀNG LỚN GIÁ CÀNG RẺ
+         <br>- Đa dạng màu sắc, chất liệu vải để các doanh nghiệp lựa chọn
+         <br>- Độ bền màu, bền vải siêu tốt
+         <br>- Thấm hút mồ hôi vượt trội
+         <br>- ƯU ĐÃI CỰC LỚN CHO CÁC ĐƠN HÀNG KHỦNG >> ĐẶT SỐ LƯỢNG CÀNG NHIỀU GIÁ CÀNG RẺ
+         <br>- MIỄN PHÍ THIẾT KẾ
+         <br>- MIỄN PHÍ VẬN CHUYỂN
+         <br>- ĐỒNG PHỤC HỒNG HÀ - Sự lựa chọn hàng đầu, uy tín và tin cậy nhất dành cho quý khách hàng 
+         <br>- Quý khách hàng đang cần tìm đối tác sản xuất, liên hệ với HỒNG HÀ để nhận ngay ưu đãi lớn nhé!
+         <br></p>
+         <br><p>ĐỒNG PHỤC HỒNG HÀ - TIÊN PHONG XU HƯỚNG
+         <br>- Đồng phục thường có yêu cầu rất cao về mặt thẩm mỹ nhằm xây dựng 1 diện mạo chỉn chu - chuyên nghiệp đồng thời tạo sự tin tưởng - uy tín trong mắt khách hàng. 
+         <br>- Đồng Phục HỒNG HÀ sẽ thiết kế riêng và tùy chỉnh để tạo sự khác biệt thực sự cho khách hàng. Các mẫu đồng phục đều sáng tạo, linh hoạt và đáp ứng chính xác nhu cầu của khách hàng về thị hiếu và xu hướng.</p>
+         <br><p>XU HƯỚNG THỜI TRANG ĐỒNG PHỤC
+         <br>- Mang đồng phục thoát khỏi định nghĩa gò bó cứng nhắc, đồng phục HỒNG HÀ mang đến 1 làn gió mới trong ngành thời trang đồng phục Việt Nam. 
+         <br>- Cùng chúng tôi update ngay những xu hướng thời trang đồng phục hot nhất các bạn nhé!
+         <br>>>>>> Theo dõi chuyên mục hàng tuần cùng Đồng phục HỒNG HÀ để được thoả thích biến tấu cùng thời trang đồng phục!
+         <br>KHI ĐẾN VỚI ĐỒNG PHỤC HỒNG HÀ
+         <br>- Được miễn phí thiết kế từ logo đến kiểu dáng áo và giao hàng trên toàn quốc.
+         <br>- Đa dạng sự lựa chọn về chất vải, vải cao cấp thoáng mát và bền màu.
+         <br>- Logo in thêu chất lượng, sắc nét bởi công nghệ tiên tiến nhất.
+         <br>- Sở hữu 3 nhà máy sản xuất khép kín, quy trình chuẩn chỉnh đảm bảo chất lượng đầu ra luôn hoàn hảo.
+         <br></p>
+         <br><p>- Trải nghiệm của khách hàng là ưu tiên quan trọng nhất đối với chúng tôi. Gần 10 năm trong ngành đồng phục, chúng tôi luôn cung cấp đến khách hàng những sản phẩm với chất lượng tốt nhất, thời thượng với giá thành phù hợp nhất.
+         <br>- Cùng ghé thăm Công ty May In Đồng Phục - Đồng Phục HỒNG HÀ để có những trải nghiệm chân thật nhất các bạn nhé!
+         <br></p>
+         <br><p>ĐỒNG PHỤC CÔNG TY - NÂNG TẦM DOANH NGHIỆP
+         <br>- Đồng phục là cách nhanh nhất và hiệu quả nhất giúp công ty bạn trở nên chuyên nghiệp hơn trong mắt khách hàng và đối tác, thương hiệu của bạn sẽ tạo ấn tượng tốt, tăng sự hài lòng cho khách hàng.
+         <br>- Với hơn 10.000 khách hàng đã đặt hàng và hàng triệu sản phẩm đã sản xuất trong nhiều năm. Đồng phục HỒNG HÀ tự hào đem đến những bộ đồng phục chuyên nghiệp nhất, thời trang nhất đến với doanh nghiệp của bạn.
+         <br></p>
+         <br><p>ĐỒNG PHỤC - TẠI SAO KHÔNG?
+         <br>- Thông thường người ta hay lựa chọn những loại vải mịn màng, dễ thấm hút và có sự co giãn tốt để làm áo đồng phục. 
+         <br>- Tại HỒNG HÀ có sẵn các mẫu áo phù hợp với ngành hàng F&B theo yêu cầu của doanh nghiệp  
+         <br>- Đồng thời, HỒNG HÀ cũng nhận thiết kế riêng đồng phục nếu quý khách yêu cầu.
+         <br>KHI ĐẾN VỚI ĐỒNG PHỤC HỒNG HÀ
+         <br>- Miễn phí thiết kế từ logo đến kiểu dáng áo & giao hàng toàn quốc
+         <br>- Chất lượng vải Cotton cao cấp
+         <br>- Logo in thêu chất lượng, sắc nét
+         <br>- Nhà máy sản xuất khép kín, chất lượng đầu ra sản phẩm luôn hoàn hảo
+         <br></p>
+         <br><p>TẠO ẤN TƯỢNG VỚI KHÁCH HÀNG BẰNG ĐỒNG PHỤC
+         <br>- Những chiếc áo đồng phục đẹp góp phần làm nên đội ngũ nhân viên chuyên nghiệp nhất,... Bước chân vào, ấn tượng ban đầu rất quan trọng, thấy đội ngũ nhân viên "trai xinh gái đẹp", đồng phục gọn gàng, xịn xò thì chỉ muốn là khách quen của quán mãi thôi!
+         <br>- Với kinh nghiệm nhiều năm trong lĩnh vực sản xuất đồng phục, Đồng Phục HỒNG HÀ - Thời Trang Công Sở tự tin là sự lựa chọn hàng đầu của bạn: 
+         <br>- Miễn phí thiết kế từ logo đến kiểu dáng áo & giao hàng toàn quốc
+         <br>- Chất lượng vải cao cấp
+         <br>- Logo in thêu chất lượng, sắc nét
+         <br>- Nhà máy sản xuất khép kín, chất lượng đầu ra sản phẩm luôn hoàn hảo
+         <br></p>
+         <br><p>ĐẸP VÀ ĐẲNG CẤP CÙNG ĐỒNG PHỤC HỒNG HÀ
+         <br>Những chiếc áo đồng phục sẽ không hề nhàm chán với thiết kế và cách tân độc đáo đến từ Đồng Phục HỒNG HÀ 
+         <br>- Kham khảo ngay bộ sưu tập áo đồng phục của HỒNG HÀ
+         <br>- Đồng Phục HỒNG HÀ tự tin sẽ mang đến cho doanh nghiệp của bạn sản phẩm đẹp nhất, đẳng cấp nhất 
+         <br>KHI ĐẾN VỚI ĐỒNG PHỤC HỒNG HÀ
+         <br>- Được miễn phí thiết kế từ logo đến kiểu dáng áo và giao hàng trên toàn quốc.
+         <br>- Đa dạng sự lựa chọn về chất vải, vải cao cấp thoáng mát và bền màu.
+         <br>- Logo in thêu chất lượng, sắc nét bởi công nghệ tiên tiến nhất.
+         <br>- Sở hữu 3 nhà máy sản xuất khép kín, quy trình chuẩn chỉnh đảm bảo chất lượng đầu ra luôn hoàn hảo.
+         <br></p>
+         <br><p>XUỐNG PHỐ CÙNG ÁO ĐỒNG PHỤC
+         <br>Bạn có cuộc hẹn sau giờ làm nhưng chẳng kịp về nhà thay đồ? Đừng lo, hãy tham khảo ngay những bản phối gợi ý từ HỒNG HÀ để xuống phố cùng áo đồng phục như một fashionista nhé!
+         <br>>>>>> Theo dõi chuyên mục cùng Đồng phục HỒNG HÀ để được thoả thích biến tấu cùng thời trang đồng phục!
+         <br>KHI ĐẾN VỚI ĐỒNG PHỤC HỒNG HÀ
+         <br>- Được miễn phí thiết kế từ logo đến kiểu dáng áo và giao hàng trên toàn quốc.
+         <br>- Đa dạng sự lựa chọn về chất vải, vải cao cấp thoáng mát và bền màu.
+         <br>- Logo in thêu chất lượng, sắc nét bởi công nghệ tiên tiến nhất.
+         <br>- Sở hữu 3 nhà máy sản xuất khép kín, quy trình chuẩn chỉnh đảm bảo chất lượng đầu ra luôn hoàn hảo.</p>
+         <br><p>HỒNG HÀ - DIỆN MẠO TẠO THÀNH CÔNG
+         <br>-  BST với thiết kế ấn tượng chắc chắn sẽ là sự lựa chọn hàng đầu cho các doanh nghiệp ưa thích sự tinh tế, sang trọng.
+         <br>- KHI ĐẾN VỚI ĐỒNG PHỤC HỒNG HÀ
+         <br>- Được miễn phí thiết kế từ logo đến kiểu dáng áo và giao hàng trên toàn quốc.
+         <br>- Đa dạng sự lựa chọn về chất vải, vải cao cấp thoáng mát và bền màu.
+         <br>- Logo in thêu chất lượng, sắc nét bởi công nghệ tiên tiến nhất.
+         <br>- Sở hữu 3 nhà máy sản xuất khép kín, quy trình chuẩn chỉnh đảm bảo chất lượng đầu ra luôn hoàn hảo.
+         <br></p>
+         <br><p>MẪU ÁO ĐỒNG PHỤC TIÊU CHUẨN DÀNH CHO MỌI DOANH NGHIỆP 
+         <br>‼️ Mẫu áo thiết kế được ưu tiên hàng đầu cho các sản phẩm áo đồng phục công ty. Thể hiện sự chuyên nghiệp và lịch sự của mỗi doanh nghiệp 
+         <br>‼️ Đồng Phục HỒNG HÀ tự hào đơn vị may đồng phục uy tín, chất lượng cao cho công ty, doanh nghiệp trên toàn quốc. Với mẫu mã đa dạng, thiết kế thời trang, form dáng đúng size, hình in thêu sắc sảo, bền đẹp. 
+         <br>CÔNG NGHỆ ÁO TẠI HỒNG HÀ
+         <br>‼️ Sở hữu tới 15+ kiểu dáng và 34+ sắc màu để lựa chọn
+         <br>‼️ Dây chuyền sản xuất khép kín với máy móc hiện đại, có khả năng đáp ứng 100% đơn hàng của quý khách để tối ưu chi phí.
+         <br>‼️ Liên tục cập nhật những thiết kế mới nhất, theo sát xu hướng thời trang. 
+         <br>Hãy liên hệ ngay với chúng tôi để được tư vấn mẫu áo đồng phục ưng ý!
+         <br></p>
+         <br><p>ĐỒNG PHỤC - CHÌA KHÓA NHẬN DIỆN DOANH NGHIỆP
+         <br>- Người ta ví rằng việc xây dựng đồng phục của một công ty giống như việc xây dựng nền văn hóa cho công ty này vậy. Khó có thể tìm ra một công ty, doanh nghiệp nào mà không có đồng phục, bởi nó là hình ảnh, là bộ mặt. Một đồng phục nổi bật giúp doanh nghiệp xây dựng được thương hiện, tạo niềm tin cho đối tác, khách hàng của mình.
+         <br>Vì sao bạn nên lựa chọn dịch vụ của Đồng Phục HỒNG HÀ
+         <br>-  HỒNG HÀ cung cấp rất nhiều giải pháp đồng phục với đa dạng kiểu dáng, chất liệu
+         <br>- Mức chi phí hợp lý, đáp ứng nhu cầu của tất cả các khách hàng, doanh nghiệp
+         <br>- Đội ngũ nhân viên được đều đào tạo bài bản và có nhiều kinh nghiệm trong ngành may mặc, đảm bảo sản phẩm chất lượng
+         <br>- KHI ĐẾN VỚI ĐỒNG PHỤC HỒNG HÀ 
+         <br>- Miễn phí thiết kế từ logo đến kiểu dáng áo & giao hàng toàn quốc
+         <br>- Chất lượng vải cao cấp
+         <br>- Logo in thêu chất lượng, sắc nét
+         <br>- Nhà máy sản xuất khép kín, chất lượng đầu ra sản phẩm luôn hoàn hảo
+         <br></p>
+         <br><p>ĐỒNG PHỤC SANG TRỌNG - ĐẲNG CẤP
+         <br>Đồng phục đóng vai trò quan trọng trong việc xây dựng đẳng cấp và thương hiệu cho doanh nghiệp.
+         <br>Đồng phục đẹp sẽ xây dựng hình ảnh uy tín và vị thế tốt đẹp trong mắt khách hàng của mỗi doanh nghiệp. HỒNG HÀ với phương châm " Uy tín tạo nên thương hiệu" cam kết mang đến cho Quý khách hàng sản phẩm với chất lượng tốt nhất và giá thành phù hợp nhất
+         <br></p>
+         <br><p>ĐỒNG PHỤC THỜI TRANG - GIẢI PHÁP NÂNG TẦM HÌNH ẢNH CHO DOANH NGHIỆP
+         <br>- Ngày nay hầu như công ty nào cũng sử dụng đồng phục công sở riêng với thiết kế logo công ty được làm rất công phu. Việc sử dụng đồng phục của các doanh nghiệp này thường là một nỗ lực trong việc xây dựng thương hiệu và phát triển một hình ảnh công ty chuyên nghiệp, đáng tin cậy.
+         <br>- Thấu hiểu được điều đó, với sứ mệnh cách tân những bộ đồng phục nhàm chán thông thường, chúng tôi mang đến những sản phẩm mới vừa thời trang lại vừa mang tính ứng dụng cao, là trải nghiệm hoàn toàn mới với Quý khách hàng.
+         <br>KHI ĐẾN VỚI ĐỒNG PHỤC HỒNG HÀ
+         <br>- Miễn phí thiết kế từ logo đến kiểu dáng áo & giao hàng toàn quốc
+         <br>- Chất lượng vải cao cấp, thời trang công sở
+         <br>- Logo in thêu chất lượng, sắc nét
+         <br>- Nhà máy sản xuất khép kín, chất lượng đầu ra sản phẩm luôn hoàn hảo
+         <br></p>
+         <br><p>BỘ SƯU TẬP ĐỒNG PHỤC POLO BASIC: HOÀN HẢO ĐẾN TỪNG CHI TIẾT
+         <br>- Xu hướng tối giản và chú trọng vào sự tinh tế trên từng đường nét đang trở nên thịnh hành trong những năm gần đây. Hiểu được xu thế phát triển của ngành thời trang, Đồng Phục Hồng Hà cho ra mắt BST BASIC với điểm nhấn nằm ở phần cổ nhằm tôn vinh những nét tinh tế và sang trọng của chiếc áo đồng phục. 
+         <br>- BST BASIC với phần cổ bẻ vải thoáng mát lại tôn form dáng, kiểu đồng phục này thể hiện sự trẻ trung và đầy tính năng động, không chỉ mặc khi tới văn phòng mà bạn có thể mặc đi tới mọi nơi, mọi thời điểm, vô cùng thuận tiện lại giúp quảng bá hình ảnh thương hiệu công ty bạn khắp mọi lúc mọi nơi.
+         <br></p>
+         <br><p>
+         <br>TRẢI NGHIỆM MẪU ÁO MỚI NHẤT
+         <br>Ngay lúc này, các mẫu áo đồng phục mới nhất đã có mặt tại hệ thống showroom của HỒNG HÀ Uniform trên toàn quốc. Hãy ghé để trải nghiệm trực tiếp sản phẩm và chọn lựa mẫu áo ưng ý cho doanh nghiệp của bạn!
+         <br>HỒNG HÀ - ĐỊA CHỈ TIN CẬY ĐỂ ĐẶT MAY ĐỒNG PHỤC:
+         <br>- Cung cấp rất nhiều giải pháp đồng phục với đa dạng kiểu dáng, chất liệu với gần 10 năm kinh nghiệm trong ngành.
+         <br>- Mức chi phí hợp lý, đáp ứng nhu cầu của tất cả các khách hàng, doanh nghiệp.
+         <br>- Sở hữu 3 nhà máy sản xuất khép kín với đội ngũ nhân viên được đào tạo bài bản đảm bảo 100% chất lượng đầu ra.
+         <br></p>
+         <br><p>NHỮNG MẪU ĐỒNG PHỤC ĐÓN ĐẦU XU THẾ
+         <br>- Đến với Đồng Phục HỒNG HÀ, chúng tôi cam kết sẽ mang đến cho Quý khách hàng sản phẩm với chất lượng tốt nhất và giá thành phù hợp nhất:
+         <br>- Chất liệu cao cấp, co giãn và thấm hút mồ hôi tốt
+         <br>- Kiểu dáng hiện đại, thời trang
+         <br>- Màu sắc trang nhã, tinh tế
+         <br>- Miễn phí thiết kế và in ấn
+         <br>KHI ĐẾN VỚI ĐỒNG PHỤC HỒNG HÀ
+         <br>- Được miễn phí thiết kế từ logo đến kiểu dáng áo và giao hàng trên toàn quốc.
+         <br>- Đa dạng sự lựa chọn về chất vải, vải cao cấp thoáng mát và bền màu.
+         <br>- Logo in thêu chất lượng, sắc nét bởi công nghệ tiên tiến nhất.
+         <br>- Sở hữu 3 nhà máy sản xuất khép kín, quy trình chuẩn chỉnh đảm bảo chất lượng đầu ra luôn hoàn hảo.
+         <br></p>
+         <br><p>Mời Quý khách hàng tham khảo các mẫu áo đồng phục doanh nghiệp của Đồng phục HỒNG HÀ dưới đây
+         <br>- Đồng phục là một trong những công cụ cực kỳ hiệu quả trong việc quảng cáo thương hiệu nhưng không tốn quá nhiều chi phí.
+         <br>- Hầu hết các doanh nghiệp đều phải tiếp xúc với khách hàng việc mặc đồng phục cho nhân viên tạo cho khách hàng thiện cảm ngay từ cái nhìn đầu tiên, khiến công ty “ghi điểm” ngay lập tức.
+         <br>- Mời Quý khách hàng tham khảo các mẫu áo đồng phục doanh nghiệp của Đồng phục HỒNG HÀ dưới đây
+         <br></p>
+         <br><p>ĐỒNG PHỤC - NÂNG TẦM THƯƠNG HIỆU¬
+         <br>‼️Bạn đang có nhu cầu may in đồng phục nhưng chưa tìm được địa chỉ tin cậy?
+         <br>Bạn muốn tăng tính đoàn kết & tính kỷ luật của nhân viên?
+         <br>Bạn muốn tiết kiệm chi phí quảng cáo mà vẫn muốn đưa thương hiệu của mình đến với nhiều khách hàng hơn?
+         <br>ĐỒNG PHỤC HỒNG HÀ chính là địa chỉ mà bạn đang tìm kiếm
+         <br>Khi đến với Đồng Phục HỒNG HÀ...
+         <br>MIỄN PHÍ thiết kế sản phẩm
+         <br>MIỄN PHÍ may sản phẩm mẫu
+         <br>MIỄN PHÍ giao hàng toàn quốc
+         <br>Chất liệu vải cao cấp
+         <br>Dáng áo lịch sự, chuyên nghiệp
+         <br>Hình in sắc nét, không bong tróc, vải không xù dù giặt tay hay giặt máy
+         <br>【#ĐỂ LẠI SĐT】hoặc 【#INBOX 】 chúng tôi sẽ ngay lập tức tư vấn giúp bạn tìm được mẫu áo đồng phục tốt nhất
+         <br></p>
+         <br><p>NĂNG LỰC SẢN XUẤT CỦA ĐỒNG PHỤC HỒNG HÀ
+         <br>- Đồng Phục HỒNG HÀ đang sở hữu và hoạt động 03 Nhà máy sản xuất với công nghệ hiện đại, chuyên nghiệp.
+         <br>-  HỒNG HÀ Uniform tự tin rằng đây là một trong nhà máy “siêu to khổng lồ, hiện đại nhất" trong ngành Đồng phục tại Việt Nam
+         <br>- Nhà máy sản xuất quy trình khép kín từ may, in, thêu tổng diện tích trên 10.000 m2
+         <br>- Đội ngũ công nhân chuyên nghiệp⁠, được tuyển dụng và đào tạo bài bản, chuyên môn cao
+         <br>- Năng lực sản xuất hơn 300.000 sản phẩm/tháng⁠
+         <br>- Máy móc, trang thiết bị nhập khẩu hiện đại, công nghệ tiên tiến nhất</p>
+         <br><p>Sở Hữu Ngay Mẫu Áo Đồng Phục Chất lượng - Tinh Tế - Đẳng Cấp
+         <br>Quy mô sản xuất vô cùng lớn với 3 nhà máy sản xuất hiện đại. Với 10 năm hoạt động và phát triển, phục vụ hơn 100.000 khách hàng 
+         <br>Đồng Phục HỒNG HÀ tự tin sẽ mang đến cho doanh nghiệp của bạn sản phẩm đẹp nhất, đẳng cấp nhất
+         <br></p>
+         <br><p>3 BƯỚC LỰA CHỌN ĐƠN VỊ MAY ĐỒNG PHỤC UY TÍN - CHẤT LƯỢNG
+         <br>- Muốn khẳng định thương hiệu bền vững chắc chắn doanh nghiệp cần phải có đồng phục. Tuy nhiên việc lựa chọn đơn vị may đo đồng phục uy tín, chất lượng lại là 1 vấn đề nan giải, bởi không phải công ty nào cũng có kinh nghiệm trong việc lựa chọn được 1 đơn vị uy tín giúp xây dựng nên hình ảnh của doanh nghiệp mình:
+         <br>-  HỒNG HÀ cung cấp rất nhiều giải pháp đồng phục với đa dạng kiểu dáng, chất liệu
+         <br>- Mức chi phí hợp lý, đáp ứng nhu cầu của tất cả các khách hàng, doanh nghiệp
+         <br>- Đội ngũ nhân viên được đều đào tạo bài bản và có nhiều kinh nghiệm trong ngành may mặc, đảm bảo sản phẩm chất lượng
+         <br></p>
+         <br><p>Đồng Phục HỒNG HÀ với nhiều năm kinh nghiệm trong ngành đồng phục, là sự lựa chọn tin của nhiều doanh nghiệp trong và ngoài nước
+         <br>-  HỒNG HÀ cung cấp rất nhiều giải pháp đồng phục với đa dạng kiểu dáng, chất liệu
+         <br>- Mức chi phí hợp lý, đáp ứng nhu cầu của tất cả các khách hàng, doanh nghiệp
+         <br>- Đội ngũ nhân viên được đều đào tạo bài bản và có nhiều kinh nghiệm trong ngành may mặc, đảm bảo sản phẩm chất lượng
+         <br>KHI ĐẾN VỚI ĐỒNG PHỤC HỒNG HÀ
+         <br>- Miễn phí thiết kế từ logo đến kiểu dáng áo & giao hàng toàn quốc
+         <br>- Chất lượng vải cao cấp, thời trang công sở
+         <br>- Logo in thêu chất lượng, sắc nét
+         <br>- Nhà máy sản xuất khép kín, chất lượng đầu ra sản phẩm luôn hoàn hảo
+         <br></p>
+         <br><p>Đồng phục Năng động, trẻ trung. nhiệt huyết 
+         <br>-  Thoải mái, lịch sự
+         <br>-  Mạnh mẽ, cá tính
+         <br>-  Sáng tạo, ứng dụng cao
+         <br>-  Chỉn chu, chuyên nghiệp  
+         <br>Đồng phục không chỉ đem đến diện mạo trẻ trung và sự thoải mái cho người mặc mà còn thể hiện tinh thần doanh nghiệp năng động sáng tạo và tràn đầy nhiệt huyết.
+         <br>-  Đồng phục là sự hiện diện của thời trang chứ không phải chỉ là trang phục bắt buộc nơi làm việc.
+         <br>-  Liên hệ với HỒNG HÀ để được tư vấn mẫu đồng phục dành riêng cho doanh nghiệp của mình nhé!
+         <br></p>
+         <br><p>5 LỢI ÍCH VƯỢT TRỘI KHI MẶC ĐỒNG PHỤC ĐI LÀM
+         <br>- Đồng phục là bộ mặt đại diện của thương hiệu và giúp tạo ra hình ảnh nhất quán về mỗi doanh nghiệp. Đồng phục giúp quảng bá hình ảnh doanh nghiệp của bạn đến khách hàng một cách dễ dàng và gần gũi hơn. 
+         <br>- Đồng phục thể hiện tính cộng đồng, tính thống nhất và giúp xóa đi mọi ranh giới, khoảng cách giữa tất cả các nhân viên. 
+         <br>- Đồng phục tạo ra nét chuyên nghiệp – điều mà khách hàng và đối tác của mỗi doanh nghiệp đều rất cần.
+         <br>- Đồng phục giúp tạo cảm giác thoải mái và linh hoạt cho người mặc. Các doanh nghiệp nên cân nhắc chọn đồng phục sao cho phù hợp với tính chất công việc của mình. 
+         <br>- ĐỒNG PHỤC HỒNG HÀ - Sự lựa chọn hàng đầu, uy tín và tin cậy nhất dành cho quý khách hàng
+         <br></p>
+         <br><p>ĐỒNG PHỤC HỒNG HÀ: NHỮNG NGƯỜI TRẺ LÀM NÊN ĐIỀU PHI THƯỜNG
+         <br>- Trẻ trung, năng động
+         <br>- Nhiệt huyết, sáng tạo
+         <br>- Chuyên nghiệp, tận tâm
+         <br>- HỒNG HÀ sở hữu lực lượng nhân viên GenZ hùng hậu đến từ khắp các phòng ban. Để hòa nhập vào thế hệ GenZ - một thế hệ với những cá tính khác biệt, không ngần ngại thể hiện phong cách bản thân.
+         <br>- Những bạn trẻ đang từng ngày gắn bó và làm việc trong môi trường của Đồng phục HỒNG HÀ mang trong mình sự nhiệt huyết, tận tâm với công việc. Chúng tôi sống và làm theo phương châm: “Làm hết sức, chơi hết mình” . 
+         <br>- Các bạn trẻ với chí cầu tiến, luôn cố gắng thay đổi và sáng tạo từng ngày để đưa thương hiệu Đồng phục HỒNG HÀ ngày càng phát triển và vươn xa hơn nữa. 
+         <br>- Đồng phục HỒNG HÀ: Tiên phong xu hướng - Thời trang hiện đại - Sản phẩm chất lượng cao - Mẫu mã thời thượng - Dịch vụ tận tình
+         <br></p>
+         <br><p>TẠI SAO NÊN THÊU ÁO ĐỒNG PHỤC
+         <br>Cùng với nhu cầu của thị trường, đồng phục đang dần trở thành một phần không thể thiếu trong mỗi doanh nghiệp. Không chỉ đồng bộ về giao diện mà đồng phục còn là một biện pháp truyền thông thương hiệu bền vững và hiệu quả. 
+         <br>Không bỏ qua tinh thần thời trang trong đồng phục, công nghệ thêu logo, tên thương hiệu lên đồng phục được HỒNG HÀ ứng dụng và được nhiều doanh nghiệp yêu thích và đón nhận bởi nét đẹp tinh tế, sang trọng nổi bật. </p>
+         <br><p>Khám phá Showroom Đồng Phục - HỒNG HÀ: Chuyên nghiệp và đầu tư đến từng chi tiết 
+         <br>Đồng phục là bộ nhận diện thương hiệu quan trọng hàng đầu, thể hiện sự chuyên nghiệp của mỗi doanh nghiệp và tạo dấu ấn đặc biệt đối với khách hàng.
+         <br>Ghé ngay showroom Đồng phục HỒNG HÀ để được tư vấn và lựa chọn đồng phục dành riêng cho doanh nghiệp của bạn.</p>
+         <br><p>TẠI SAO NÓI ĐỒNG PHỤC CHẤT LƯỢNG- THƯƠNG HIỆU CHUYÊN NGHIỆP?
+         <br>- Mỗi chiếc áo đồng phục là một hình ảnh doanh nghiệp, là đại sứ nhận diện thương hiệu. Do vậy vượt trên mẫu mã và giá cả, chất lượng về chất liệu, kiểu dáng, các chi tiết đường may... mới là điều doanh nghiệp cần lưu ý khi đặt may đồng phục. Một mẫu đồng phục càng chất lượng- sẽ đem tới bộ nhận diện thương hiệu càng chỉn chu chuyên nghiệp trong mắt khách hàng.
+         <br>- Với hơn 10 năm kinh nghiệm trong chế tác và sản xuất đồng phục, HỒNG HÀ Uniform tự tin sẽ mang tới cho quý khách hàng những sản phẩm có chất lượng tốt nhất, đem tới bộ nhận diện thương hiệu chỉn chu, chuyên nghiệp nhất.
+         <br></p>
+         <br><p>TIÊU CHÍ KHẲNG ĐỊNH GIÁ TRỊ CỦA 1 CHIẾC ÁO ĐỒNG PHỤC 
+         <br>- Để thiết kế một mẫu đồng phục đẹp, hoàn thiện, không chỉ dựa vào màu sắc và kiểu dáng doanh nghiệp cần lưu ý thêm tiêu chí sau:
+         <br>- Đồng phục có chất lượng cao về chất liệu, kiểu dáng và đạt chuẩn về size áo để đảm bảo được sự thoải mái, vừa vặn, tự tin trong suốt thời gian dài mặc làm việc tại văn phòng.
+         <br>- Đồng phục đảm bảo tính thẩm mỹ từ bố cục thiết kế tinh tế đến việc đảm bảo được sự hài hòa trong việc kết hợp màu sắc. Đặc biệt, đồng phục là một giải pháp nhận diện thương hiệu nên việc doanh nghiệp có một thiết kế riêng, độc quyền là điều vô cùng quan trọng. 
+         <br>- Cuối cùng, một đồng phục doanh nghiệp phải đảm bảo được tính đa dạng tính năng sử dụng. Bởi nhân sự hiện nay không còn chỉ mặc đồng phục tại nơi làm việc mà còn tham gia nhiều hoạt động, gặp gỡ khách hàng, trade show… 
+         <br>- Với tiêu chỉ đem lại những sản phẩm chất lượng và hơn 10 năm kinh nghiệm, HỒNG HÀ Uniform tự tin khẳng định sẽ đem tới sự hài lòng nhất cho quý khách hàng.
+         <br></p>
+         <br><p>BÍ QUYẾT TẠO SỰ CHUYÊN NGHIỆP TỪ CÁI NHÌN ĐẦU TIÊN VỚI ĐỒNG PHỤC DOANH NGHIỆP
+         <br>- Trở thành yếu tố không thể thiếu trong bất kì doanh nghiệp nào, đồng phục mang ý nghĩa vô cùng quan trọng khi không chỉ đồng bộ về giao diện mà còn mang lại sự chuyên nghiệp từ cái nhìn đầu tiên với khách hàng. 
+         <br>- Theo khảo sát: 
+         <br>- 90% lượt mua hàng dựa vào ấn tượng thị giác
+         <br>- 84,7% khách hàng cho biết dựa vào màu sắc khi chọn mua một sản phẩm 
+         <br>- 80% người cho rằng màu sắc giúp nhớ và nhận biết thương hiệu
+         <br>- Do vậy một đồng phục với thiết kế nổi bật được màu sắc, logo, thông điệp nhận diện thương hiệu sẽ là bí quyết giúp doanh nghiệp được nhận diện và để lại ấn tượng chuyên nghiệp trong mắt khách hàng.
+         <br></p>
+         <br><p>
+         <br>ĐỒNG PHỤC HỒNG HÀ- CÔNG TY MAY IN CHẤT LƯỢNG UY TÍN HÀNG ĐẦU VIỆT NAM
+         <br>10 năm hoạt động và phát triển, với thế mạnh về chất lượng cũng vị thế trên thị trường HỒNG HÀ Uniform tự tin là công ty may in có chất lượng, thị trường uy tín hàng đầu Việt Nam. 
+         <br>-  Về nguồn nguyên vật liệu. HỒNG HÀ luôn đảm bảo đầu vào nguồn nguyên-  nhiên vật liệu có chất lượng cao nhất, có giấy chứng nhận, đảm bảo chất lượng sử dụng cho khách hàng. Với kho chất liệu đa dạng, hơn 200 màu sắc khác nhau, Đồng phục HỒNG HÀ đảm bảo tối đa mọi yêu cầu của doanh nghiệp. 
+         <br>-  Về trang thiết bị. Tại 3 xưởng may chính của Đồng phục HỒNG HÀ đều được đảm bảo lắp đặt các trang thiết bị tân tiến hiện đại, được kiểm tra bảo dưỡng theo định kỳ. Điều này bước đầu có thể đảm bảo được sản lượng lên tới hàng chục nghìn đơn mỗi ngày cũng như đảm bảo về chất lượng của sản phẩm. Thứ hai là có thể giảm tải được công việc lớn của doanh nghiệp, đảm bảo sức khỏe, tinh thần cho nhân sự. 
+         <br>-  Về con người HỒNG HÀ. Đều là những người làm đã có trình độ chuyên môn tay nghề cao, gắn bó với công việc. Đây là nguồn lực lớn, hậu phương vững chắc giúp cho Đồng phục HỒNG HÀ không ngừng vươn xa, khẳng định vị thế trên thị trường. 
+         <br>-  Tiên phong xu hướng- Sản phẩm chất lượng cao- Mẫu mã đẹp mắt- Dịch vụ tận tình- Xưởng may Đồng phục HỒNG HÀ chắc chắn sẽ là địa chỉ làm cho khách hàng hài lòng.
+         <br></p>
+         <br><p>ĐỒNG PHỤC DOANH NGHIỆP TINH TẾ TRONG TỪNG CHI TIẾT
+         <br>- Nổi bật trong mắt thu hút và đầy quyền lực, Logo HỒNG HÀ Uniform thể hiện rõ nét hơn bao giờ hết. 
+         <br>- Sử dụng chất liệu cao cấp áo dày dặn đứng form nhưng lại vô cùng thoáng mát. Cùng độ bền cao, chất lượng chống nhăn tuyệt đối giúp hình ảnh doanh nghiệp luôn chuyên nghiệp chỉn chu suốt ngày dài. 
+         <br>- Độc đáo trong thiết kế, đầu tư nghiên cứu tỉ mỉ về form dáng, mẫu đồng phục được nghiên cứu thiết kế với form áo tôn vinh hình thể đặc trưng nhất của người Việt Nam. 
+         <br></p>
+         <br><p>Đa dạng phong cách, tự tin nổi bật với Đồng phục HỒNG HÀ
+         <br>- Đồng phục là gò bó?
+         <br>- Đồng phục là khô cứng?
+         <br>- Đồng phục là …?
+         <br>Cùng HỒNG HÀ thổi bay quan niệm cũ về đồng phục với HỒNG HÀ Uniform: Đồng phục là sự hiện diện của thời trang chứ không phải chỉ là trang phục bắt buộc nơi làm việc.
+         <br>Đồng phục thời trang: Đa dạng phong cách - Tự tin nổi bật
+         <br></p>
+         <br><p>LÝ DO GIÚP HỒNG HÀ TỐI ƯU ĐƯỢC CHI PHÍ VÀ THỜI GIAN CHO ĐƠN HÀNG
+         <br>- Sử dụng công nghệ cao cùng nguyên liệu tốt nhất để sản xuất nhưng giá thành của các sản phẩm tại HỒNG HÀ lại có chi phí vô cùng hợp lý. Cùng HỒNG HÀ tìm hiểu lý do có thể tối ưu được chi phí và thời gian cho khách hàng nhé. 
+         <br>- ĐỒNG PHỤC HỒNG HÀ - TIÊN PHONG XU HƯỚNG
+         <br></p>
+         <br><p>Đáp ứng mọi tiêu chuẩn thiết kế
+         <br>- Mỗi doanh nghiệp khi đến với HỒNG HÀ đều có những tiêu chuẩn khác nhau đối với đồng phục. Phát triển từ việc lắng nghe và thấu hiểu từ câu chuyện và mong muốn đó của khách hàng, HỒNG HÀ luôn cố gắng hết mình đảm bảo cho ra những thiết kế có thể đáp ứng được mọi tiêu chuẩn.
+         <br>- BST cảm hứng từ sáng tạo không ngừng nghỉ đem tới phong cách khác biệt cho doanh nghiệp. Một mẫu thiết kế đáp ứng được mọi tiêu chuẩn, được nhiều doanh nghiệp lựa chọn nhất.
+         <br>- Đảm bảo tinh thần đồng bộ của đồng phục
+         <br>- Không làm mất đi tính thời trang, mang lại vẻ đẹp thẩm mỹ
+         <br>- Thiết kế tinh tế, lồng ghép khéo léo những dấu ấn riêng giúp tăng nhận diện cho thương hiệu
+         <br>- Doanh nghiệp của bạn chưa tìm được mẫu đồng phục phù hợp? 
+         <br>Liên hệ với HỒNG HÀ để được tư vấn miễn phí mẫu thiết kế dành riêng cho doanh nghiệp của bạn nhé!
+         <br></p>
+         <br><p>- ĐỒNG PHỤC ĐẶC BIỆT - NÂNG TẦM THƯƠNG HIỆU
+         <br>Với điểm nhấn tinh tế 
+         <br>- Logo sắc nét
+         <br>- Mang lại giá trị thẩm mỹ cao
+         <br>- Chất lượng đạt chuẩn & độ bền cao 
+         <br>Đồng phục HỒNG HÀ luôn tự tin mang lại sản phẩm chất lượng và giá trị cao cho doanh nghiệp. 
+         <br>- Liên hệ ngay với Đồng Phục HỒNG HÀ để được TƯ VẤN và NHẬN SIÊU ƯU ĐÃI khi đặt mua đồng phục công ty.
+         <br></p>
+         <br><p>- Mẫu áo với chất liệu vải cao cấp nhất hiện nay: chống nhăn, bề mặt nhẵn mịn là sự lựa chọn hoàn hảo nhất cho công ty, doanh nghiệp của bạn.
+         <br>- Tại sao doanh nghiệp nên lựa chọn đặt đồng phục doanh nghiệp tại HỒNG HÀ 
+         <br>-  HỒNG HÀ cung cấp rất nhiều giải pháp đồng phục với đa dạng kiểu dáng, chất liệu
+         <br>- Mức chi phí hợp lý, đáp ứng nhu cầu của tất cả các khách hàng, doanh nghiệp
+         <br>- Đội ngũ nhân viên được đều đào tạo bài bản và có nhiều kinh nghiệm trong ngành may mặc, đảm bảo sản phẩm chất lượng
+         <br></p>
+         <br><p>Đồng Phục HỒNG HÀ Mặc Cho Cả Ngày Dài
+         <br>- Sự tối giản trong đồng phục - xu hướng thời trang mới được các doanh nghiệp ưu tiên lựa chọn để khẳng định vị thế cũng như tầm nhìn của thương hiệu.
+         <br>- Diện đồng phục cả ngày dài ít nhiều nhân sự sẽ cảm thấy bí bách và đặc biệt là tính chất công việc cần sự di chuyển nhiều.
+         <br>- Với tinh thần Đổi mới- Sáng tạo không ngừng nghỉ Đồng Phục HỒNG HÀ đã ưu tiên sử dụng công nghệ kéo sợi ComPact PIT mỏng nhẹ thoáng khí, co dãn hai chiều, nhân sự có thể thoải mái vận động cả ngày dài hay dạo phố đều được.
+         <br>- Liên hệ với HỒNG HÀ để được tư vấn mẫu đồng phục dành riêng cho doanh nghiệp của bạn nhé!
+         <br></p>
+         <br><p>Đồng Phục Doanh Nghiệp Từ HỒNG HÀ
+         <br>- Công Ty May In Đồng Phục - Đồng phục HỒNG HÀ vinh dự khi nhận được những hình ảnh feedback xịn xò cùng những cảm nhận chân thật nhất 
+         <br>- Cảm ơn Quý công ty đã lựa chọn HỒNG HÀ là đơn vị sản xuất đồng phục cho mình. Chuyên nghiệp, nhiệt huyết với công việc- Chỉn chu trong từng sản phẩm- Nâng cao năng lực sản xuất- Nâng cấp trang thiết bị hiện đại mỗi ngày là cách mà HỒNG HÀ thể hiện sự trân trọng và lời cảm ơn của mình dành cho khách hàng.
+         <br></p>
+         <br><p>Doanh nghiệp của bạn đang tìm kiếm mẫu áo đồng phục hướng tới sự trẻ trung- hiện đại nhưng vẫn giữ được nét riêng của thương hiệu?
+         <br>- Chắc chắn sẽ là sự lựa chọn hoàn hảo cho doanh nghiệp với những ưu điểm tuyệt vời:
+         <br>- Khô, thoáng, nhẹ với công nghệ dệt 2 mặt tạo lỗ thoáng khí giúp thoát nhiệt nhanh
+         <br>- Màu vải đa dạng, bền màu, phản sáng tốt
+         <br>- Kết cấu vải chống co rút tốt và không nhăn, không xù, không bai dão
+         <br>- Dễ làm sạch, dễ gấp gọn không bị biến dạng khi giặt, nhanh khô
+         <br>- Khử mùi, chống UV, chống bám bụi
+         <br>Liên hệ với HỒNG HÀ Uniform để được tư vấn mẫu dành riêng cho doanh nghiệp của bạn nhé!
+         <br></p>
+         <br><p>LỰA CHỌN CHẤT LIỆU PHÙ HỢP CHO NGÀNH HÀNG 
+         <br>- Dù doanh nghiệp kinh doanh bất kỳ ngành hàng hay dịch vụ nào thì đồng phục vẫn chiếm ưu thế trong việc xây dựng và phát triển hình ảnh thương hiệu. Chính vì vậy, các doanh nghiệp hiện nay rất chú trọng đến thiết kế kiểu dáng cũng như màu sắc của áo đồng phục.
+         <br>- Không thể phủ nhận chiếc áo đồng phục đẹp mắt sẽ rất thu hút nhưng lựa chọn chất liệu vải phù hợp với tính chất công việc cũng là điều vô cùng quan trọng. Đặc biệt với đặc tính ngành hàng cần vận động nhiều, doanh nghiệp nên lựa chọn chất liệu thoải mái, co dãn tốt.
+         <br>- Hiểu được mong muốn của khách hàng, Đồng Phục HỒNG HÀ đáp ứng mọi nhu cầu:
+         <br>- Thoải mái thiết kế đường chuyển nhiệt
+         <br>- Chất cao cấp thoáng mát, mềm mịn tạo giảm giác thoải mái nhất khi mặc
+         <br>- Form basic lịch sự, che khuyết điểm, tôn dáng người mặc
+         <br>- Đa dạng màu sắc vải và màu chuyển nhiệt, doanh nghiệp có thể thoải mái lựa chọn
+         <br>- Doanh nghiệp đang phân vân về lựa chọn chất liệu đồng phục thì hãy đến với HỒNG HÀ để được tư vấn những sản phẩm tuyệt vời cho doanh nghiệp của mình nhé!
+         <br></p>
+         <br><p>TẦM QUAN TRỌNG CỦA LOGO ĐỐI VỚI DOANH NGHIỆP?
+         <br>- Tạo ấn tượng mạnh mẽ trong tâm trí khách hàng, thể hiện cá tính riêng của thương hiệu, mỗi Logo được tạo ra đều có ý nghĩa đại diện cho bộ mặt của doanh nghiệp. Mẫu đồng phục với thiết kế làm nổi bật lên được logo sẽ giúp đối tác và khách hàng dễ dàng nhận diện thương hiệu ngay từ cái nhìn đầu tiên.
+         <br>- Hiểu được giá trị quan trọng của Logo vậy nên trong mỗi thiết kế của HỒNG HÀ Uniform đều được đầu tư nghiên cứu để cho ra những chiếc áo đồng phục làm nổi bật logo - tạo dấu ấn thương hiệu riêng cho doanh nghiệp. 
+         <br>- Nổi bật thương hiệu trên từng đường thêu với công nghệ thêu hiện đại nhất của HỒNG HÀ 
+         <br>- Hình thêu sắc nét- Hình in đạt chuẩn
+         <br>- Độ bền cao chuẩn chỉnh theo đúng tỉ lệ
+         <br>- Đáp ứng mọi tiêu chí thẩm mỹ mà doanh nghiệp yêu cầu
+         <br>HỒNG HÀ đã đầu tư, nghiên cứu, ứng dụng công nghệ thêu & in logo hiện đại nhất trên thị trường để tạo ra những hình ảnh sắc nét nhất, bền bỉ nhất để đem lại sản phẩm có giá trị cao cho doanh nghiệp.
+         <br></p>
+         <br><p>‼️ Vẫn là thiết kế kiểu dáng basic được nhấn nhá bằng tone màu tương phản ở phần cổ áo, tạo nên một diện mạo trẻ trung và hiện đại giúp doanh nghiệp bắt nhịp xu hướng đồng phục mới nhất
+         <br>‼️ Điểm cộng hoàn hảo từ HỒNG HÀ mà doanh nghiệp không thể bỏ lỡ:
+         <br>‼️ Thoải mái thiết kế đường chuyển nhiệt, đường phối màu để phù hợp với doanh nghiệp
+         <br>‼️ Chất cao cấp thoáng mát, mềm mịn tạo giảm giác thoải mái nhất khi mặc
+         <br>‼️ Form basic lịch sự, che khuyết điểm, tôn dáng người mặc
+         <br>‼️ Đa dạng màu sắc vải và màu chuyển nhiệt, doanh nghiệp có thể thoải mái lựa chọn
+         <br>‼️ Doanh nghiệp thoải mái lựa chọn với bảng vải và màu chuyển nhiệt đa dạng màu sắc
+         <br>Doanh nghiệp đang băn khoăn về lựa chọn đồng phục thì hãy đến với HỒNG HÀ Uniform để được tư vấn tuyệt vời cho doanh nghiệp của mình nhé!
+         <br></p>
+         <br><p>- Tùy thuộc vào lĩnh vực mà doanh nghiệp hoạt động sẽ có những yếu tố nhận diện thương hiệu khác nhau theo phong cách mà doanh nghiệp hướng đến.
+         <br>- Thấu hiểu nỗi niềm của doanh nghiệp mà HỒNG HÀ đặc biệt chú trọng tới điểm nhấn tinh tế để tạo điểm nhấn riêng cho doanh nghiệp, nâng cao hình ảnh và giá trị thương hiệu.
+         <br>Với công nghệ thêu logo hiện đại nhất thị trường may mặc đã được Hồng Hà ứng dụng đảm bảo đầy đủ các tiêu chí mà doanh nghiệp đang tìm kiếm.
+         <br>- Hình thêu sắc nét - chuẩn chỉnh
+         <br>- Độ bền cao, bảo quản dễ dàng
+         <br>- Tạo điểm nhấn mạnh mẽ cho doanh nghiệp
+         <br>- Đáp ứng  tiêu chí thẩm mỹ mà doanh nghiệp yêu cầu
+         <br>Hãy liên hệ ngay để trở thành được tư vấn mẫu áo đồng phục riêng cho doanh nghiệp của bạn!
+         <br>HỒNG HÀ Uniform  trân trọng gửi tặng quý khách hàng:
+         <br>- Miễn phí hoàn toàn thiết kế logo cho quý doanh nghiệp (nếu cần)
+         <br>- Miễn phí thiết kế kiểu dáng áo đến khi khách hàng vừa lòng
+         <br>- Miễn phí giao hàng trên toàn quốc
+         <br></p>
+         <br><p>LỰA CHỌN MÀU SẮC PHÙ HỢP VỚI LOGO
+         <br>- Để có được chiếc áo đồng phục sang-xịn mang màu sắc thương hiệu riêng biệt nhưng vẫn đảm bảo được yếu tố đồng điệu thì việc lựa chọn màu sắc áo phù hợp với logo là điều vô cùng quan trọng đối với mỗi doanh nghiệp. 
+         <br>- Hiểu được những giá trị to lớn ấy mà HỒNG HÀ Uniform đã đặc biệt nghiên cứu và chú trọng đến từng yếu tố nhỏ nhất từ chất liệu, form dáng, màu sắc đến từng đường may, mũi chỉ một cách tinh tế và chỉn chu nhất đến tay khách hàng.
+         <br>- Nếu doanh nghiệp của bạn đang băn khoăn về việc chọn lựa màu sắc thì hãy tham khảo ngay những gợi ý sau đây của HỒNG HÀ nhé!
+         <br></p>
+         <br><p>10 năm kinh nghiệm hoạt động sản xuất đồng phục cùng thế mạnh về chất lượng cũng như uy tín trên thị trường, HỒNG HÀ không ngừng khẳng định vị thế thương hiệu trên từng đối tượng và tạo niềm tin, sự hài lòng đối với khách hàng. 
+         <br>- ĐỒNG PHỤC HỒNG HÀ ĐỒNG PHỤC DOANH NGHIỆP- CHẤT LƯỢNG VẢI TỐT NHẤT- HÌNH IN/THÊU ĐẸP NHẤT- GIÁ RẺ NHẤT THỊ TRƯỜNG
+         <br></p>
+         <br><p>YẾU TỐ TẠO NÊN SỰ KHÁC BIỆT CỦA ĐỒNG PHỤC HỒNG HÀ
+         <br>-  Yếu tố khác biệt giúp HỒNG HÀ giữ vững được vị thế, tạo dựng được niềm tin đối với khách hàng trong suốt 10 năm qua chính là luôn nỗ lực không ngừng đem tới giá trị cốt lõi, những sản phẩm ngày càng chất lượng tới tay khách hàng.
+         <br>-  Luôn đi đầu về thời trang đồng phục doanh nghiệp
+         <br>-  Đa dạng chất liệu phù hợp với từng doanh nghiệp
+         <br>-  Đảm bảo sản phẩm đạt độ hoàn thiện cao nhất
+         <br>-  Đề cao trải nghiệm khách hàng: Hộp quà tặng sang trọng, chăm chút từng sản phẩm
+         <br>-  Nhiều dịch vụ ưu đãi gửi tới khách hàng
+         <br>-  Mỗi đơn hàng, mỗi sự tin tưởng lựa chọn của doanh nghiệp, đơn vị, đoàn thể là một dấu ấn khẳng định vị thế cho thương hiệu HỒNG HÀ: sản xuất bằng tâm huyết, bằng chất lượng sản phẩm và dịch vụ tốt nhất chính là chìa khóa để xây dựng thương hiệu ngày càng lớn mạnh.
+         <br></p>
+         <br><p>Chất liệu được doanh nghiệp ưa chuộng nhất 
+         <br>  Là chất liệu cao cấp được nhiều doanh nghiệp yêu thích và lựa chọn nhiều nhất tại HỒNG HÀ, với công nghệ dệt độc quyền mang lại những chiếc áo có chất lượng: 
+         <br>-  Bề mặt vải dệt theo thế hệ mới. Mặt dệt mịn, đẹp, không xù, hiệu ứng chuyển màu độc đáo
+         <br>-  Điều hòa nhiệt độ cơ thể, siêu thoáng, mát. Co giãn thoải mái theo chuyển động cơ thể - Chống ra mùi cơ thể, khử khuẩn hiệu quả
+         <br>-  Sản phẩm đứng dáng, ít bai gião, mặt vải bền chắc
+         <br> Bảng màu vải đa dạng đảm bảo đáp ứng được nhu cầu của doanh nghiệp
+         <br>-  Đồng phục chất lượng bắt đầu từ tấm vải chất lượng! Liên hệ ngay để các chuyên viên tư vấn của Đồng Phục HỒNG HÀ tư vấn cho quý khách hàng sản phẩm tốt và phù hợp nhất
+         <br></p>
+         <br><p>
+         <br>UNIFORM FOR ALL
+         <br>- Lắng nghe và thấu hiểu những mong muốn của doanh nghiệp là tìm được một mẫu đồng phục phù hợp với tất cả nhân sự HỒNG HÀ ra mắt Uniform For All. 
+         <br>- BST hướng tới sự phù hợp với mọi vóc dáng và đề cao tính ứng dụng cho đồng phục đem tới sự tự tin nhất cho người mặc. UNIFORM FOR ALL Đem tới một tinh thần đoàn kết, thống nhất nhưng không làm mất đi phong thái sang trọng, lịch lãm, cuốn hút với những điểm riêng không thể tìm thấy ở bất kỳ mẫu thiết kế nào. Thời trang đồng phục là thời trang dành cho mọi người
+         <br></p>
+         <br><p>UPDATE XU HƯỚNG THIẾT KẾ MẪU ĐỒNG PHỤC
+         <br>- Đồng phục không bỏ qua xu hướng, mang tới vẻ đẹp đoàn kết, thống nhất nhưng không mất đi tính thời trang hiện đại với HỒNG HÀ Uniform. 
+         <br>- Độc đáo trong thiết kế với cảm hứng thời trang Pháp tạo nên vẻ đẹp sang trọng, thanh lịch. 
+         <br>- Thời trang tối giản tập trung sự cách điệu vào các chi tiết nhỏ, phối thân với những đường cutout gọn gàng, cùng với màu sắc trang nhã, trendy mang lại dáng vẻ vừa thanh lịch vừa năng động cho người mặc.
+         <br>- Đồng phục là sự hiện diện của thời trang chứ không phải trang phục bắt buộc nơi công sở. HỒNG HÀ với mong muốn để bất kì nhân sự nào cũng đều tự tin khi mặc đồng phục, tự hào đem thương hiệu đi xe hơn văn phòng.
+         <br></p>
+         <br><p>-  Khó khăn lớn nhất trong việc thiết kế một mẫu đồng phục là có thể đảm bảo độ phù hợp với số đông. 
+         <br>-  Khác với thời trang bán lẻ có thể được lựa chọn dựa theo niềm yêu thích và phong cách của mỗi cá nhân. Mỗi mẫu thiết kế của đồng phục buộc phải đảm bảo độ phù hợp cao với đa dạng cá tính, phong cách, vóc dáng, lứa tuổi.. của nhân sự doanh nghiệp.
+         <br>-  Không lấy một tiêu chuẩn cụ thể đại diện cho số đông, Vẻ đẹp của sự tự tin mẫu đồng phục được thiết kế hướng đến nâng cao tối đa sự phù hợp, tôn lên mọi vóc dáng để bất cứ nhân sự nào cũng đều tự tin khi diện lên mình màu áo đồng phục của doanh nghiệp.
+         
+         <br></p>
+         <br><p>UNIFORM FOR ALL
+         <br>- Để bất cứ nhân viên nào cũng tự tin khi mặc đồng phục!
+         <br>- Trong bất kì doanh nghiệp nào cũng có đa dạng các nhân sự khác nhau về: giới tính, vóc dáng , phong cách… Thế nên không thể lấy một tiêu chuẩn để đại diện cho số đông, đồng phục doanh nghiệp đòi hỏi phải có độ phù hợp cao với mọi người. 
+         <br>- HỒNG HÀ Uniform ra mắt bộ sưu tập UNIFORM FOR ALL có độ phù hợp cao nhất với mọi người. Đem tới một tinh thần đoàn kết, thống nhất nhưng không làm mất đi phong thái sang trọng, lịch lãm, cuốn hút với những điểm riêng không thể tìm thấy ở bất kỳ mẫu thiết kế nào.
+         <br></p>
+         <br><p>- Đoàn kết của một tổ chức ảnh hưởng rất lớn tới việc doanh nghiệp đó có thể lớn mạnh hay không. 
+         <br>- Không chỉ là sự đồng điệu về mặt trang phục hay yếu tố bên ngoài, đồng phục là điểm kết nối giữa các thành viên trong tổ chức với nhau. 
+         <br>- Hơn hết, vẻ đẹp của đồng phục không chỉ được đánh giá bằng tính đồng bộ mà còn nằm ở tính thời trang ứng dụng, sự tự tin của người diện chúng và đặc biệt là truyền tải được thông điệp, nhận diện được thương hiệu cho doanh nghiệp. 
+         <br>- Gắn kết tinh thần đoàn kết, mang thương hiệu doanh nghiệp đi xa hơn văn phòng làm việc, mang lại sự tự tin và tự hào của người mặc là những gì đồng phục thời trang cần có. 
+         <br>- Trong hơn 10 năm thành lập và phát triển, HỒNG HÀ tự hào là đơn vị hàng đầu trong lĩnh vực sản xuất và thiết kế đồng phục doanh nghiệp. Với những gì đang có HỒNG HÀ tự tin sẽ mang lại những bộ đồng phục phù hợp nhất tới doanh nghiệp của bạn.
+         <br></p>
+         <br><p>4 điểm nổi bật doanh nghiệp không thể bỏ qua
+         <br>-  Là mẫu đồng phục thời trang mới và duy nhất trên thị trường trên thị trường, tập trung vào kỹ thuật giúp áo đứng form và hack dáng. 
+         <br>-  Truyền thông thương hiệu được lồng ghép trong bộ đồng phục đơn giản, tinh tế nhưng vô cùng sang trọng giúp nâng tầm giá trị doanh nghiệp, tạo ấn tượng với khách hàng. 
+         <br>-  Sử dụng form áo cổ điển không quá ôm sát cơ thể gây khó chịu mà được cắt may với độ rộng vừa đủ làm tôn dáng, phù hợp với mọi thể trạng cơ thể. 
+         <br>-  Chất liệu với công nghệ dệt thế hệ mới, dày dặn nhưng vô cùng thoáng mát, thấm hút mồ hôi loại bỏ cảm giác nóng bí. Áo bền dai, không bao dãn dão, đặc biệt  hỗ trợ chống ra mùi cơ thể, khử khuẩn hiệu quả. 
+         <br>-  Nhắn ngay cho HỒNG HÀ để nhận được ưu đãi và trở thành một trong những doanh nghiệp đầu tiên diện thời trang nhé!
+         <br></p>
+         <br><p>Đồng phục HỒNG HÀ Thay đổi góc nhìn đồng phục
+         <br>?? Đồng phục là gò bó, thiếu thẩm mỹ và kén dáng? 
+         <br>Đó là chuyện của ngày xưa, HỒNG HÀ đồng phục chưa bao giờ lại đẹp, tinh tế và dễ mặc đến vậy.
+         <br>-  Chú trọng vào 3 yếu tố CHẤT LƯỢNG - THỜI TRANG- NỔI BẬT của HỒNG HÀ Uniform chắc chắn sẽ thay đổi góc nhìn đồng phục.
+         <br>-  CHẤT LƯỢNG vàng với công nghệ kéo sợi vải dài và bền bỉ hơn 2 - 3 lần
+         <br>-  THỜI TRANG hiện đại thanh lịch dễ mặc phù hợp với mọi độ tuổi, giới tính và dáng người. Lên dáng đứng form vừa vặn giúp người mặc tự tin
+         <br>-  Bảng màu đầy đủ, doanh nghiệp lựa chọn màu sắc phù hợp để làm NỔI BẬT được thương hiệu.
+         <br>Liên hệ với HỒNG HÀ để được tư vấn mẫu đồng phục thời trang cho doanh nghiệp của mình.
+         <br></p>
+         <br><p>Thời trang nâng tầm thương hiệu
+         <br>Một trong những yếu tố góp phần vào bộ nhận diện thương hiệu doanh nghiệp một cách rõ ràng, đơn giản chính là đồng phục. 
+         <br>- Một đồng phục đẹp sẽ để lại ấn tượng chuyên nghiệp trong mắt khách hàng và là niềm tự hào của nhân viên, mang giá trị thương hiệu doanh nghiệp vươn xa. 
+         <br>-  HỒNG HÀ thiết kế hiện đại, đa màu sắc mang đến cho doanh nghiệp diện mạo chuyên nghiệp, trẻ trung, sáng tạo. 
+         <br>-  Chất liệu cao cấp được dệt theo mắt chim thế hệ mới, mềm mịn, thoáng mát co giãn 4 chiều, tạo hiệu ứng chuyển màu độc đáo. 
+         <br>-  Dáng lịch sự nhưng không kém phần trẻ trung. Phù hợp với mọi lứa tuổi, giới tính, phong cách. 
+         <br>-  Bảng màu đa sắc doanh nghiệp có thể lựa chọn tùy ý phù hợp với màu thương hiệu của mình. 
+         <br>Cùng HỒNG HÀ nâng tầm giá trị thương hiệu, liên hệ để được tư vấn chi tiết!
+         <br></p>
+         <br><p>30.000 Sản Phẩm Mỗi Tháng, HỒNG HÀ Làm Gì Để Đảm Bảo Chất Lượng Từng Đơn Hàng?
+         <br>-  Không ngừng đầu tư nghiên cứu và phát triển công nghệ, nguyên - vật liệu tới tay nghề HỒNG HÀ tự tin mang đến cho Quý khách hàng sản phẩm chất lượng nhất.
+         <br>-  Ứng dụng và sử dụng công nghệ hiện đại, cam kết cho ra những sản phẩm có hình in thêu sắc nét, đều màu, đúng tỷ lệ.
+         <br>-  Công nghệ cao, sức sản xuất lớn giúp tối ưu tối đa chi phí và thời gian may làm giảm giá thành sản phẩm, tiết kiệm chi phí, đảm bảo tối đa nhu cầu cho doanh nghiệp. 
+         <br>Đến với HỒNG HÀ - Đến với chất lượng! Liên hệ ngay để được tư vấn mẫu đồng phục riêng cho doanh nghiệp của mình nhé!
+         <br></p>
+         <br><p>ĐỒNG PHỤC HỒNG HÀ - HÀNH TRÌNH TIÊN PHONG TRONG NGÀNH ĐỒNG PHỤC
+         <br>- Không ngừng sáng tạo để đem tới những sản phẩm chất lượng nhất
+         <br>- Với tôn chỉ mang những sản phẩm chất lượng nhất đến tay khách hàng, HỒNG HÀ luôn đầu tư nghiên cứu và phát triển từ nguồn nguyên vật liệu, các mẫu mã đến nâng cao tay nghề và công nghệ kỹ thuật. Đặc biệt, luôn chú trọng vào trải nghiệm khách hàng. Thỏa mãn khách hàng từ việc nghiên cứu nhu cầu. Chìa khóa để khách hàng tin yêu và gắn bó với doanh nghiệp còn là việc tạo ra “giá trị trọn đời” cho họ thông qua các dịch vụ và trải nghiệm mua hàng.
+         <br>- Với hơn 10 năm kinh nghiệm hoạt động sản xuất đồng phục, Đồng phục HỒNG HÀ không ngừng khẳng định vị thế thương hiệu đến với từng khách hàng. 
+         <br>Đến với HỒNG HÀ - Đến với chất lượng! 
+         <br></p>
+         <br><p>ĐỒNG PHỤC CAO CẤP NÂNG TẦM GIÁ TRỊ DOANH NGHIỆP
+         <br>Đồng Phục HỒNG HÀ không ngừng đổi mới & nâng cao chất lượng cũng như đa dạng mẫu mã sản phẩm.
+         <br>Luôn update những mẫu mới, kiểu sáng, màu sắc mới để khách hàng có nhiều lựa chọn hơn làm tăng độ thẩm mĩ cũng như sự khác biệt trên chiếc đồng phục cho doanh nghiệp bạn. 
+         <br>Cùng HỒNG HÀ điểm qua một số mẫu áo được nhiều doanh nghiệp lựa chọn.
+         <br></p>
+         <br><p>- Đơn Hàng Của Đồng Phục HỒNG HÀ Luôn Được Giao Nhanh Chóng & Đúng Hạn
+         <br>HỒNG HÀ luôn có những lợi thế để đem đếm lợi ích khách hàng tốt nhất đảm bảo đơn hàng luôn được sản xuất nhanh chóng, đúng hạn nhưng vẫn đảm bảo quy trình kiểm định chất lượng kĩ càng trước khi tới tay khách hàng. 
+         <br>- Đồng Phục HỒNG HÀ đem đến dịch vụ miễn phí thiết kế với nhà máy sản xuất khép kín, chất lượng đầu ra sản phẩm luôn hoàn hảo. Nhắn ngay để các chuyên viên tư vấn của HỒNG HÀ tư vấn cho doanh nghiệp của bạn mẫu áo phù hợp.
+         <br></p>
+         <br><p>NHỮNG LỢI THẾ KHI ĐẶT ÁO TẠI ĐỒNG PHỤC HỒNG HÀ
+         <br>Khi đặt áo tại HỒNG HÀ, khách hàng sẽ nhận được rất nhiều lợi thế:
+         <br>- Chuyên môn tay nghề cao 
+         <br>- Tối ưu quy trình mang lại nhiều lợi ích cho khách hàng
+         <br>- Sản phẩm chất lượng tốt được nhiều khách hàng tin tưởng
+         <br>Đồng phục HỒNG HÀ với quy trình in may khép kín, trình tự chuẩn chỉ, rõ ràng chắc chắn sản phẩm luôn làm Quý khách hàng hài lòng.
+        
+         <br></p>
+         <br><p>XU HƯỚNG THIẾT KẾ MẪU ĐỒNG PHỤC DOANH NGHIỆP
+         <br>- Doanh nghiệp bạn đang phân vân chưa biết thiết thế đồng phục như nào cho phù hợp?
+         <br>- Chưa định vị được màu sắc thương hiệu
+         <br>- Chưa chọn được thiết kế phù hợp
+         <br>Thì chắc chắc bạn không thể bỏ qua sản phẩm của Đồng Phục HỒNG HÀ 
+         <br>- Miễn phí thiết kế từ logo đến kiểu dáng áo & giao hàng toàn quốc
+         <br>- Chất lượng vải cao cấp
+         <br>- Logo in thêu chất lượng, sắc nét
+         <br>- Nhà máy sản xuất khép kín, chất lượng đầu ra sản phẩm luôn hoàn hảo
+         <br>- Bảo hành in ấn yên tâm trao trọn niềm tin</p>
+         <br><p>- Trải Nghiệm Tham Quan Xưởng May Đồng Phục Của Đồng Phục HỒNG HÀ
+         <br>Với Quy mô xưởng 10.000m2 được xây dựng theo quy chuẩn, sạch sẽ, phân luồng từng bộ phận. HỒNG HÀ tự tin mang đến cho Quý khách hàng sản phẩm chất lượng. 
+         <br>- Nhà máy sản xuất quy trình khép kín từ may - in - thêu với tổng diện tích trên 10.000 m2 
+         <br>- Đội ngũ công nhân giàu kinh nghiệm, được tuyển dụng và đào tạo bài bản, chuyên môn cao
+         <br>- Năng lực sản xuất hơn 300.000 sản phẩm/tháng 
+         <br>- Máy móc, trang thiết bị nhập khẩu hiện đại, công nghệ tiên tiến nhất 
+         <br>- Với trên 10 năm kinh nghiệm trong ngành may mặc và cung cấp sản phẩm đồng phục cho trên 100.000 doanh nghiệp tại Việt Nam.
+         <br>Chúng tôi cam kết mang đến các sản phẩm tốt nhất, bền nhất, đẹp nhất và phù hợp với các khách hàng
+         <br></p>
+         <br><p>Những Màu Áo Hot Đang Được Quan Tâm Nhiều Nhất Mà Không Nên Bỏ Qua 
+         <br>- Nhanh tay cmt or ib cho Đồng phục HỒNG HÀ để nhận những phần ưu đãi cho doanh nghiệp bạn
+         <br>KHI ĐẾN VỚI ĐỒNG PHỤC HỒNG HÀ 
+         <br>- Thiết kế nổi bật, ấn tượng, mang đậm dấu ấn thương hiệu
+         <br>- Chất liệu cao cấp, co giãn, mềm mịn, thoáng mát với công nghệ dệt độc quyền
+         <br>- Màu sắc đa dạng, phối màu bắt mắt với gần 100 tông màu khác nhau
+         <br>- Đường may tỉ mỉ, chắc chắn
+         <br>- Hình in/thêu sắc nét, bền màu
+         <br>- Tạo dựng hình ảnh chuyên nghiệp, ghi đậm dấu ấn trong lòng khách hàng ngay từ bộ đồng phục chất lượng!
+         <br></p>
+         <br><p>- Mẫu áo doanh nghiệp với chất liệu vải chống nhăn, bề mặt nhẵn mịn, không xù lông, bề màu là sự lựa chọn hoàn hảo nhất cho công ty, doanh nghiệp của bạn.
+         <br>- Vì sao bạn nên lựa chọn đặt đồng phục tại HỒNG HÀ 
+         <br>- HỒNG HÀ cung cấp rất nhiều giải pháp đồng phục với đa dạng kiểu dáng, chất liệu
+         <br>- Mức chi phí hợp lý, đáp ứng nhu cầu của tất cả các khách hàng, doanh nghiệp
+         <br>- Đội ngũ nhân viên được đều đào tạo bài bản và có nhiều kinh nghiệm trong ngành may mặc, đảm bảo sản phẩm chất lượng
+         <br></p>
+         <br><p>Đồng Phục Cao Cấp - Sang Trọng - Thanh Lịch
+         <br>- Mẫu áo với chất liệu vải cao cấp nhất hiện nay: chống nhăn, bề mặt nhẵn mịn, ít xù lông chắc chắn là sự lựa chọn hoàn hảo nhất cho công ty, doanh nghiệp của bạn
+         <br>- Vì sao bạn nên lựa chọn đặt đồng phục doanh nghiệp tại HỒNG HÀ:
+         <br>- HỒNG HÀ cung cấp rất nhiều giải pháp đồng phục với đa dạng kiểu dáng, chất liệu
+         <br>- Mức chi phí hợp lý, đáp ứng nhu cầu của tất cả các khách hàng, doanh nghiệp
+         <br>- Đội ngũ nhân viên được đều đào tạo bài bản và có nhiều kinh nghiệm trong ngành may mặc, đảm bảo sản phẩm chất lượng
+         <br></p>
+         <br><p>CHUYÊN NGHIỆP - ĐỒNG BỘ VỚI MẪU ÁO ĐỒNG PHỤC
+         <br>- Bên cạnh mang đến cho khách hàng mức giá ưu đãi nhất, Đồng Phục HỒNG HÀ đặt tiêu chí về chất lượng sản phẩm và dịch vụ khách hàng lên hàng đầu.
+         <br>- Áo thun đồng phục tại HỒNG HÀ có gì ?
+         <br>- Chất liệu vải cao cấp, thoáng mát, độ bền cao.
+         <br>- Kiểu dáng áo thanh lịch.
+         <br>- Logo/ in thêu đẹp mắt, tinh xảo.
+         <br>- Hỗ trợ thiết kế/ may mẫu theo yêu cầu.
+         <br>- Giao hàng đúng thời gian.</p>
+         <br><p>ĐỒNG PHỤC CHẤT LƯỢNG - THƯƠNG HIỆU GIÁ TRỊ
+         <br>Một chiếc áo đồng phục phù hợp và chất lượng sẽ vẽ lên hình ảnh doanh nghiệp uy tín và chuyên nghiệp trong mắt mọi người. 
+         <br>- Bởi vậy hãy tạo ấn tượng tốt cho khách hàng bằng vẻ ngoài đẹp và chuyên nghiệp của toàn bộ nhân viên công ty với đồng phục HỒNG HÀ. 
+         <br>- Với thiết kế hiện đại, màu sắc đa dạng, mang đến cho doanh nghiệp diện mạo trẻ trung, sáng tạo:
+         <br>- Chất liệu vải cao cấp, thoáng mát, co giãn 4 chiều nhẹ nhàng dễ chịu khi mặc.
+         <br>- Dáng đứng form, lịch sự, hợp thời trang.
+         <br>- Đường may tinh tế, sắc xảo.
+         <br></p>
+         <br><p>Tại HỒNG HÀ, chất lượng sản phẩm luôn là tiêu chí đặt ra hàng đầu trong quá trình sản xuất với kinh nghiệm 10 năm trong ngành sản xuất đồng phục.
+         <br>Chúng tôi tự tin Đồng Phục HỒNG HÀ sẽ là cái tên đầu tiên mà bạn nghĩ tới khi muốn gửi gắm một bộ đồng phục chuyên nghiệp và chất lượng cho doanh nghiệp của mình:
+         <br>- Miễn phí tư vấn & thiết kế
+         <br>- Chuẩn form, đứng dáng
+         <br>- Logo sắc nét
+         <br>- Thời gian giao hàng nhanh chóng
+         <br></p>
+         <br><p>Đồng HỒNG HÀ Việt xin giới thiệu danh mục sản phẩm dành cho tất cả các doanh nghiệp, cá nhân.
+         <br>- Đồng phục sự kiện
+         <br>- Đồng phục nhân viên
+         <br>- Đồng phục quán ăn, cà phê
+         <br>- Đồng phục thể thao
+         <br>- Đồng phục lớp, gia đình 
+         <br>- Đội ngũ thiết kế tại Đồng Phục HỒNG HÀ sẽ giúp khách thiết kế hoàn toàn miễn phí, đảm bảo phù hợp với đặc trưng của từng doanh nghiệp và hỗ trợ chỉnh sửa đến khi bạn hài lòng. 
+         <br>- Bạn đang cần đồng phục chất lượng cao giá thành hợp lí? Hãy để HỒNG HÀ giúp bạn nhé!
+         <br></p>
+         <br><p>TẠI SAO BẠN NÊN CHỌN ĐỒNG PHỤC
+         <br>- Chiếc áo được yêu thích và lựa chọn bởi những ưu điểm vượt trội:
+         <br>- Kết hợp hoàn hảo giữa sơ mi ngắn tay và áo thun cổ điển
+         <br>- Thiết kế sang trọng, thanh lịch
+         <br>- Thoải mái, thoáng mát, với mọi yêu cầu công việc
+         <br>- Mang lại phong thái chuyên nghiệp
+         <br>- Thích hợp để sử dụng làm đồng phục cho tất cả các ngành nghề, lĩnh vực.
+         <br>- Du lịch, khách sạn, nhà hàng, … 
+         <br></p>
+         <br><p>ĐỒNG PHỤC THỜI TRANG CHUẨN GU CÁ TÍNH
+         <br>#ĐồngPhục mang đến cho khách hàng những sản phẩm cực kỳ dễ phối, tạo nên sự thuận tiện vượt bậc nhất cho phong cách thời trang doanh nghiệp.
+         <br>- Sản phẩm sẽ phù hợp cho những cô nàng không thích sự gò bó, hay những chàng trai với những phong cách cá tính nhất. 
+         <br>- Ngoài ra, những mẫu áo cao cấp mềm mịn, độ thấm hút cao, tạo nên sự thoải mái và tự tin nhất dành cho mọi lứa tuổi.
+         <br>- Sản phẩm đang được khách hàng quan tâm và hài lòng nhất
+         <br>- Hiện đang được sản xuất trên 30.000 in thành phẩm
+         <br>- Chất lượng gia tăng giá trị sử dụng
+         <br>- Cực Kỳ ƯU ĐÃI khi Đặt Hàng Từ 10 Sản Phẩm
+         <br>- In thêu MIỄN PHÍ
+         <br>- Miễn Phí thiết kế mẫu
+         <br></p>
+         <br><p>NHỮNG ĐIỀU CẦN CÓ CỦA MỘT NHÂN VIÊN
+         <br>- Đối với việc làm Nhân viên, thái độ quan trọng hơn hết
+         <br>- Hãy luôn mỉm cười với khách hàng
+         <br>- Kỹ năng giao tiếp tốt
+         <br>- Nhanh nhẹn, xử lý tình huống tốt
+         <br>- Nắm rõ, thuộc lòng hết các thực đơn
+         <br>- Khả năng chịu áp lực cao
+         <br>- Cẩn thận, chu đáo, tỉ mỉ
+         <br>Ngoài ra, một bộ đồng phục đẹp và chỉnh chu cũng là điều cần thiết
+         <br>- Giúp cho nhân viên phục vụ tự tin hơn
+         <br>- Thể hiện sự chuyên nghiệp cho dịch vụ của bạn
+         <br>- Để lại ấn tượng và cảm tình cho khách hàng
+         <br>- Nhận diện thương hiệu qua màu sắc hoặc logo trên bộ đồng phục.
+         <br>- Tiết kiệm chi phí mua sắm quần áo khi đi làm
+         <br>- Không phải tốn thời gian suy nghĩ rằng hôm nay mình sẽ mặc gì
+         <br>- ĐỒNG PHỤC HỒNG HÀ - Giá Trị Tạo Nên Thương Hiệu
+         <br></p>
+         <br><p> Đồng Phục HỒNG HÀ 
+         <br>- Quà Tặng Doanh Nghiệp
+         <br>- Nhận Đặt Từ 10 Sản Phẩm
+         <br>- Bạn muốn có #Đồng Phục nhân viên, #Quà tặng doanh nghiệp ..Bạn chưa chọn được nhà cung cấp Uy Tín
+         <br>- BẠN LO SỢ CÔNG TY BỎ RA 1 SỐ TIỀN LỚN NHƯNG: 
+         <br>- Nhận về sản phẩm không như ý muốn ?
+         <br>- Không được tham khảo trực tiếp chất liệu vải ?
+         <br>- Size – form áo không chuẩn 
+         <br>- In thêu logo thì tính thêm phí ?
+         <br>- Không được hỗ trợ CSKH, hậu mãi về sau ?
+         <br>- Dù bạn chỉ đặt 10 sản phẩm
+         <br>- Đồng Phục HỒNG HÀ giải quyết tất cả nỗi lo của bạn.</p>
+         <br><p>- CHẤT LIỆU QUYẾT ĐỊNH TẤT CẢ
+         <br>- Với tiết trời nóng bức, để lựa chọn một item thỏa tiêu chí sự lịch lãm, chỉn chu mà vẫn mong sự thoải mái, dễ chịu, chỉ có thể là Đồng Phục.
+         <br>- Nếu trong môi trường công sở cần sự “thoải mái nhưng vẫn lịch thiệp” thì những chiếc sơ mi dài tay – ngắn tay, chiếc quần tây thoải mái chính là sự lựa chọn hoàn hảo.
+         <br>- Chất liệu áo sơ mi: kate, cotton, bamboo
+         <br>- Chất liệu quần tây: kaki, cotton..
+         <br>- Chất liệu áo thun: poly, hạt mè, cá sấu, cotton…
+         <br></p>
+         <br><p>- Anh rất tốt thế nhưng … phải chuyên nghiệp lên nha 
+         <br>- Em rất tiếc thế nhưng … mặc đồng phục đi anh
+         <br>GIÁ NHƯ MÌNH ĐẶT ĐỒNG PHỤC SỚM HƠN”
+         <br>ĐỒNG PHỤC DOANH NGHIỆP
+         <br>- Giải quyết nỗi lo chuyên nghiệp
+         <br>- Lợi ích của việc mặc đồng phục:
+         <br>- Chuyên nghiệp hơn, hiện đại hơn
+         <br>- Bắt mắt hơn, ấn tượng hơn
+         <br>- Nhận diện thương hiệu tốt hơn
+         <br>- Nhiều người biết đến - cải thiện doanh thu
+         <br>- Khẳng định vị thế doanh nghiệp
+         <br>ĐỒNG PHỤC HỒNG HÀ - Giá trị tạo nên thương hiệu
+         <br>- Chuyên các loại đồng phục văn phòng - công sở - nhà hàng – khách sạn – karaoke,...
+         <br>- Chỉ nhận đặt hàng từ 10 sản phẩm
+         <br>- Hỗ trợ tư vấn thiết kế MIỄN PHÍ
+         <br>- Xưởng sản xuất quy mô lớn và khép kín
+         <br>- Hỗ trợ may áo mẫu trước khi sản xuất hàng loạt
+         <br>- Cam kết uy tín về chất lượng sản phẩm
+         <br>- Giao hàng “siêu tốc” 
+         <br>Liên hệ ngay để được nhận những ưu đãi sớm nhất nhé</p>
+         <br><p>TẠI SAO ĐỒNG PHỤC HỒNG HÀ LUÔN ĐƯỢC ƯA CHUỘNG ĐẶT HÀNG? 
+         <br>Tiêu chí khi khách hàng lựa chọn chúng tôi:
+         <br>- Có bề dày kinh nghiệm về lĩnh vực may mặc đồng phục
+         <br>- Có xưởng sản xuất trực tiếp, không trung gian, không qua gián tiếp
+         <br>- Có chi nhánh tại một số tỉnh thành lớn trong nước: Thành Phố Hồ Chí Minh   Hà Nội – Thái Nguyên
+         <br>- Có trang thiết bị hiện đại rút ngắn thời gian sản xuất và tiết kiệm thời gian 
+         <br>- Có quy trình sản xuất nghiêm ngặt từng công đoạn (chọn - cắt - may - thêu)
+         <br>- Giá cả luôn được niêm yết rõ ràng và công khai cho Khách hàng lựa chọn dịch vụ phù hợp.
+         <br>- Có đội ngũ thiết kế “xịn xò”, thiết kế mọi thứ theo ý của bạn.
+         <br>- Luôn có những chính sách ưu đãi và chiết khấu cho khách hàng
+         <br>ĐỒNG PHỤC HỒNG HÀ - Giá trị tạo nên thương hiệu
+         <br>- Liên hệ ngay với chúng tôi để được tư vấn trực tiếp và nhận ngay các ưu đãi chiết khấu hấp dẫn nhé.
+         <br></p>
+         <br><p>Yếu tố tạo nên bộ #Đồng Phục đẹp
+         <br>Đồng phục là bộ mặt thương hiệu
+         <br>- Cần phải chỉnh chu, lịch sự và chuyên nghiệp
+         <br>- Vậy thì những yếu tố nào là chủ chốt, quan trọng
+         <br>- Phải xác định được lĩnh vực kinh doanh của doanh nghiệp
+         <br>- Thiết kế mẫu đồng phục phù hợp cho doanh nghiệp
+         <br>- Màu sắc phải hài hoà với ngành nghề đang hoạt động.
+         <br>- Form dáng, size số phải vừa vừa vặn với từng nhân viên
+         <br>- Logo và slogan phải ấn tượng, dễ nhớ
+         <br>- Chất liệu và đường may
+         <br>Vậy thì chọn đơn vị sản xuất như thế nào
+         <br>- Nơi cung cấp đồng phục uy tín
+         <br>- Kiểm tra, xác nhận hồ sơ năng lực
+         <br>- Chính sách và tiến độ sản xuất
+         <br>- Giá cả và các số lượng yêu cầu
+         <br>ĐỒNG PHỤC HỒNG HÀ 
+         <br>- Giá trị tạo nên thương hiệu
+         <br>- Tự hào là đơn vị sản xuất đồng phục nằm trong top đồng phục Việt Nam
+         <br>- Hỗ trợ tư vấn và thiết kế MIỄN PHÍ
+         <br></p>
+         <br><p>CHIÊU TRÒ GIỮ CHÂN KHÁCH
+         <br>- NHẬN ĐẶT TỪ 10 SẢN PHẨM
+         <br>Mua càng Nhiều - Giá càng Rẻ
+         <br>- Là một đơn vị lâu năm trong lĩnh vực may mặc.
+         <br>- Thay vì câu khách bằng những chiêu trò hình ảnh bắt mắt, giá cả cực rẻ, mua bán không trung thực.
+         <br>Thì tại Đồng Phục HỒNG HÀ:
+         <br>- Chúng tôi giữ khách bằng chất lượng sản phẩm
+         <br>- Sử dụng những hình ảnh thật tế, hình tự chụp
+         <br>- Luôn sử dụng chất liệu “xịn xò” khi may
+         <br>- Hình in, thêu luôn luôn giữ được sắc nét.
+         <br>- Hỗ trợ may đo trực tiếp cho khách.
+         <br>- Thiết kế mẫu sản phẩm bắt mắt
+         <br>- Form dáng hiện đại
+         <br>- Chiều khách hết cỡ.
+         <br>Các sản phẩm của #ĐồngPhụcHỒNGHÀ:
+         <br>- Đồng phục công sở, văn phòng ,doanh nghiệp
+         <br>- Đồng phục nhà hàng, khách sạn,
+         <br>- Đồng phục karaoke
+         <br>- Đồng phục buồng phòng
+         <br>- Đồng phục đầu bếp
+         <br>- Đồng phục lễ tân, phục vụ</p>
+         <br><p>- 1 chấm là tư vấn -2 chấm là chốt đơn
+         <br>GIÁ SỐC CHỈ TỪ 10 ÁO
+         <br>ĐỒNG PHỤC DOANH NGHIỆP
+         <br>- Đã từ lâu xu hướng kết hợp mặc đồng phục là sử dụng ÁO không còn xa lạ với hầu hết mọi độ tuổi, đem lại sự thoải mái trong di chuyển....
+         <br>- Với phong cách thời trang hiện đại
+         <br>- Chất liệu tốt được chúng tôi chú trọng trong từng sản phẩm đem lại sự năng động thoải mái nhất đến với khách hàng: bambo, cotton, poly, hạt mè…
+         <br>- Đồng Phục Áo Trẻ Trung – Thời Thượng không cần nghĩ nhiều mà vẫn tự tin tỏa sáng.
+         <br></p>
+         <br><p>ĐỒNG PHỤC CÔNG SỞ THÊU LOGO THƯƠNG HIỆU - Hơn 5000 Doanh Nghiệp đã chọn lựa chúng tôi ! 
+         <br>- Nhận Đặt Từ 5 Cái trở Lên - Không Bán Lẻ !!!
+         <br>- Miễn phí thêu logo trên 20 chiếc
+         <br>- Nhiều kiểu dáng, form áo cho từng thương hiệu
+         <br>- Sử dụng loại vải cao cấp
+         <br>- Giao hàng nhanh trên toàn quốc
+         <br></p>
+         <br><p>BEST UNIFORM -ĐỒNG PHỤC CHO MỌI NGƯỜI
+         <br>- Tinh thần đoàn kết trong văn hóa làm việc
+         <br>- Thống nhất trang phục
+         <br>- Thương hiệu trên mọi nẻo đường
+         <br>- Thay đổi tư duy “không thích đồng phục”
+         <br>- Chúng tôi cho ra đời những trang phục #Đồng Phục tốt nhất, hot nhất, đẹp nhất để thay đổi định kiến không hay về đồng phục
+         <br>Đến với chúng tôi:
+         <br>- Size đa dạng cho đến ngoại cỡ
+         <br>- Chất liệu vải thấm hút mồ hôi
+         <br>- Thiết kế miễn phí theo màu chủ đạo thương hiệu
+         <br>- Điểm nhấn nổi bật thương hiệu 
+         <br>- Giao hàng toàn quốc
+         <br>- Hỗ trợ chỉnh sửa sản phẩm
+         <br>Sản phẩm của Đồng Phục Công Sở:
+         <br>- Chúng tôi có đồng phục cho:
+         <br>- Nhà hàng – khách sạn – karaoke
+         <br>- Công sở: khối văn phòng cấp quản lý và BGD
+         <br>- Nhân viên: buồng phòng, quầy bar, lễ tân, an ninh…
+         <br>- Bếp: bếp trưởng, bếp phó, phụ bếp..(set đồng phục bếp)
+         <br>- Combo tạp dề - áo thun - nón
+         <br>Inbox ngay và luôn
+         <br></p>
+         <br><p>Muốn ngon thì ngửi mùi quế
+         <br>Vẫn đang còn ế thì diện đồ nhà em
+         <br>- Đồng phục HỒNG HÀ tự hào là nơi trao gửi thương hiệu của bạn
+         <br>- Dù bạn kinh doanh bất kỳ ngành nghề nào:
+         <br>Nhà hàng – khách sạn
+         <br>- Quán ăn
+         <br>- Karaoke
+         <br>Thì bắt buộc bạn phải tuyển nhân viên hỗ trợ
+         <br>- Nhưng nhân viên mặc trang phục không bắt mắt 
+         <br>- Ảnh hưởng đến “danh tiếng” sản phẩm thương hiệu của bạn ?
+         <br>- Biện pháp ngay tại đây
+         <br>Cung cấp toàn bộ đồng phục cho tất cả dịch vụ kinh doanh:
+         <br>- BGD + quản lý: vest, sơ mi, quần tây, chân váy, áo ghi lê…
+         <br>- Phục vụ: sơ mi, quần tây, áo đồng phục…
+         <br>- Buồng phòng cho nhà hàng – khách sạn
+         <br>- Quầy bar: bartender, vest – ghi lê
+         <br>- Lễ tân: áo dài truyền thống, aó dài cách tân, …..
+         <br>- Bếp: bếp trưởng, bếp phó, phụ bếp…
+         <br>- Team building…..
+         <br>Tất cả dịch vụ có đầy đủ khi khách hàng cần đặt may đồng phục
+         <br>HỒNG HÀ chúng tôi:
+         <br>KHÔNG BÁN LẺ - NHẬN ĐẶT TỪ 10 SẢN PHẨM
+         <br>- Thiết kế mẫu miễn phí
+         <br>- Hỗ trợ tư vấn chất vải
+         <br>- Ưu đãi đơn hàng số lượng lớn
+         <br>- Đặt hàng – ráp mẫu ..được tư vấn cho khách thật chi tiết
+         <br>- May đo kích thước chuẩn form Á – Âu
+         <br>- Chất lượng sản phẩm là mục tiêu phát triển</p>
+         <br><p>ĐỒNG PHỤC GIÁ TẬN XƯỞNG
+         <br>- Đường may chuẩn, cẩn thận, hoàn thiện gọn gàng, không có chỉ thừa mang đến sự sang trọng và cao cấp, chuyên nghiệp cho người mặc.
+         <br>- Chất liệu: Đặc tính co dãn 4 chiều, chống nhăn và thấm hút mồ hôi tốt, tránh bị nhão áo sau nhiều lần giặt.
+         <br>- Logo In - Thêu sắc nét tôn lên giá trị của thương hiệu
+         <br>- Phom dáng áo vừa vặn - tôn dáng mang đến cảm giác thoải mái cho người mặc
+         <br>- Nhận đặt số lượng 10 - 20.000 áo.
+         <br>- Liên hệ ngay với Công Ty May In Đồng Phục HỒNG HÀ để được TƯ VẤN và Hỗ trợ thiết kế và chốt đơn ngay nhé.
+         <br></p>
+         <br><p>ĐỒNG PHỤC THẾ HỆ MỚI
+         <br>Tại sao doanh nghiệp nên lựa chọn sản phẩm ?
+         <br>- Bề mặt vải dệt theo mắt dệt mắt chim thế hệ mới.
+         <br>- Mặt dệt mịn, đẹp, không xù, hiệu ứng chuyển màu độc đáo.
+         <br>- Điều hòa nhiệt độ cơ thể, mặc siêu thoáng và mát.
+         <br>- Chống ra mùi cơ thể, khử khuẩn hiệu quả.
+         <br>- Đứng dáng, ít bai gião.
+         <br>- Co giãn thoải mái theo chuyển động cơ thể.
+         <br>- Màu sắc đa dạng để lựa chọn.
+         <br>KHI ĐẾN VỚI ĐỒNG PHỤC HỒNG HÀ
+         <br>- Miễn phí thiết kế từ logo đến kiểu dáng áo & giao hàng toàn quốc.
+         <br>- Chất lượng vải đa dạng, phong phú.
+         <br>- Logo in thêu chất lượng, sắc nét.
+         <br>- Nhà máy sản xuất khép kín, không qua trung gian
+         <br></p>
+         <br><p>NÓI ĐẾN ĐỒNG PHỤC CHẤT LƯỢNG LÀ NÓI ĐẾN HỒNG HÀ 
+         <br>Đồng Phục HỒNG HÀ là đơn vị hội tụ đầy đủ các yếu tố mà một đối tác cần:
+         <br>-  Đội ngũ nhân viên tư vấn chuyên nghiệp
+         <br>-  Được xem chất liệu thực tế theo yêu cầu
+         <br>-  Thời gian sản xuất nhanh chóng
+         <br>-  Giá tốt tận xưởng, tương xứng với chất lượng.
+         <br>-  Miễn phí thiết kế
+         <br>ĐỒNG PHỤC HỒNG HÀ - Thương hiệu đồng phục doanh nghiệp luôn tự tin mang đến các sản phẩm đồng phục thiết kế chuyên nghiệp dành cho mọi khách hàng!
+         <br></p>
+         <br><p>ÁO ĐỒNG PHỤC ĐA NĂNG
+         <br>Một chiếc áo đồng phục được thiết kế theo phong cách Riêng sẽ trở thành chiếc áo đa năng với nhiều ưu điểm như:
+         <br>- Thành phần cao cổ điển, nhưng đan chắc tay, nhỏ mắt tăng độ bền và lên form tốt hơn.
+         <br>- Hoàn mỹ để nâng cao hình ảnh chuyên nghiệp, cao cấp của doanh nghiệp.
+         <br>- Trọng lượng vải 185gsm siêu nhẹ, mặc thoải mái, dễ chịu. 
+         <br>- Phù hợp cả trong các hoạt động thường ngày.
+         <br>- Bảo hành trọn đời không xù lông, ko phai màu, nhão áo.
+         <br>- Bền bỉ, tiết kiệm.
+         <br>- Co giãn 4 chiều, độ bền rất cao.
+         <br>- Là một chiếc áo lí tưởng cho việc vận động.
+         <br>Liên hệ với Đồng Phục HỒNG HÀ để sở hữu những chiếc áo đồng phục “đa năng” với số lượng đặt chỉ từ 10 áo.
+         <br>- May tận XƯỞNG - Giá tận GỐC - FreeShip tận NHÀ.</p>
+         <br><p>#ĐỒNG PHỤC  HỒNG HÀ - MAY IN THÊU theo yêu cầu.
+         <br>-  Mẫu mã, Vải Đa dạng - Phong phú.
+         <br>-  Vải Xịn Sò, Thoáng mát - Ko xù lông - Ko ra màu.
+         <br>-  Logo thêu vi tính sắc nét.
+         <br>-  Nút áo cao cấp, thời trang.
+         <br>-  Đường may tỉ mỉ, cẩn thận.
+         <br>-  Phom áo đẹp - chuẩn.
+         <br>-  Công nghệ In 3D hiện đại "Cam kết hình in không bong tróc"
+         <br>-  Miễn phí : Tư vấn - Thiết kế - May áo mẫu.
+         <br>-  May tận XƯỞNG - Giá tận GỐC - FreeShip tận NHÀ.</p>
+         <br><p>ÁO ĐỒNG PHỤC HỒNG HÀ 
+         <br>- Như thế nào là một chiếc áo đồng phục công ty đẹp mà mặc suốt từ lúc đi làm đến khi xuống phố gặp bạn bè, người thân?
+         <br>- Dù mặc đi làm hay đi chơi, thì những chiếc áo này đều toát ra được giá trị vô cùng lớn. Khi chúng có thể quảng bá thương hiệu một cách rộng rãi.
+         <br>Tuy nhiên, để đáp ứng yêu cầu đó thì chiếc áo đồng phục phải đáp ứng được nhiều  yếu tố mà đòi hỏi là xưởng may cần đáp ứng tiêu chí quan trọng.
+         <br>- HỒNG HÀ luôn hướng đến sự tối giản, chất lượng tốt và đảm bảo an toàn khi sử dụng. 
+         <br>- Thiết kế và màu sắc là điểm cộng đồng phục
+         <br>- Hãy liên hệ ngay với HỒNG HÀ để tậu ngay chiếc đồng phục đẹp, làm mới diện mạo bề ngoài cho thương hiệu của bạn nhé.
+         <br></p>
+         <br><p>- NHỮNG LÝ DO BẠN NÊN ĐỔI MỚI ĐỒNG PHỤC
+         <br>- Một số doanh nghiệp, công ty quanh năm suốt tháng vẫn "diện" một mẫu đồng phục mà không nghĩ đến việc "thay mới" chiếc đồng phục của mình. Phải chăng họ lo ngại việc nếu sử dụng đồng phục mới thì sẽ không đem lại "phong thủy may mắn"?
+         <br>- Nhưng bạn biết không, để tránh sự nhàm chán 1 màu thì người ta chủ động thay mới đồng phục để tạo hiệu quả trong quá trình marketing đấy. Những yếu tố này sẽ kích thích được sự mới mẻ, trẻ trung cho các bạn.  
+         <br>- Việc thay đổi đồng phục luôn đem đến "làn gió mới" giúp cho nhân viên yêu nghề hơn và sở hữu thêm nguồn năng lượng tích cực mới trong công việc.
+         <br>- Chỉ cần ta sử dụng đồng phục thường xuyên, ắt hẳn chúng sẽ trở thành biểu tượng đặc trưng gắn liền với khách hàng.
+         <br>- Do đó, hãy thay đổi mẫu đồng phục, màu sắc để tìm đến những sự mới mẻ hơn nhé.
+         <br></p>
+         <br><p>AI MUỐN NGHE KHÔNG... NGHE ĐỒNG PHỤC CHẤT LƯỢNG CÓ 1 0 2 TẠI HỒNG HÀ 
+         <br>- Đồng phục tại HỒNG HÀ là chiếc áo chất lượng nhất được thiết kế tỉ mỉ.
+         <br>- Đồng phục chúng tôi chất lượng cao, nhận được sự tin yêu của khách hàng gần xa.
+         <br>- Chất liệu vải dày dặn, chống bám bẩn tốt.
+         <br>- Công nghệ in ấn hiện đại
+         <br>- Mẫu mã và màu sắc đa dạng
+         <br>- Đường thêu sắc nét
+         <br>- Nhân viên tư vấn nhiệt tình
+         <br>- Giá cả phải chăng
+         <br>- Bạn đang bâng khuâng không biết nơi nào sản xuất đồng phục đẹp nhất nhì hiện tại, hãy liên hệ ngay với HỒNG HÀ nhé.
+         <br></p>
+         <br><p>- NGẮM TRỜI NGẮM MÂY KHÔNG BẰNG NGẮM FEEDBACK CHÂN THẬT CỦA HỒNG HÀ 1 GIÂY
+         <br>- HỒNG HÀ nhận được rất nhiều feedback chất lượng đến từ khách hàng. Và chúng chính là động lực mạnh mẽ để công ty chúng tôi không ngừng phát triển.
+         <br>- Chính vì đặt chữ "Tâm" lên trên chữ "Nghề" nên công ty HỒNG HÀ luôn đảm bảo an toàn chất lượng sản phẩm đạt chất lượng tốt nhất.
+         <br>- Đội ngũ nhân viên chúng tôi luôn không ngừng hỗ trợ, tư vấn, chăm sóc khách hàng để chọn lựa ra những dịch vụ tốt nhất gửi đến quý khách.
+         <br>- HỒNG HÀ chân thành cảm ơn sâu sắc đến chiếc feedback vô cùng tuyệt vời này.
+         <br></p>
+         <br><p>TRỨNG RÁN CẦN MỠ, BẮP CẦN BƠ
+         <br>YÊU KHÔNG CẦN CỚ, CẦN ĐỒNG PHỤC HỒNG HÀ CƠ
+         <br>-  LOA LOA .... HỒNG HÀ LẠI CHO RA MẮT MẪU ĐỒNG PHỤC ĐẸP CHUẨN MODEL 
+         <br>-  Đồng phục dạng quần áo quan trọng không thể thiếu hiện nay. Chúng toát lên vẻ đẹp không thể chối từ. 
+         <br>-  HỒNG HÀ cam kết loại quần áo của công ty chúng tôi mang lại luôn đảm bảo tiêu chí:
+         <br>-  Chất liệu vải thoáng mát, thoải mái khi sử dụng
+         <br>-  Bề mặt vải trơn bóng tạo vẻ đẹp trang nhã
+         <br>-  Công nghệ in ấn "chắc như bắp rang" 
+         <br>-  Mẫu mã đa dạng
+         <br>-  Màu sắc phong phú
+         <br>-  Giá cả hợp lý
+         <br>-  Còn chần chừ gì mà không gọi ngay HỒNG HÀ để cùng "săn lùng" những mẫu đồng phục đẹp nhất ngay hôm nay. 
+         <br></p>
+         <br><p>- CHILL CÙNG ÁO CỦA CÔNG TY.
+         <br>- Hiện nay, HỒNG HÀ cảm thấy vô cùng tự hào vì được hợp tác cùng CÔNG TY để bàn giao và đưa đến thỏa thuận đôi bên.
+         <br>- Đến với HỒNG HÀ, sản phẩm áo của công ty chúng tôi luôn đảm bảo:
+         <br>- Chất liệu vải được chọn lựa và đầu tư kỹ càng
+         <br>- Kỹ thuật may mặc đạt chuẩn chất lượng cao
+         <br>- Công nghệ in ấn tiên tiến hiện đại
+         <br>- Màu sắc phối hợp hài hòa
+         <br>- Giá cả phải chăng
+         <br>- Nếu như quý khách hàng đang còn lưỡng lự cho chiếc áo thun công sở đẹp nhất. Hãy nhanh chóng sử dụng "PHÉP THỰT WIN EN CHAN TIX" để đến với HỒNG HÀ ngay hôm nay nhé.
+         <br></p>
+         <br><p>- BÂY GIỜ MẬN MỚI HỎI ĐÀO
+         <br>- ĐỒNG PHỤC ĐẸP NÊN MUA NƠI NÀO
+         <br>- MẬN HỎI THÌ ĐÀO XIN THƯA
+         <br>- HỒNG HÀ RẼ LỐI , MỜI BẠN CÙNG VÀO"
+         <br>Ngày nay, các CƠ SỞ KINH DOANH ngày càng được xây dựng ở nhiều nơi. Vì vậy mà yêu cầu về đồng phục dần trở nên quan trọng và không ngớt người tìm kiếm. Tuy nhiên, bạn ơi đừng lo lắng vì hãy đến ngay với HỒNG HÀ để chọn lựa những mẫu quần áo đẹp nhất nhé. Sản phẩm đồng phục tại công ty chúng tôi luôn đạt tiêu chí:
+         <br>- Chất lượng vải được chọn lựa kỹ càng, thấm hút mồ hôi tốt
+         <br>- Thoải mái và thoáng mát khi sử dụng
+         <br>- Công nghệ in ấn hiện đại, tiên tiến
+         <br>- Đội ngũ nhân viên giàu kinh nghiệm
+         <br>- Màu sắc và kiểu dáng đa dạng
+         <br>- Giá cả phải chăng
+         <br>Còn chần chừ gì mà không liên hệ ngay với HỒNG HÀ để chọn lựa mẫu quần áo ưng ý nhất ngay hôm nay.
+         <br></p>
+         <br><p>- KHÁCH HÀNG NÓI GÌ VỀ CHẤT LƯỢNG SẢN PHẨM CỦA HỒNG HÀ
+         <br>- CHẤT LƯỢNG - KIỂU DÁNG - THẨM MỸ ? Theo bạn, khách hàng sẽ dùng từ nào để nói về HỒNG HÀ? 
+         <br>- Đáp án chính là CẢ BA YẾU TỐ TRÊN NHÉ 
+         <br>- Không có gì tuyệt vời hơn khi một ngày đầu tuần nhận được sự phản hồi tích cực đến từ khách, chất lượng đồng phục đẹp cùng với màu sắc mãn nhãn, sử dụng thoải mái là những tiêu chí cốt lõi để làm cho đồng phục tại HỒNG HÀ thêm chất lượng:
+         <br>Sản phẩm của công ty HỒNG HÀ đáp ứng tiêu chí: 
+         <br>- Chất liệu vải thoải mái khi dùng
+         <br>- Thấm hút mồ hôi tốt
+         <br>- Màu đẹp
+         <br>- Công nghệ in ấn hiện đại
+         <br>- Đường may mũi chỉ tinh tế
+         <br>- Giá cả hợp lý
+         <br>- Còn chần chừ gì mà
+         <br></p>
+         <br><p>1 CHẤM LÀ SAY ĐẮM. 2 CHẤM LÀ ĐẮM SAY. 3 CHẤM LÀ NGẤT NGÂY VỚI ĐỒNG PHỤC HỒNG HÀ
+         <br>- Đồng phục áo bàn giao cho công ty đã tạo nên nguồn động lực to lớn đến HỒNG HÀ. Đến với công ty chúng tôi, sản phẩm đồng phục luôn đạt giá trị sau: 
+         <br>- Chất liệu vải được may và chọn lựa kỹ càng, thoáng mát và hút ẩm tốt.
+         <br>- Hỗ trợ may mẫu và may đo trực tiếp
+         <br>- Đội ngũ nhân viên nhiệt tình, giàu kinh nghiệm
+         <br>- Công nghệ in ấn tiên tiến hiện đại
+         <br>- Giá cả phải chăng
+         <br>- Nếu bạn đang cần may những loại đồng phục chất lừ nhất thì đừng ngần ngại hãy liên hệ ngay với HỒNG HÀ nhé.
+         <br></p>
+         <br><p>- ĐẶT ĐỒNG PHỤC HỒNG HÀ - AUTO CÓ MẪU ĐẸP
+         <br>ĐỒNG PHỤC xinh mà còn SANG - XỊN - MỊN đấy ạ
+         <br>- CHẤT LƯỢNG thì quý khách không cần phải lo lắng
+         <br>- MẪU MÃ đa dạng
+         <br>- THIẾT KẾ miễn phí, hợp thời trang
+         <br>- Hãy nhanh tay đặt ngay để có những mẫu đồng phục đẹp và ưu đãi hấp dẫn nhé
+         <br></p>
+         <br><p>- MUỐN ĐỒNG PHỤC ĐẸP.!? HÃY ĐẾN NGAY HỒNG HÀ NHÉ.!!
+         <br>- Công ty TNHH May Đồng Phục HỒNG HÀ với nhiều năm kinh nghiệm trong nghề may mặc, chúng tôi đã nâng tầm sự chuyên nghiệp, không ngừng sáng tạo ra đồng phục chất lượng nhất với giá cả hợp lý.
+         <br>- Đến với HỒNG HÀ, sản phẩm của chúng tôi không chỉ uy tín mà còn luôn đáp ứng tiêu chí: 
+         <br>- Chất liệu vải thoáng mát
+         <br>- Sản phẩm đa dạng
+         <br>- Bảo hành in thêu
+         <br>- Đường may bền đẹp
+         <br>- Màu sắc phong phú
+         <br>- Giá cả hợp lý
+         <br>ĐỒNG PHỤC HỒNG HÀ - ĐỐI TÁC TIN CẬY CỦA MỌI DOANH NGHIỆP</p>
+         <br><p>- Bạn thích đi làm với áo đồng phục nào
+         <br>- Áo đồng phục là những chiếc áo thoải mái, năng động và phù hợp trong nhiều hoàn cảnh
+         <br>- Thoải mái cho người mặc
+         <br>- Dễ phối đồ
+         <br>- Không kén người mặc
+         <br>Áo là những chiếc áo được thiết kế tạo nên sự lịch sự, trang trọng, chuyên nghiệp và nhân viên thường xuyên gặp các đối tác
+         <br>- Tính trang trọng cao
+         <br>- Phù hợp với đa dạng loại hình doanh nghiệp khác nhau
+         <br>- Nếu các bạn đang muốn đặt may áo đồng phục hay còn đang thắc mắc và không biết nên chọn mẫu áo đồng phục nào thì hãy đến ngay với HỒNG HÀ nhé. Hãy đến ngay với HỒNG HÀ để nhận được những ưu đãi hấp dẫn nào!
+         <br></p>
+         <br>
+         <br><p>NHẬN THIẾT KẾ ĐỒNG PHỤC THEO YÊU CẦU
+         <br>Chỉ cần quý khách có ý tưởng còn lại HỒNG HÀ sẽ lo hết
+         <br>‼️ Nhận thiết kế theo yêu cầu, theo mẫu ảnh
+         <br>‼️ Sử dụng chất liệu vải đạt chất lượng, đứng form, bền màu
+         <br>‼️ Logo được in thêu tỉ mỉ, không lo bong tróc 
+         <br>‼️ Giao hàng nhanh 
+         <br>=> INBOX ngay để xem nhiều mẫu hơn</p>
+         <br><p>Bạn đang cần muốn đảm bảo sự an toàn cho nhân viên. Bạn muốn khách hàng nhận diện thương hiệu của mình. Bạn đang lo lắng không biết lựa chọn đơn vị may
+         <br>Đừng quá lo lắng HỒNG HÀ chuyên cung cấp và hỗ trợ thiết kế miễn phí. Đặc biệt bạn còn nhận được gì khi lựa chọn HỒNG HÀ
+         <br>Sản phẩm khi  sản xuất ra đạt chất lượng, độ bền cao
+         <br>- Đa dạng các loại size
+         <br>- Giá thành cạnh tranh
+         <br>- Sử dụng công nghệ may in ấn hiện đại
+         <br>- Đội ngũ nhân viên luôn sẵn sàng tư vấn và phục vụ quý khách
+         <br>- Giao hàng nhanh chóng
+         <br>-  HỒNG HÀ chuyên cung cấp đồng phục. Nếu bạn đang tìm kiếm hãy liên hệ ngay với công ty chúng tôi nào
+         <br></p>
+         <br><p>Việc khiến khách hàng nhớ đến doanh nghiệp, có được ấn tượng tốt là điều mà bất kì doanh nghiệp nào cũng mong muốn
+         <br>Có rất nhiều hình thức để quảng bá doanh nghiệp mình nhưng để làm sao có thể tiết kiệm được chi phí đó mới là vấn đề cần quan tâm. Chính vì thế đồng phục chính là cách vừa quảng bá hiệu quả lại tiết kiệm được ngân sách cho công ty đấy
+         <br>- Đồng phục HỒNG HÀ luôn mang đến cho quý khách từ dịch vụ tốt nhất đến chất lượng sản phẩm đạt chất lượng
+         <br>- Đa dạng chất liệu vải
+         <br>- Màu sắc đa dạng
+         <br>- Đường may mũi chỉ luôn chắc chắn và kĩ càng
+         <br>- Quy trình may được kiểm tra nghiêm ngặt
+         <br>- Giá bán cạnh tranh
+         <br>- Miễn phí thiết kế
+         <br>- In thêu sắc nét 
+         <br>- Hãy đến với công ty chúng tôi để nhanh tay nhận được nhiều ưu đãi hấp dẫn nhất đang chờ đón bạn ngay hôm nay.
+         <br></p>
+         <br><p>ÉT Ô ÉT VÌ NHỮNG MẪU ÁO ĐẸP TỪNG XEN TI MÉT 
+         <br>-Bạn đang tìm kiếm những mẫu áo CHẤT PHÁT NGẤT ? 
+         <br>-Bạn đang tìm kiếm những mẫu áo XINH LUNG LINH ?
+         <br>- Vậy thì bạn đang tìm đúng chỗ kinh doanh những mẫu áo thun vừa XINH lại vừa CHẤT rồi đấy.! Công ty HỒNG HÀ tự hào là một trong những công ty may mặc nổi tiếng hiện nay. Với nhiều tháng ngày hoạt động, mẫu áo tại công ty chúng tôi luôn đạt những tiêu chí:
+         <br>-Chất liệu vải được chọn lựa kỹ càng, thấm hút cực tốt
+         <br>-Kỹ thuật may chuyên nghiệp
+         <br>-Từng đường may kẻ chỉ được đan, thêu chắc nịt
+         <br>-Màu sắc và mẫu mã đa dạng
+         <br>-Hỗ trợ may đo tận nơi
+         <br>-Giá cả hợp lý
+         <br>-Nếu bạn đang còn đắn đo chọn lựa áo thì đừng lo vì đã có HỒNG HÀ ở đây rồi. Hãy đến với công ty chúng tôi để nhanh tay nhận được nhiều ưu đãi hấp dẫn nhất đang chờ đón bạn ngay hôm nay.
+         <br></p>
+         <br><p>
+         <br>MAY ĐỒNG PHỤC TẠI HỒNG HÀ ĐỂ NHẬN ĐƯỢC NHIỀU ƯU ĐÃI SIÊU CUỐN HÚT.
+         <br>- Đồng phục là một trong những "vật bất ly thân" với cuộc sống của chúng ta hiện nay. Đến với những mẫu đồng phục may tại HỒNG HÀ đảm bảo những tiêu chí:
+         <br>- Chất liệu vải được chọn lựa kỹ càng
+         <br>- Màu sắc và mẫu mã đa dạng
+         <br>- Công nghệ in ấn hiện đại, tiên tiến
+         <br>- Kỹ thuật may chuyên nghiệp
+         <br>- Chuỗi QC đảm bảo chất lượng đầu ra đạt năng suất tối đa.
+         <br>- Những điểm mạnh vô cùng to lớn như vậy, cùng nhiều ưu đãi hấp dẫn thì còn chần chứ gì mà không đến HỒNG HÀ để sở hữu ngay những mẫu áo đẹp nhất ngay hôm nay.
+         <br></p>
+         <br><p>Ở ĐÂY CÓ CHIẾC ÁO "NGON" HƠN CẢ NGƯỜI YÊU CŨ 
+         <br>-  Hiện nay, áo thun đã và đang là đồng phục được ưa chuộng nhất không kể giới tính và tuổi tác. Đặc biệt, những chiếc áo thun sản xuất tại Thiên Nguyên mang những đặc điểm vô cùng "Táo bạo" và độc đáo hơn bất cứ đâu. Cùng điểm qua 5 mặt tốt nhất của áo thun tại Hồng Hà nhé:
+         <br>-  Chất liệu vải co giãn và thấm hút mồ hôi cực tốt
+         <br>-  Mẫu mã và màu sắc đa dạng đến mức hơn 100+ loại mẫu cho quý khách chọn lựa
+         <br>-  Công nghệ in ấn tiên tiến, hiện đại
+         <br>-  Quy trình may được diễn ra nghiêm ngặt và có chuỗi QC đảm bảo chất lượng đầu ra
+         <br>-  Giá cả phải chăng
+         <br>-  Với những tiện lợi vô cùng hữu ích này, còn chần chừ gì mà không đến ngay HỒNG HÀ để sở hữu những chiếc sang - xịn - mịn nhất ngay hôm nay cùng vô vàn ưu đãi hấp dẫn khác đang chờ đón bạn.
+         <br></p>
+         <br><p>Nếu bạn đang cần tìm cho mình mẫu áo chất lượng, giá cả phải chăng thì đây sẽ là mẫu áo không nên bỏ qua đấy
+         <br>Đồng phục là một phần không thể thiếu … Bên cạnh việc bảo vệ HỒNG HÀ xây dựng hình ảnh, văn hóa, tạo uy tín cho doanh nghiệp.
+         <br>- Logo được thêu tỉ mỉ
+         <br>- Thoáng mát hút ẩm
+         <br>- Đa dạng các loại size
+         <br>- Quý khách chỉ cần gửi logo và màu sắc HỒNG HÀ sẽ sẵn sàng tư vấn cho quý khách những mẫu đẹp nhất đấy. Hãy nhanh tay vào web HỒNG HÀ để lựa mẫu đồng phục bảo hộ lao động đẹp cho nhân viên mình nào
+         <br></p>
+         <br><p>Đồng phục – nâng cao vẻ đẹp cho thương hiệu
+         <br>- Đồng phục được xem là chìa khóa tạo nên được sự chỉn chu, đoàn kết và tạo ấn tượng tốt trong mắt khách hàng, góp phần rất lớn cho thương hiệu của doanh nghiệp, giúp khách hàng dễ nhờ đến công ty 
+         <br>- Đồng thời, nếu bạn đang tìm cho mình những mẫu đồng phục chất lượng, thiết kế đậm chất hiện đại, đa dạng phong phú mang đến được nét đặc trưng của doanh nghiệp, nâng cao được hình ảnh cũng như sự chuyên nghiệp thì không thể bỏ qua đồng phục HỒNG HÀ đâu nhé
+         <br>Đến với HỒNG HÀ bạn sẽ được
+         <br>- Miễn phí hoàn toàn phí thiết kế, tư vấn
+         <br>- Đội ngũ nhân viên giàu kinh nghiệm, năng động, luôn sẵn sàng tư vấn, phục vụ quý khách
+         <br>- Có thể xem chất liệu thực tế thoải mái
+         <br>- Quy trình may được kiểm tra nghiêm ngặt từ may cho đến sản xuất nhằm đem đến sản phẩm tốt nhất cho khách hàng
+         <br>- Luôn đảm bảo thời gian giao hàng đúng hẹn
+         <br>Quý khách hàng đang lưỡng lựa chọn lựa mẫu đồng phục đẹp và chất lượng nhất? 
+         <br>- Hãy đến ngay với HỒNG HÀ ngay hôm nay để "pick" cho nhân viên mình những mẫu đồng phục xịn xò nhất nhé.
+         <br></p>
+         <br><p>LƯU SỐ HỒNG HÀ ĐI.... KHI NÀO CẦN ÁO THÌ GỌI CHO HỒNG HÀ...
+         <br>HỒNG HÀ rất hạnh phúc vì là nơi để khách hàng tin tưởng yêu thương và đặt niềm tin để may những mẫu áo cho mọi ngành tại Việt Nam
+         <br>- Bạn đang đắn đo không biết chọn lựa xưởng may uy tín nào có thể giúp bạn thực hiện ước muốn đó?
+         <br>- Đừng lo lắng vì đã có HỒNG HÀ đây rồi, những chiếc áo đồng phục luôn được công ty chúng tôi "chăm chút tỉ mỉ" như "em bé". 
+         <br>- Chất liệu vải co giãn, thấm hút tốt
+         <br>- Công nghệ in ấn tiên tiến, hiện đại
+         <br>- Dây chuyền sản xuất được diễn ra theo trình tự khoa học
+         <br>- Đội ngũ nhân viên lâu năm trong nghề 
+         <br>- Giá cả phải chăng
+         <br>- Có bảo hành, ưu đãi, hậu mãi tốt
+         <br>- Hãy đến ngay với HỒNG HÀ để chọn cho mình những mẫu đồng phục đẹp, chất lượng nhất ngay hôm nay nhé.
+         <br></p>
+         <br><p>ĐỒNG CHÍ TLINH... LÊN ĐỒ.!!
+         <br>- Nhưng để có thể LÊN ĐỒ thì ta phải chọn trang phục chuẩn, đẹp, chất lượng cao. 
+         <br>- Nếu quý khách hàng đang cần những chiếc đồng phục đẹp nhất với giá cả vô cùng phải chăng thì hãy đến ngay HỒNG HÀ, những chiếc quần áo của công ty chúng tôi bao gồm các đặc điểm sau:
+         <br>- Chất liệu vải co giãn tốt, thấm hút mồ hôi.
+         <br>- Mẫu mã, kiểu dáng thiết kế đa dạng
+         <br>- Công nghệ in ấn hiện đại
+         <br>- Đội ngũ nhân công giàu kinh nghiệm
+         <br>- Giá cả phải chăng
+         <br>- Còn chần chừ gì mà không mua đồng phục ngay tại HỒNG HÀ để nhanh chóng sở hữu những ưu đãi hấp dẫn nhất ngay hôm nay.
+         <br></p>
+         <br><p>TRỞ LẠI VỚI CÔNG VIỆC CÙNG ĐỒNG PHỤC HỒNG HÀ
+         <br>- Vậy là mỗi chúng ta đều sẽ bắt đầu lo toan bộn bề với công việc thường ngày. Để có thể tìm kiếm được những chiếc đồng phục đẹp nhất, chúng tôi xin giới thiệu quý khách những mẫu áo vô cùng đẹp mắt, mới mẻ
+         <br>- Mẫu mã và màu sắc đa dạng, tha hồ chọn lựa
+         <br>- Đường may kẻ chỉ được thêu tỉ mỉ nhất
+         <br>- Dây chuyền sản xuất được tiến hành một cách khoa học
+         <br>- Công nghệ in ấn hiện đại
+         <br>- Giá cả phải chăng 
+         <br>- Nếu quý khách chưa tìm được mẫu áo đồng phục đẹp nhất để chuẩn bị công việc cho một ngày mới, thì đừng ngần ngại hãy liên hệ với HỒNG HÀ để được chăm sóc tốt nhất nhé.
+         <br></p>
+         <br><p>Một nhìn là say đắm. Hai nhìn là đắm say. Ba nhìn là ngất ngây
+         <br>HỒNG HÀ xin tiếp tục gửi đến quý khách mẫu áo vừa đẹp vừa chất lượng, mặc vào là đẹp ngất ngây
+         <br>- Sử dụng màu chủ đạo
+         <br>- Chất liệu vải thấm hút mồ hôi tốt, bền, mềm mịn
+         <br>- Logo in nổi bật tinh tế
+         <br>Một dáng áo đơn giản nhưng cực kì thời trang và đặc biệt là rất thích hợp để sử dụng mặc hàng ngày đi làm đấy
+         <br>- Quý khách chỉ cần gửi logo và màu sắc HỒNG HÀ sẽ sẵn sàng tư vấn cho quý khách những mẫu đẹp nhất đấy. Hãy nhanh tay vào web HỒNG HÀ để lựa mẫu đồng phục công sở đẹp cho nhân viên mình nào
+         <br></p>
+         <br><p>Quý khách đang cần tìm mẫu áo hãy liên hệ ngay với HỒNG HÀ nhé
+         <br>Sản phẩm của HỒNG HÀ về chất lượng quý khách không cần lo lắng ạ
+         <br>- Chất liệu vải sử dụng đa dạng, đặc biệt là thân thiện với mới trường
+         <br>- Đường may mũi chỉ luôn kiểm tra kĩ càng trước khi giao hàng
+         <br>- Nhân viên dày dặn kinh nghiệm luôn sẵn sàng tư vấn
+         <br>- Màu sắc vô cùng đa dạng
+         <br>- Quý khách chỉ cần gửi logo và màu sắc HỒNG HÀ sẽ sẵn sàng tư vấn cho quý khách những mẫu đẹp nhất đấy. Hãy nhanh tay vào web HỒNG HÀ để lựa mẫu đồng phục đẹp cho nhân viên mình nào
+         <br></p>
+         <br><p>- Áo đồng phục thể hiện vẻ đẹp văn hoá doanh nghiệp
+         <br>- Bạn chỉ cần gửi HỒNG HÀ logo, màu sắc hoặc kiểu mẫu yêu thích. HỒNG HÀ sẽ hỗ trợ tận tình nhất đến cho quý khách về thiết kế và tư vấn những mẫu áo đẹp nhất đến với công ty, nhằm tạo nên được sự hài lòng của khách hàng
+         <br>Sản phẩm của HỒNG HÀ luôn đảm bảo về chất lượng của vải cũng như quy trình may, để đem đến những dịch vụ tốt nhất cho khách hàng đấy
+         <br>- Còn chần chờ gì nữa, hãy đến với HỒNG HÀ để lựa những mẫu áo đẹp cho doanh nghiệp mình nào
+         <br></p>
+         <br><p>Những mẫu đồng phục vừa đẹp vừa thoải mái mà vẫn hợp thời trang
+         <br>Bạn đang tìm kiếm cho mình những mẫu đồng phục vừa hợp thời trang, vừa thoải mái nhưng vẫn đem đến được sự năng động đúng không?
+         <br>Ngay bây giờ, HỒNG HÀ sẽ giới thiệu cho bạn các mẫu áo vừa có thể kết hợp với nhiều items khác nhau lại tạo nên sự tự tin đấy
+         <br>Mẫu áo của chúng tôi luôn đảm bảo
+         <br>- Chất liệu đạt chất lượng tốt nhất
+         <br>- Độ co dãn tốt, thấm hút mồ hôi, không bị ra màu
+         <br>- Quy trình may được kiểm tra chặt chẽ
+         <br>- Còn chần chờ gì nữa, hãy đến với HỒNG HÀ để lựa những mẫu áo đẹp cho doanh nghiệp mình nào
+         <br></p>
+         <br><p>-Mỗi mẫu đồng phục lại tạo nên 1 nét giá trị riêng. Đối với đồng phục sẽ được thiết kế làm sao có thể đảm bảo được an toàn cho nhân viên, nhưng vẫn mang đến sự thoải mái nhất có thể. Dưới đây là mẫu sản phẩm mà quý khách hàng có thể tham khảo đấy
+         <br>-Sản phẩm được thiết kế với phối 
+         <br>-Thiết kế tạo cảm giác thoải mái và dễ dàng trong công việc
+         <br>-Từng đường may đều luôn đảm bảo chắc chắn
+         <br>-Chất liệu vải đạt chất lượng tốt, thấm hút mồ hôi và bền theo năm tháng
+         <br>-Quý khách có thể xem thêm</p>
+         <br><p>Với sự tìm hiểu và quan sát để cho ra những mẫu sản phẩm mới đáp ứng nhu cầu của khách hàng. HỒNG HÀ xin gửi đến quý khách những mẫu áo đồng phục vừa phù hợp để đi làm và cũng có thể đi chơi.
+         <br>- Chất liệu vải thấm hút mồ hôi, co giãn tốt
+         <br>- Từng đường may, mũi chỉ luôn đảm bảo
+         <br>- Quy trình kiểm tra sau khi sản xuất luôn chặt chẽ, kĩ càng
+         <br>- Kĩ thuật in ấn và thêu theo kĩ thuật tân tiến nhất
+         <br>- Vậy với những sản phẩm mới, cùng với các ưu điểm sản phẩm thì chắc chắn HỒNG HÀ sẽ đem đến cho quý khách hàng những sự bất ngờ và hài lòng đấy. Hãy đến với chúng tôi để được trải nghiệm những dịch vụ tốt nhất nhé
+         <br></p>
+         <br><p>- Hãy cùng với HỒNG HÀ sắm sửa những bộ đồng phục công cơ để có thể mang đến cảm giác tươi mới và tràn đầy năng lượng nào
+         <br>- Áo tại HỒNG HÀ Uniform luôn đạt những tiêu chí tuyệt vời, hoàn hảo nhất, có thể nói đến như:
+         <br>- Chất liệu vải được sử dụng tạo cảm giác mát mẻ, thoáng mát
+         <br>- Không bị nhàu hay phai màu qua thời gian dài
+         <br>- Màu sắc sặc sỡ, bắt mắt
+         <br>- Kiểu mẫu thiết kế vô cùng đa dạng
+         <br>- Từng đường chỉ được may “chắc như bắp rang”
+         <br>- Logo được in ấn phù hợp với truyền thống tập đoàn từ màu sắc đến thông điệp nội dung
+         <br>- Giá cả phải chăng
+         <br></p>
+         <br><p>-  Chiếc áo được may với chất vải cá, mềm mịn và thoáng mát. 
+         <br>-  Hình in được in với kỹ thuật in chuyển nhiệt - hình in tệp vào vải, không bao giờ bị bong tróc hay hư hỏng.
+         <br>-  Đồng phục được may với chất vải thoải mái và thoáng mát. 
+         <br>-  Ngoài ra, Đồng phục HỒNG HÀ còn cung cấp trọn bộ đồng phục quán cà phê: nón kết, áo thun, tạp dề với giá cạnh tranh nhất thị trường. 
+         <br>-  Nếu bạn đang khó khăn trong việc chọn mẫu, #thiết kế áo đồng phục cho tập thể mình thì đừng ngần ngại mà liên hệ ngay với Đồng Phục Giá Rẻ HỒNG HÀ ngay nhé.
+         <br>LỢI ÍCH KHI ĐẶT ĐỒNG PHỤC TẠI XƯỞNG MAY HỒNG HÀ
+         <br>- Giá ưu đãi tận gốc, cạnh tranh nhất thị trường trong và ngoài nước.
+         <br>- Hỗ trợ thiết kế logo miễn phí.
+         <br>- Nhân may số lương ít, 5 cái cũng nhận.
+         <br>- Vải may chất lượng, bền, đẹp, mịn, thấm hút mồ hôi tốt, tạo cảm giác thoải mái, dễ chịu nhất. 
+         <br>- Logo in/thêu với công nghệ mới nhất, đảm bảo bền đẹp, chi tiết. 
+         <br>- Chất liệu vải đa dạng: Cotton, Poly, Lạnh, Lacoste, Telex Thái, 3D
+         <br>- Nhận in đơn gấp trong vòng 24h.
+         <br>- Tư vấn nhiệt tình 24/7, hỗ trợ khách hàng xem áo mẫu, mẫu vải.
+         <br></p>
+         <br><p>ĐỒNG PHỤC HỒNG HÀ
+         <br>-  Màu sắc hài hòa của bộ đồng phục phù hợp cho cả nam và nữ. 
+         <br>-  Đồng phục được may với chất vải thấm hút mồ hôi tốt, thoải mái và thoáng mát. 
+         <br>-  Ngoài ra, Đồng phục HỒNG HÀ còn cung cấp trọn bộ đồng phục: nón kết, áo thun, tạp dề với giá cạnh tranh nhất thị trường. 
+         <br>-  Nếu bạn đang khó khăn trong việc chọn mẫu, #thiết kế áo đồng phục cho tập thể mình thì đừng ngần ngại mà liên hệ ngay với Đồng Phục Giá Rẻ HỒNG HÀ ngay nhé.
+         <br></p>
+         <br><p>ĐỒNG PHỤC ĐẶT CÀNG NHIỀU - GIÁ CÀNG RẺ
+         <br>- Đồng phục chất lượng may và in TẬN XƯỞNG - hỗ trợ GIÁ RẺ nhất thị trường.
+         <br>- Giá ưu đãi tận gốc, cạnh tranh nhất thị trường trong và ngoài nước.
+         <br>- Hỗ trợ thiết kế logo miễn phí.
+         <br>- Nhân may số lương ít, 5 cái cũng nhận.
+         <br>- Vải may chất lượng, bền, đẹp, mịn, thấm hút mồ hôi tốt, tạo cảm giác thoải mái, dễ chịu nhất. 
+         <br>- Logo in/thêu với công nghệ mới nhất, đảm bảo bền đẹp, chi tiết.
+         <br>COMBO ÁO ĐỒNG PHỤC + TẠP DỀ - GIÁ TỐT NHẤT THỊ TRƯỜNG
+         <br>- Xưởng HỒNG HÀ chuyên may và in đồng phục giá rẻ theo yêu cầu: đồng phục áo thun cổ bẻ, đồng phục bảo hộ lao động, nón, tạp dề, áo khoác,... => Inbox ngay, CSKH hỗ trợ tư vấn 24/7.  
+         <br>- Chất liệu vải đa dạng: Cotton, Poly, Lạnh, Lacoste, Telex Thái, 3D
+         <br>- Nhận in đơn gấp trong vòng 24h.
+         <br>- Tư vấn nhiệt tình 24/7, hỗ trợ khách hàng xem áo mẫu, mẫu vải.
+         <br>- Đồng phục HỒNG HÀ cung cấp trọn bộ đồng phục: nón kết, áo thun, tạp dề với giá cạnh tranh nhất thị trường.
+         <br></p>
+         <br><p>Xưởng chuyên ĐỒNG PHỤC uy tín chất lượng
+         <br>- Xưởng HỒNG HÀ chuyên may và in đồng phục theo yêu cầu: đồng phục áo thun cổ bẻ, đồng phục bảo hộ lao động, nón, tạp dề, áo khoác,... => Inbox ngay, CSKH hỗ trợ tư vấn 24/7. 
+         <br>- Giá ưu đãi tận gốc, cạnh tranh nhất thị trường trong và ngoài nước.
+         <br>- Hỗ trợ thiết kế logo miễn phí.
+         <br>- Nhân may số lương ít, 5 cái cũng nhận.
+         <br>- Vải may chất lượng, bền, đẹp, mịn, thấm hút mồ hôi tốt, tạo cảm giác thoải mái, dễ chịu nhất. 
+         <br>- Logo in/thêu với công nghệ mới nhất, đảm bảo bền đẹp, chi tiết. 
+         <br>- Chất liệu vải đa dạng: Cotton, Poly, Lạnh, Lacoste, Telex Thái, 3D
+         <br>- Nhận in đơn gấp trong vòng 24h.
+         <br>- Tư vấn nhiệt tình 24/7, hỗ trợ khách hàng xem áo mẫu, mẫu vải.
+         <br>-  Đồng phục HỒNG HÀ cung cấp trọn bộ đồng phục: nón kết, áo thun, tạp dề với giá cạnh tranh nhất thị trường. 
+         <br>- Nếu bạn đang khó khăn trong việc chọn mẫu, #thiết kế áo đồng phục cho tập thể mình thì đừng ngần ngại mà liên hệ ngay với Đồng Phục Giá Rẻ HỒNG HÀ ngay nhé.
+         <br>Xưởng May HỒNG HÀ là xưởng sản xuất đồng phục uy tín, giá rẻ hàng đầu tại Việt Nam. Chúng tôi chuyên cung cấp áo thun, áo sơ mi, nón, tạp dề đồng phục cho các công ty, doanh nghiệp, trường học, lớp, nhà hàng, khách sạn, bệnh viện, quán cafe, các shop thời trang, các đơn vị cung cấp đồng phục nhỏ lẻ khác …
+         <br></p>
+         <br><p>ĐỒNG PHỤC TEAM HỒNG HÀ 
+         <br>-  Khi nhân viên cùng mặc trên mình một bộ áo sẽ giúp tạo sự đoàn kết giữa thành viên cá nhân hơn là mỗi nguời mang một bộ đồ riêng.
+         <br>-  Mẫu áo hướng đến sự bình đẳng, không phân chia cấp bậc giàu nghèo, điều này giúp cho mỗi người tự tin và thoải mái hơn khi đứng trong tập thể.
+         <br>-  Cơ sở sản xuất đồng phục giá rẻ HỒNG HÀ tự tin luôn là đơn vị hàng đầu trong lĩnh vực may gia công đồng phục với đúng chất vải, đúng chất lượng theo yêu cầu và chắc chắn là đúng giá.
+         <br>-  Đồng phục HỒNG HÀ cung cấp trọn bộ đồng phục: nón kết, áo thun, tạp dề với giá cạnh tranh nhất thị trường. 
+         <br>-  Nếu bạn đang khó khăn trong việc chọn mẫu, #thiết kế áo đồng phục cho tập thể mình thì đừng ngần ngại mà liên hệ ngay với Đồng Phục Giá Rẻ HỒNG HÀ ngay nhé.
+         <br></p>
+         <br><p>- PHẢN HỒI KHÁCH HÀNG – TIẾP THÊM ĐỘNG LỰC CHO ĐỒNG PHỤC HỒNG HÀ 
+         <br>- Chiếc mang màu sắc tươi sáng mà lại còn thời trang nữa thì làm sao mà không ưng được. Mặc Đồng Phục HỒNG HÀ auto xinh!
+         <br>- Động lực mỗi ngày để làm tốt hơn là đây! Cứ hàng đi thì khách lại phản hồi! Đẹp có, xấu có. Nhưng HỒNG HÀ luôn dựa trên lời nói, sự góp ý chân thành của khách hàng để cố gắng, để phấn đấu và làm sao cải thiện phù hợp với xu hướng hiện đại ngày nay.
+         <br>- Một lần nữa xin cảm ơn đã cùng chúng tôi hợp tác trong thời gian qua. Và cho chúng tôi những bức hình cực phẩm này nhé!
+         <br>- Quý khách có nhu cầu hay bất kỳ thắc mắc về đồng phục hay liên lạc với chúng tôi. Đảm bảo sẽ làm hài lòng Quý Khách Hàng.
+         <br></p>
+         <br><p>ĐỒNG PHỤC CÔNG TY
+         <br>- ĐẦU THÁNG HOAN HỈ - CẢ THÁNG MAY NẮN, YÊU THƯƠNG THẬT NHIỀU
+         <br>- Công Ty Đồng Phục HỒNG HÀ rất vui khi được khách hàng đặt niềm tin chọn may đồng phục nhân viên.
+         <br>- Sản phẩm sử dụng chất liệu vải đạt chất lượng tốt nhất
+         <br>- Màu sắc bền và không bị phai màu theo thời gian
+         <br>- Các khâu đều được kiểm tra nghiêm ngặt để mang đến sản phẩm đạt chất lượng và đảm bảo đúng thời gian giao hàng
+         <br>- Đồng Phục HỒNG HÀ chân thành cảm ơn quý khách đã tin tưởng sử dụng sản phẩm và dịch vụ của công ty chúng tôi.
+         <br>   Nếu quý khách đã có những thắc mắc cần được tư về vấn đề may đồng phục hay muốn đặt may, hãy liên hệ ngay với Đồng Phục HỒNG HÀ nhé.
+         <br>-Đừng lo lắng, hãy để  Công Ty Đồng Phục HỒNG HÀ mang đến Quý khách hàng những bộ đồng phục đẹp với giá cả phù hợp.
+         <br></p>
+         <br><p>- Đồng phục được xem là mẫu đồng phục rất được nhiều công ty, trường học lựa chọn. Nó vừa bảo vệ sức khoẻ, vừa quảng bá hình ảnh của mình. 
+         <br>- Công Ty Đồng Phục HỒNG HÀ bàn giao sản phẩm đồng phục đảm bảo về chất lượng tuyệt đối. 
+         <br>Đây cũng là niềm vinh hạnh rất lớn đối với  Công Ty Đồng Phục HỒNG HÀ khi được trao niềm tin may đồng phục
+         <br>- Đồng phục áo đẹp mắt, sang trọng, tinh thế, thể hiện nỗi bật logo. Cùng với đó là chất liệu vải đạt chất lượng tốt nhất, thấm hút mồ hôi, tạo sự thoải mái cho người mặc.
+         <br>-  Bền màu theo thời gian.
+         <br>-  Các khâu đều được kiểm tra nghiêm ngặt để mang đến sản phẩm đạt chất lượng và đảm bảo đúng thời gian giao hàng.
+         <br>-  ĐỒNG PHỤC HỒNG HÀ xin cảm ơn quý khách đã luôn tin tưởng, đặt niềm tin vào công ty chúng tôi. Đây cũng là động lực rất lớn để ĐỒNG PHỤC HỒNG HÀ phấn đấu mỗi ngày để mang đến những mẫu đồng phục chất lượng với giá tốt nhất đến tay khách hàng.
+         <br>-  Đồng Phục HỒNG HÀ chân thành cảm ơn quý khách đã tin tưởng sử dụng sản phẩm và dịch vụ của công ty chúng tôi.
+         <br>   Nếu quý khách đã có những thắc mắc cần được tư về vấn đề may đồng phục hay muốn đặt may, hãy liên hệ ngay với Đồng Phục HỒNG HÀ nhé.
+         <br>- Đừng lo lắng, hãy để Công Ty Đồng Phục HỒNG HÀ mang đến Quý khách hàng những bộ đồng phục đẹp với giá cả phù hợp.
+         <br></p>
+         <br><p>Công Ty Đồng Phục HỒNG HÀ rất vui khi được khách hàng đặt niềm tin chọn may đồng phục áo nhân viên
+         <br>- Sản phẩm sử dụng chất liệu vải đạt chất lượng tốt nhất
+         <br>- Màu sắc bền và không bị phai màu theo thời gian
+         <br>- Áo thun chất liệu cao cấp thoáng mát.
+         <br>- Các khâu đều được kiểm tra nghiêm ngặt để mang đến sản phẩm đạt chất lượng và đảm bảo đúng thời gian giao hàng
+         <br>- Đồng Phục HỒNG HÀ chân thành cảm ơn quý khách đã tin tưởng sử dụng sản phẩm và dịch vụ của công ty chúng tôi.
+         <br>   Nếu quý khách đã có những thắc mắc cần được tư vấn đề may đồng phục hay muốn đặt may, hãy liên hệ ngay với Đồng Phục Long Phụng nhé.
+         <br>- Đừng lo lắng, hãy để  Công Ty Đồng Phục Long Phụng mang đến Quý khách hàng những bộ đồng phục đẹp với giá cả phù hợp.
+         <br></p>
+         <br><p>- PHẢN HỒI KHÁCH HÀNG – TIẾP THÊM ĐỘNG LỰC CHO ĐỒNG PHỤC HỒNG HÀ
+         <br>- Chiếc ÁO mang màu thương hiệu mà lại còn thời trang nữa thì làm sao mà không ưng được.
+         <br>- Động lực mỗi ngày để làm tốt hơn là đây! Cứ hàng đi thì khách lại phản hồi! Đẹp có, xấu có. Nhưng HỒNG HÀ luôn dựa trên lời nói, sự góp ý chân thành của khách hàng để cố gắng, để phấn đấu và làm sao cải thiện phù hợp với xu hướng hiện đại ngày nay.
+         <br>- Một lần nữa xin cảm ơn Công Ty đã cùng chúng tôi hợp tác trong thời gian qua. Và cho chúng tôi những bức hình cực phẩm này nhé!
+         <br>- Đừng lo lắng, hãy để  Công Ty Đồng Phục HỒNG HÀ mang đến Quý khách hàng những bộ đồng phục đẹp với giá cả phù hợp.
+         <br></p>
+         <br><p>- ÁO ĐỒNG PHỤC CÔNG TY HỒNG HÀ
+         <br>- Áo của Công Ty Đồng Phục HỒNG HÀ được sản xuất khép kín với đa dạng mẫu mã và màu sắc phong phú, thiết kế đa dạng, công ty chúng tôi không ngừng nâng cao chất lượng sản phẩm.
+         <br>- Chiếc áo đồng phục bàn giao đến CÔNG TY luôn đảm bảo chất lượng tốt, form dáng chuẩn đem đến cảm tác tự tin, thoải mái cho khách hàng khi mặc.
+         <br>- Chất liệu vải cao cấp, đường mắt chắc tỉ mĩ, chắc chắn, hình in sắc sảo => tạo ra chiếc áo chất lượng chuẩn hàng shop mà giá thành lại vô cùng hợp lý.
+         <br>- Đừng lo lắng, hãy để  Công Ty Đồng Phục HỒNG HÀ mang đến Quý khách hàng những bộ đồng phục đẹp với giá cả phù hợp.
+         <br></p>
+         <br><p>ÁO ĐỒNG PHỤC CÔNG TY HỒNG HÀ
+         <br>Đồng Phục HỒNG HÀ tự hào là nhà cung cấp đồng phục cho CÔNG TY
+         <br>Với kiểu dáng sang trọng cùng chất liệu vải thấm hút mồ hôi tốt, tạo cảm giác thông thoáng, mát mẻ rất thoải mái cho người mặc. Đi kèm là tông màu trắng tươi sáng sẽ làm tăng sự trẻ trung, nét tinh tế cho người mặt nhưng không kém phần lịch thiệp và năng động.
+         <br>Chiếc áo đồng phục bàn giao đến CÔNG TY luôn đảm bảo chất lượng tốt, form dáng chuẩn đem đến cảm tác tự tin, thoải mái cho khách hàng khi mặc.
+         <br>Đến với Long Công Ty Đồng Phục HỒNG HÀ để cảm nhận thấy sự mềm mại của vải và phong cách tinh tế đẳng cấp từ những mẫu đồng phục thời trang..
+         <br></p>
+         <br><p>Thu qua đông tới!
+         <br>- Đồng phục được xem là mẫu đồng phục rất được nhiều công ty, trường học lựa chọn. Nó vừa bảo vệ sức khoẻ, vừa quảng bá hình ảnh của mình. 
+         <br>- Đồng phục áo sử dụng chất liệu vải đạt chất lượng tốt nhất, thấm hút mồ hôi, tạo sự thoải mái cho người mặc.
+         <br>- Bền màu theo thời gian.
+         <br>- Các khâu đều được kiểm tra nghiêm ngặt để mang đến sản phẩm đạt chất lượng và đảm bảo đúng thời gian giao hàng.
+         <br>- ĐỒNG PHỤC HỒNG HÀ xin cảm ơn quý khách đã luôn tin tưởng, đặt niềm tin vào công ty chúng tôi. Đây cũng là động lực rất lớn để ĐỒNG PHỤC HỒNG HÀ phấn đấu mỗi ngày để mang đến những mẫu đồng phục chất lượng với giá tốt nhất đến tay khách hàng.
+         <br>- Đồng Phục HỒNG HÀ chân thành cảm ơn quý khách đã tin tưởng sử dụng sản phẩm và dịch vụ của công ty chúng tôi.
+         <br>   Nếu quý khách đã có những thắc mắc cần được tư về vấn đề may đồng phục hay muốn đặt may, hãy liên hệ ngay với Đồng Phục HỒNG HÀ nhé.
+         <br>- Đừng lo lắng, hãy để Công Ty Đồng Phục HỒNG HÀ mang đến Quý khách hàng những bộ đồng phục đẹp với giá cả phù hợp.
+         <br></p>
+         <br><p>ĐỒNG PHỤC HỒNG HÀ - ĐẶT TRẢI NGHIỆM CỦA KHÁCH HÀNG LÊN HÀNG ĐẦU
+         <br>-  Với slogan : KHÁCH HÀNG – LUÔN ĐÚNG . Họ cho chúng tôi sự giao phó – Chúng tôi cho họ sự tin tưởng. Khi bạn giao cho chúng tôi đảm nhiệm về sản phẩm – hình ảnh của công ty bạn . Thì đối với chúng tôi đó là niềm vinh dự ,chúng tôi càng phải có nhiều trách nhiệm về sản phẩm hơn. Sản phẩm phải đẹp , phải chất lượng và chúng tôi sẽ làm cho bạn tin tưởng về ĐỒNG PHỤC HỒNG HÀ
+         <br>-  Chúng tôi luôn đặt khách hàng – sản phẩm lên hàng đầu, luôn lắng nghe, thấu hiểu những mong muốn của khách hàng rồi từ đó đưa ra những giải pháp để tạo lên sản phẩm đẹp , giá thành tốt . Với sứ mệnh kết nối cảm xúc, kết nối tinh thần đoàn kết , mang đến sự chuyên nghiệp cho công ty, doanh nghiệp của bạn
+         <br>Khách hàng đến với Đồng Phục HỒNG HÀ sẽ được: 
+         <br>-  Là xưởng may trực tiếp, không qua trung gian
+         <br>-  Chất liệu áo cao cấp,vừa form
+         <br>-  Giá thành cạnh tranh nhất thị trường
+         <br>-  Thiết kế miễn phí theo yêu cầu khách hàng
+         <br>-  Chất lượng hình in rõ ràng sắc nét
+         <br></p>
+         <br><p>
+         <br>ĐỒNG PHỤC LÀ CÁCH NHẬN DIỆN THƯƠNG HIỆU TỐT NHẤT
+         <br>- Xưởng May Đồng Phục HỒNG HÀ luôn cố gắng hiểu, lắng nghe thương hiệu, giúp thương hiệu của bạn nổi bật trên từng chiếc áo. 
+         <br>- Chúng tôi luôn đưa ra những thiết kế có tính thời trang nhất, giúp màu sắc, logo chiếc áo của bạn định vị được thương hiệu doanh nghiệp của bạn trong mắt khách hàng được tốt hơn.
+         <br>Đến với Đồng Phục HỒNG HÀ để có những mẫu đồng phục ưng ý nhất nhé!
+         <br>- Là xưởng may trực tiếp, không qua trung gian
+         <br>- Chất liệu áo cao cấp,vừa form
+         <br>- Giá thành cạnh tranh nhất thị trường
+         <br>- Thiết kế miễn phí theo yêu cầu khách hàng
+         <br>- Chất lượng hình in rõ ràng sắc nét</p>
+         <br><p>Thiết kế đồng phục có quan trọng
+         <br>-  Thiết kế đồng phục công ty đẹp là điều vô cùng quan trọng để tạo dựng hình ảnh chuyên nghiệp trong mắt đối tác và khách hàng. Hiểu được điều này, các đơn vị may đồng phục ngày càng chú trọng các yếu tố về thiết kế để đáp ứng nhu cầu của các doanh nghiệp.
+         <br>-  Áo đồng phục đẹp sẽ tạo nên sự thống nhất, chuyên nghiệp và đẳng cấp cho doanh nghiệp. Khoác đồng phục lên người, công ty sẽ cho mọi người cảm thấy đây là một gia đình, không có sự phân biệt.
+         <br>Đến với Đồng Phục HỒNG HÀ để có những mẫu đồng phục ưng ý nhất nhé!
+         <br>-  Là xưởng may trực tiếp, không qua trung gian
+         <br>-  Chất liệu áo cao cấp,vừa form
+         <br>-  Giá thành cạnh tranh nhất thị trường
+         <br>-  Thiết kế miễn phí theo yêu cầu khách hàng
+         <br>-  Chất lượng hình in rõ ràng sắc nét
+         <br></p>
+         <br><p>Nên Chọn In Hay Thêu Logo Áo Đồng Phục Sẽ Chất Lượng Hơn?
+         <br>- Logo thương hiệu là phần rất quan trọng, không thể thiếu trên áo đồng phục của công ty. Chính vì thế việc in hay thêu logo lên áo thun đồng phục bằng phương pháp in hay thêu logo đang rất được quan tâm. Cùng HỒNG HÀ tìm hiểu về 2 phương pháp in và thêu logo này nhé.
+         <br>- Phương pháp in logo lên áo đồng phục
+         <br>- In logo đồng phục là một phương pháp được sử dụng nhiều nhất hiện nay. 
+         <br>- Đây được xem là phương pháp tiện dụng, tiết kiệm nên được nhiều doanh nghiệp lựa chọn. 
+         <br>- Quá trình in là sử dụng máy in chuyên dụng và mực in chuyên dụng. In áo phông đồng phục ngày nay có khá nhiều kỹ thuật như: in lụa, in kỹ thuật , in chuyển nhiệt hay in decal lên áo.
+         <br>- Phương pháp thêu logo lên áo đồng phục 
+         <br>- Bên cạnh phương pháp in logo thì nhiều doanh nghiệp cũng khá thích cách thêu logo hơn. 
+         <br>- Bởi những ưu điểm vượt trội nâng cao chất lượng của chiếc áo đồng phục.
+         <br>- Thêu logo đồng phục là phương pháp sử dụng máy thêu để tạo ra logo, hình ảnh, họa tiết lên vị trí cần thêu.
+         <br>Vậy bạn đã đưa ra cho mình lựa chọn phù hợp với doanh nghiệp của mình chưa?
+         <br>Còn chần chừ gì nữa mà không đến với HỒNG HÀ để có những chiếc đồng phục chất lượng, thiết kế riêng biệt.
+         <br></p>
+         <br><p>Tại sao nên may áo đồng phục công ty cho nhân viên ?
+         <br>- Tùy theo từng tổ chức và mô hình hoạt động của công ty mà các doanh nghiệp lựa chọn những bộ đồng phục phù hợp như: đồng phục công sở: sơ mi, quần âu, chân váy,… đồng phục áo phông, đồng phục bảo hộ lao động hay đồng phục áo khoác gió,… 
+         <br>- Mỗi bộ đồng phục đều thể hiện tầm nhìn chiến lược, văn hoá hoạt động của công ty, tập thể nhằm nâng cao vị thế và hình ảnh trong mắt khách hàng. 
+         <br>- Nếu bạn vẫn đang phân vân về chọn lựa loại đồng phục hoặc muốn may đồng phục áo khoác cho công ty thì vui lòng tìm tham khảo những thông tin dưới đây để có được lựa chọn hữu ích nhất nhé.
+         <br>- Chất liệu may áo đồng phục công ty hiện nay vô cùng phong phú và đa dạng. 
+         <br>- Mỗi loại vải sẽ có những ưu nhược điểm riêng và khả năng giữ ấm khác nhau với các dòng sản phẩm chính. Để sở hữu được những mẫu áo đồng phục chất lượng và giá cả hợp lý bạn cần tìm hiểu kĩ về chất liệu làm lên sản phẩm.
+         <br>Hãy cùng Đồng phục HỒNG HÀ khám phá những mẫu đồng phục áo gió Hot nhất hiện nay nhé!
+         <br>- Để lại hoặc Đồng Phục HỒNG HÀ sẽ tư vấn giúp bạn tìm được mẫu áo đồng phục ưng ý.
+         <br></p>
+         <br><p>TĂNG ĐỘNG LỰC ĐI LÀM CÙNG ÁO ĐỒNG PHỤC HỒNG HÀ 
+         <br>-  Công dụng của áo ngày nay không còn đơn giản là chiếc áo dùng mặc, hay che nắng tránh gió, mà áo gió còn là trang phục làm người mặc trở nên thời trang hơn, cá tính hơn trong xu thế hiện đại. 
+         <br>-  Mặc khác, với những doanh nghiệp sử dụng áo làm đồng phục cho nhân viên hay khách hàng đối tác, thì áo còn trở thành công cụ Marketing hiệu quả hơn cho cho doanh nghiệp mình.
+         <br>-  Vậy sao còn không liên hệ ngay đến HỒNG HÀ để đặt cho doanh nghiệp của mình những chiếc áo ưng ý nhất
+         <br>-  Công nghệ in ấn, thêu logo bền đẹp
+         <br>-  Đa dạng mẫu mã, kiểu dáng, MIỄN PHÍ thiết kế theo yêu cầu
+         <br>-  Sản phẩm đảm bảo chất lượng như đúng cam kết
+         <br>-  Nhận may số lượng: từ ít đến SLL
+         <br></p>
+         <br><p>ĐỒNG PHỤC DOANH NGHIỆP - ĐẠI SỨ THƯƠNG HIỆU
+         <br>- Đồng phục doanh nghiệp không chỉ là hình ảnh, bộ mặt công ty mà nó còn mang rất nhiều lợi ích cho công ty bạn.
+         <br>- Củng cố tinh thần làm việc, tinh thần đoàn kết của nhân viên.
+         <br>- Thúc đẩy trách nhiệm của từng nhân viên trong công ty.
+         <br>- Là nền tảng phát triển marketing thương hiệu của doanh nghiệp
+         <br>- HÃY LIÊN HỆ NGAY VỚI ĐỒNG PHỤC HỒNG HÀ ĐỂ TÌM CHO DOANH NGHIỆP CỦA BẠN BỘ ĐỒNG PHỤC ƯNG Ý NHẤT!
+         <br></p>
+         <br><p>
+         <br>XƯỞNG MAY & IN ĐỒNG PHỤC CHUYÊN NGHIỆP
+         <br>- Xưởng sản xuất trực tiếp #ÁO ĐỒNG PHỤC + #TẠP DỀ + #NÓN uy tín
+         <br>- Giá ưu đãi, cạnh tranh nhất thị trường
+         <br>- Thiết kế logo miễn phí
+         <br>- Nhận may số lượng ít đến lớn
+         <br>- Logo in với công nghệ mới nhất, đảm bảo bền đẹp, chi tiết
+         <br>- Hỗ trợ in đơn gấp, 24h là có áo, có mẫu áo sẵn giao liền không in. 
+         <br>- Chất liệu vải đa dạng: Cotton, Poly, Lạnh, Lacoste, 3D
+         <br>- Nhận in đơn gấp trong vòng 24h
+         <br>- Tư vấn nhiệt tình 24/7, hỗ trợ khách hàng xem áo mẫu, mẫu vải.
+         <br></p>
+         <br><p>ƯU ĐIỂM NỔI BẬT CỦA ĐỒNG PHỤC TẠI HỒNG HÀ
+         <br> Đem đến cho các doanh nghiệp những chiếc áo đồng phục CHẤT LƯỢNG, THỜI TRANG VÀ NỔI BẬT
+         <br>- Đa dạng màu sắc: Bảng màu đầy đủ các gam màu từ rực rỡ tươi sáng đến nhẹ nhàng trung tính
+         <br>- Chất liệu vải thấm hút mồ hôi tốt, thoáng mát dễ chịu và co giãn 4 chiều, không hề bai dão.
+         <br>- Dáng thanh lịch: phổ biến, dễ mặc, phù hợp với mọi độ tuổi và giới tính đem đến một diện mạo chỉn chu, chuyên nghiệp nhưng vẫn năng động trẻ trung.
+         <br>- Thiết kế nổi bật: Theo yêu cầu khách hàng đến khi ưng mới thôi.</p>
+         <br><p>TẠI SAO IN LOGO TỐT CHO THƯƠNG HIỆU
+         <br>- Đồng phục có in, thêu logo thương hiệu là sản phẩm quảng cáo hiệu quả, để nâng cao uy tín của thương hiệu công ty và nhân viên của bạn. Đối với bất kỳ doanh nghiệp nào, nhân viên đại diện cho thương hiệu được ví như mặt tiền của ngôi nhà. Đồng phục sẽ làm cho các bạn nhân viên ấn tượng, thông minh và chuyên nghiệp hơn.
+         <br>- Cho dù là một nhà hàng, quán trà nhỏ, khách sạn lớn, quán bar… nhân viên sử dụng Đồng phục in logo thương hiệu sẽ trở nên chuyên nghiệp hơn.
+         <br>- Đồng phục có thương hiệu là quà tặng cho doanh nghiệp là một sản phẩm quảng cáo rất hiệu quả, phù hợp với các doanh nghiệp làm trong lĩnh vực thực phẩm, khách sạn, đồ tiêu dùng… 
+         <br>- Những chiếc Đồng phục có thương hiệu sẽ tạo nên sự khác biệt giữ nhân viên của bạn và đối thủ cạnh tranh, tạo nên điều đáng nhớ cho khách hàng. Nếu bạn đang làm trong ngành dịch vụ cũng có thể sử dụng tạp dề cho nhân viên và quà tặng cho khách hàng.
+         <br>- Dù bằng cách nào việc logo gắn với thương hiệu được hiển thị trên bất kỳ sản phẩm động phục nào sẽ nâng cao nhận thức về thương hiệu với tất cả những người tiếp xúc với họ.
+         <br>- Đồng phục thiết kế theo yêu cầu riêng của doanh nghiệp, mang tính cá nhân hóa sẽ tạo nên một chiến dịch tiếp thị thành công do khả năng hiểu thị và tính hữu dụng của chúng.
+         <br></p>
+         <br><p>1001+ MẪU ÁO DOANH NGHIỆP CÔNG TY KHÔNG THỂ BỎ LỠ
+         <br>- Mẫu mã đa dạng, thiết kế đẹp mắt, hợp thời trang mà vẫn giữ được những tiêu chuẩn về thương hiệu công ty, nhà hàng
+         <br>- Đội ngũ tư vấn chuyên nghiệp sẽ mang đến cho đối tác sự hài lòng và thoải mái để hiểu nhất về sản phẩm mình sẽ làm 
+         <br>- Đội ngũ thiết kế với kinh nghiệm lâu năm làm trong ngành thiết kế sẽ mô phỏng bản thiết kế SÁNG TẠO NHẤT – CHI TIẾT NHẤT – CHUYÊN NGHIỆP NHẤT
+         <br>- Đội ngũ vận chuyển năng động , linh hoạt trong việc giao hàng và liên lạc với khách hàng nhanh nhất
+         <br>- Đối tác sẽ được tư vấn về những mẫu vải tốt nhất trên thị trường vải VN hiện nay. Và được nhân viên hướng dẫn phân biệt chất liệu tốt và thường để giúp đối tác hình dung và chọn được mẫu vải mình sẽ làm cho nhân viên
+         <br>- Hãy là bạn của Đồng phục HỒNG HÀ ngay bây giờ để nhận được những ưu đãi lớn nhất để NÂNG CAO GIÁ TRỊ THƯƠNG HIỆU CÔNG TY , NHÀ HÀNG
+         <br></p>
+         <br><p>ĐỒNG PHỤC HỒNG HÀ - TINH TẾ, CHUYÊN NGHIỆP QUA TỪNG CHI TIẾT
+         <br>-  Cùng chiêm ngưỡng những mẫu đồng phục mới nhất đến từ Đồng phục HỒNG HÀ, chúng tôi sẽ giúp công ty bạn xây dựng hình ảnh chuyên nghiệp.
+         <br>-  Khi khách hàng bước đầu đặt chân và tận mắt nhìn thấy hình ảnh đồng bộ và chuyên nghiệp của những chiếc áo tại Đồng phục HỒNG HÀ, chắc chắn phần nào đó đã để lại dấu ấn về chính doanh nghiệp của bạn. Một hình ảnh công ty chuyên nghiệp sẽ tạo được lòng tin. Sự tin tưởng của khách hàng khi hợp tác và sử dụng sản phẩm của công ty.
+         <br>-  Đa dạng kiểu dáng và màu sắc, chất liệu đồng phục
+         <br>-  Dây chuyền sản xuất khép kín với máy móc hiện đại, có khả năng đáp ứng 100% đơn hàng của quý khách để tối ưu chi phí.
+         <br>-  Liên tục cập nhật những thiết kế mới nhất, theo sát xu hướng thời trang. 
+         <br>Hãy liên hệ ngay với chúng tôi để được tư vấn mẫu áo đồng phục ưng ý!
+         <br></p>
+         <br><p>MẪU ĐỒNG PHỤC MÀ CÁC ANH/CHỊ EM ĐANG TÌM KIẾM !!!
+         <br>-Không chỉ có phối màu "nịnh mắt" mà các logo in trên đồng phục cũng hết sức tỉ mỉ và chi tiết. 
+         <br>-Liên hệ ngay Áo đồng phục HỒNG HÀ để "tậu"  đồng phục thật xinh cho doanh nghiệp của mình nào
+         <br>- Tư vấn tận TÂM
+         <br>- Thiết kế MIỄN PHÍ
+         <br>- In chất lượng cao
+         <br>- Sản xuất trọn gói không qua trung gian
+         <br>- Giao hàng hỏa tốc toàn quốc
+         <br></p>
+         <p>ĐỒNG PHỤC. DÙ ÍT HAY NHIỀU - BAO NHIÊU CŨNG NHẬN
+         <br>Bạn đang cần đặt may: 10, 20, 50 hay 100, 1000, 10000+++ chiếc áo đồng phục?
+         <br>- Liên hệ Đồng Phục HỒNG HÀ ngay, vì chúng tôi #NHẬN MỌI SỐ LƯỢNG
+         <br>- Xưởng sản xuất khép kín, không qua trung gian
+         <br>- Kho vải luôn sẵn mọi chất liệu, màu sắc
+         <br>- Hệ thống máy cắt/may/in tiên tiến
+         <br>- Công nghệ in hiện đại
+         <br>- Đội ngũ nhân công lành nghề, kinh nghiệm
+         <br>Vì vậy, chúng tôi sẵn sàng đáp ứng:
+         <br>- Mọi đơn hàng lớn nhỏ, không giới hạn số lượng
+         <br>- Sản xuất nhanh chóng, đảm bảo chất lượng 
+         <br>- Trả hàng đúng hẹn
+         <br></p>
+         <br><p>ĐẶT Áo Đồng Phục - Giá Tốt - Vải Xịn
+         <br>Đầy đủ các loại Đồng phục "CAO CẤP" thiết kế "THEO YÊU CẦU MIỄN PHÍ"
+         <br>Những chiếc áo đồng phục được thiết kế phong cách cổ tròn và Polo được dùng bằng chất liệu Poly Thái, Cotton sẽ trở thành chiếc áo đa năng với nhiều ưu điểm như:
+         <br>- Chất liệu vải mềm mịn, thoáng mát, thoải mái khi mặc
+         <br>- Hoàn mỹ để nâng cao hình ảnh chuyên nghiệp, cao cấp của doanh nghiệp.
+         <br>- Logo in sắc nét, tinh tế
+         <br>- Là một chiếc áo lí tưởng cho việc vận động và làm việc
+         <br>Liên hệ với Đồng Phục HỒNG HÀ để sở hữu những chiếc áo đồng phục “đa năng” với mọi số lượng.
+         <br>- Giá gốc tận xưởng - đặt càng nhiều giá càng tốt
+         <br>- Giao hàng hỏa tốc mọi miền đất nước
+         <br></p>
+         <br><p>ĐỒNG PHỤC HỒNG HÀ NÓI KHÔNG VỚI CHẤT LƯỢNG KHÔNG ĐẢM BẢO, IN LỖI, VẢI XẤU
+         <br>Điều bạn lo lắng nhất mỗi lần đặt đồng phục cho công ty hay đội nhóm là việc hàng nhận thực tế không giống tượng tưởng về chất liệu, màu sắc và hình in phải không?
+         <br>- Đặt may đồng phục tại Đồng phục HỒNG HÀ khách hàng chắc chắn không cần lo lắng về vấn đề chất lượng sản phẩm.
+         <br>- Đồng phục HỒNG HÀ đảm bảo sản xuất đúng với cam kết đã có với khách hàng. Ngoài ra chúng tôi sẵn sàng chịu trách nhiệm với tất cả đơn hàng được gửi đi nếu phát sinh bất kì vấn đề nào.
+         <br>May đồng phục ở Đồng phục HỒNG HÀ là lựa chọn của sự an tâm
+         <br></p>
+         <br><p>Doanh nghiệp, tổ chức của bạn đã có đồng phục đẹp, chất lượng
+         <br>- Để lại com.ment [.] để nhận tư vấn và xem mẫu đồng phục dành cho doanh nghiệp để có ý tưởng cho đồng phục của doanh nghiệp mình nhé..
+         <br>ÁO POLO CỦA ĐỒNG PHỤC HỒNG HÀ chất lượng với:
+         <br>- Chất liệu vải: mềm mại, thoáng mát, co dãn 4 chiều tạo cảm giác thoải mái trong mọi hoạt động.
+         <br>- Form áo tôn dáng, giải quyết nỗi lo khuyết điểm hình thể.
+         <br>- CHỈ MẤT 3S để #CHẤM hoặc #INBOX, chúng tôi sẽ liên hệ ngay cho bạn và có cơ hội nhận ưu đãi vô cùng hấp dẫn:
+         <br>- Tư vấn thiết kế áo đồng phục miễn phí
+         <br>- Giao hàng siêu nhanh toàn quốc</p>
+         <br><p>ĐÂU LÀ GIẢI PHÁP ĐỒNG PHỤC HOÀN HẢO CHO DOANH NGHIỆP?
+         <br>- HỒNG HÀ luôn là lựa chọn hàng đầu đặt may đồng phục cho doanh nghiệp. Vậy chọn áo nào để phù hợp cho doanh nghiệp của bạn.
+         <br>- Tùy vào mỗi đặc tính và công việc của doanh nghiệp, vậy hãy tìm hiểu xem đâu mới là lựa chọn phù hợp với doanh nghiệp của bạn nhé!
+         <br>- HỒNG HÀ hướng đến sự trẻ trung, năng động trong công việc, áo thiết kếdễ dàng hoạt động mang lại sự thoải mái cho người mặc 
+         <br>- Với những đặc điểm trên phù hợp cho những công việc cần hoạt động nhiều, ví dụ như: nhà hàng, quán cà phê, team building,...
+         <br>- HỒNG HÀ hướng đến sự lịch lãm, chuyên nghiệp. Chiếc áo có phần cổ và bo tay dễ dàng làm nổi bật nên nét riêng của thương hiệu bạn.
+         <br>- Đây cũng là lý do rất nhiều doanh nghiệp chọn HỒNG HÀ làm đồng phục để hướng đến sự chuyên nghiệp, lịch sự.
+         <br>- Vậy bạn đã đưa ra cho mình lựa chọn phù hợp với doanh nghiệp của mình chưa?
+         <br>Còn chần chừ gì nữa mà không đến với HỒNG HÀ để có những chiếc đồng phục chất lượng, thiết kế riêng biệt.
+         <br></p>
+   </div>
+   <div class="btn">
+   <button onclick="coppy(0)">Copy</button>
+</div>
+   <script>
+      function coppy(a){
+         var p = document.getElementsByTagName("p");
+         var connect = document.getElementById('text');
+         if(a == 0){
+            navigator.clipboard.writeText(p[Math.floor(Math.random() * p.length) - 1].innerText);
+         }else{
+            navigator.clipboard.writeText(p[Math.floor(Math.random() * p.length) - 1].innerText +"\n" + connect.value);
+         }
+      }
+   </script>
+</body>
+</html>
